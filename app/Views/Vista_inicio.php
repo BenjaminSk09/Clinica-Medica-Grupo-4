@@ -278,6 +278,7 @@
             <i class="fab fa-twitter"></i>
         </div>
     </header>
+    
     <!-- Navegación principal -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
