@@ -6,6 +6,6 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('paciente/Vista_inicio');
+        return view('form_agregar_paciente.php');
     }
 }

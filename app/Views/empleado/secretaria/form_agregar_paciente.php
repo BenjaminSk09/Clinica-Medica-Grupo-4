@@ -233,7 +233,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('paciente')?>">Portal del Paciente</a>
+                        <a class="nav-link" href="<?= base_url('portal_paciente')?>">Portal del Paciente</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Citas Médicas</a>

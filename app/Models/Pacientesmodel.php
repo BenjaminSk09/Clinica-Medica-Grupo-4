@@ -4,9 +4,9 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Pacientesmodel extends Model
+class PacientesModel extends Model
 {
-    protected $table         = 'pacientes';
+    protected $table = 'pacientes';
     protected $primaryKey = 'id_paciente';
     protected $allowedFields = [
        'nombre', 'apellido', 'email','telefono',
