@@ -7,3 +7,4 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('paciente','PacienteController::index');
+$routes->get('inicio','InicioController::index');
