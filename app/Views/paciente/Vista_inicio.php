@@ -30,12 +30,11 @@
         </div>
 
         <div class="social-icons">
-            <a href="Vista "><i class="fas fa-home"></i></a>
+            <a href="http://localhost/Clinica-Medica-Grupo-4/public/"><i class="fas fa-home"></i></a>
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-            
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-twitter"></i>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://gt.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a>
         </div>
     </header>
     <!-- Navegación principal -->
@@ -48,11 +47,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Menú principal -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Horarios</a>
+                <li class="nav-item">
+                        <a class="nav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                        <a class="nav-link" href="Especialidades"><span class="hover-effect">Sobre Nosotros</span> </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Médicos</a>

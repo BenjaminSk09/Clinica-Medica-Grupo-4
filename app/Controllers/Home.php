@@ -8,4 +8,12 @@ class Home extends BaseController
     {
         return view('paciente/Vista_inicio');
     }
+    public function Horarios(): string
+    {
+        return view('paciente/Horarios');
+    }
+    public function Nosotros(): string
+    {
+        return view('paciente/Nostros');
+    }
 }

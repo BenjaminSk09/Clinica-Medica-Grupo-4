@@ -260,3 +260,13 @@ nav a {
     margin: 0;
     /* Margen del texto */
 }
+
+/*Color de las letras*/
+.hover-effect {
+    color: black; /* Color de texto inicial */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+.hover-effect:hover {
+    color: rgb(72, 219, 200); /* Cambia a rojo al pasar el ratón */
+}
