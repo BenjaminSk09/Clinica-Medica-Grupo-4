@@ -10,6 +10,6 @@ class PacienteController extends BaseController
         $pacientes = new PacientesModel();
         $datos['datos']=$pacientes->findAll();
 
-        return view('pacientes',$datos);
+        return view('vista_paciente',$datos);
     }
 }
