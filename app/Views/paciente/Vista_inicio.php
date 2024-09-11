@@ -30,8 +30,9 @@
         </div>
 
         <div class="social-icons">
-            <i class="fas fa-home"></i>
-            <i class="fab fa-instagram"></i>
+            <a href="Vista "><i class="fas fa-home"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-linkedin-in"></i>
             <i class="fab fa-twitter"></i>
