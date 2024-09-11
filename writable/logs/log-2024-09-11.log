@@ -1,4 +1,20 @@
+<<<<<<< HEAD
 CRITICAL - 2024-09-11 16:56:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_paciente.php"
+=======
+CRITICAL - 2024-09-11 16:06:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "form_agregar_paciente.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('form_agregar_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('form_agregar_paciente.php', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('form_agregar_paciente.php')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-11 16:06:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_paciente.php"
+>>>>>>> 4837d8f2fce9b571611aa0d8403375117a48d4ba
 [Method: GET, Route: paciente]
 in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
  1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_paciente.php')
@@ -10,6 +26,7 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
  7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+<<<<<<< HEAD
 CRITICAL - 2024-09-11 16:56:07 --> ErrorException: Cannot redeclare App\Controllers\Home::index()
 [Method: GET, Route: /]
 in APPPATH\Controllers\Home.php on line 11.
@@ -51,6 +68,9 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
  8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 CRITICAL - 2024-09-11 17:52:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_paciente.php"
+=======
+CRITICAL - 2024-09-11 17:12:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_paciente.php"
+>>>>>>> 4837d8f2fce9b571611aa0d8403375117a48d4ba
 [Method: GET, Route: paciente]
 in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
  1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_paciente.php')

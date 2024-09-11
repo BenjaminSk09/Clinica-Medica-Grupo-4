@@ -1,4 +1,3 @@
-/*Esta es el controlador de Paciente */
 <?php
 
 namespace App\Controllers;
