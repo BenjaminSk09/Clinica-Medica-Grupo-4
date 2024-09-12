@@ -14,6 +14,10 @@ class Home extends BaseController
     }
     public function Nosotros(): string
     {
-        return view('paciente/Nostros');
+        return view('paciente/Nosotros');
+    }
+    public function Medicos(): string
+    {
+        return view('paciente/Medicos');
     }
 }

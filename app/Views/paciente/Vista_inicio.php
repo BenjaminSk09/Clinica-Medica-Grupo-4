@@ -20,7 +20,7 @@
     <header>
         <div class="logo">
             <a href=""> <img
-                    src="https://marketplace.canva.com/EAFdCebXgRs/1/0/1600w/canva-logotipo-medicina-simple-azul-y-blanco-4UzHG4FY3uw.jpg"
+                    src="imagenes/paciente/Logo.png"
                     alt="Logo Clínica Médica">
             </a>
             <div>
@@ -47,14 +47,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Menú principal -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Especialidades"><span class="hover-effect">Sobre Nosotros</span> </a>
+                        <a class="nav-link" href="Nosotros"><span class="hover-effect">Sobre Nosotros</span> </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Médicos</a>
+                        <a class="nav-link" href="Medicos"><span class="hover-effect">Médicos</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Ubicación</a>

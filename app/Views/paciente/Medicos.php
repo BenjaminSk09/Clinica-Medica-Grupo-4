@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Médica</title>
-</head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link href="<?= base_url('diseno_css/paciente/horarios.css') ?>" rel="stylesheet">
-
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="<?= base_url('diseno_css/paciente/medicos.css') ?>" rel="stylesheet">
 
 
 </head>
@@ -17,6 +15,7 @@
 <body>
 
 
+    <!--Medicos-->
     <!-- Encabezado -->
     <header>
         <div class="logo">
@@ -48,14 +47,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Menú principal -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Nosotros"><span class="hover-effect">Sobre Nosotros</span> </a>
+                        <a class="nav-link" href="Nosotros"><span class="hover-effect">Sobre Nosotros</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Medicos"><span class="hover-effect">Médicos</span></a>
+                        <a class="nav-link" href="Medicos"><span>Médicos</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Ubicación</a>
@@ -79,58 +78,41 @@
             </div>
         </div>
     </nav>
-
-
-    <!-- Horarios-->
-  
-    <!-- Horario de Atención -->
-    
-        <div class="row justify-content-center horario-table">
-            <div class="col-lg-8 col-md-10">
-                <table class="table table-bordered table-striped text-center">
-                    <thead class="table-primary">
-                        <tr>
-                            <th>Día</th>
-                            <th>Horario de Atención</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lunes</td>
-                            <td>8:00 AM - 5:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Martes</td>
-                            <td>8:00 AM - 5:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Miércoles</td>
-                            <td>8:00 AM - 5:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Jueves</td>
-                            <td>8:00 AM - 5:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Viernes</td>
-                            <td>8:00 AM - 5:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Sábado</td>
-                            <td>9:00 AM - 1:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Domingo</td>
-                            <td>Cerrado</td>
-                        </tr>
-                    </tbody>
-                </table>
+<br>                
+    <!-- Tarjeta de Doctor -->
+    <div class="doctor1">
+        <div class="doctor-card">
+            <img src="https://w7.pngwing.com/pngs/703/42/png-transparent-user-icon-icono-de-usuario-pictogram-profile-avatar.png"
+                alt="Foto del Doctor">
+            <div class="doctor-info">
+                <h2>Abner Gamaliel Santos López</h2>
+                <p><strong>Cortesía</strong></p>
+                <p><strong>Especialidad:</strong> Ginecología y Obstetricia, Urología Ginecológica</p>
+                <p><strong>Ubicación:</strong> 6ta av. 9-18 zona 10, edif. Sixtino II ala II nivel 9 clínica 901</p>
+                <p><strong>Contacto:</strong> 2369-4148/5592-3789</p>
+                <a href="#" class="profile-link">Ver perfil &gt;</a>
+            </div>
+        </div>
+    <!-- Agrega más tarjetas de doctores según sea necesario -->
+    </div>
+    <div class="doctor2">
+        <!-- Tarjeta de Doctor adicional (Ejemplo) -->
+        <div class="doctor-card">
+            <img src="https://w7.pngwing.com/pngs/703/42/png-transparent-user-icon-icono-de-usuario-pictogram-profile-avatar.png" alt="Foto de la Doctora">
+            <div class="doctor-info">
+                <h2>Aida Maritza Ramírez Ortiz</h2>
+                <p><strong>Titular</strong></p>
+                <p><strong>Especialidad:</strong> Cardiología</p>
+                <p><strong>Ubicación:</strong> Av. Reforma 14-20 zona 1, Torre Médica nivel 2 clínica 204</p>
+                <p><strong>Contacto:</strong> 2244-1122/5566-3344</p>
+                <a href="#" class="profile-link">Ver perfil &gt;</a>
             </div>
         </div>
     </div>
+   
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 

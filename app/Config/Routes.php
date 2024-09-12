@@ -8,7 +8,8 @@ use CodeIgniter\Router\RouteCollection;
 /*Pafina principal*/ 
 $routes->get('/', 'Home::index');
 $routes->get('Horarios','Home::Horarios');
-$routes->get('Nosotros','Home::Nostros');
+$routes->get('Nosotros','Home::Nosotros');
+$routes->get('Medicos','Home::Medicos');
 
 /*Pagina paciente*/ 
 $routes->get('paciente','PacienteController::index');
