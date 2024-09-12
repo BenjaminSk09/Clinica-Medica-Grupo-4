@@ -19,9 +19,7 @@
     <!-- Encabezado -->
     <header>
         <div class="logo">
-            <a href=""> <img
-                    src="imagenes/paciente/Logo.png"
-                    alt="Logo Clínica Médica">
+            <a href=""> <img src="imagenes/paciente/Logo.png" alt="Logo Clínica Médica">
             </a>
             <div>
                 <h1>Clínica Medica</h1>
@@ -57,10 +55,10 @@
                         <a class="nav-link" href="Medicos"><span class="hover-effect">Médicos</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ubicación</a>
+                        <a class="nav-link" href="Ubicacion"><span class="hover-effect">Ubicación</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contáctanos</a>
+                        <a class="nav-link" href="Contactanos"><span class="hover-effect">Contáctanos</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <!-- Botón del menú desplegable -->

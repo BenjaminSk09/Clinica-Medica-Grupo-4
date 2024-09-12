@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Médica</title>
-</head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link href="<?= base_url('diseno_css/paciente/horarios.css') ?>" rel="stylesheet">
-
-
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="<?= base_url('diseno_css/paciente/contactanos.css') ?>" rel="stylesheet">
+    <script src="codigo_js/paciente/nosotros.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
 
 <body>
-
-
     <!-- Encabezado -->
     <header>
         <div class="logo">
             <a href=""> <img
-                    src="https://marketplace.canva.com/EAFdCebXgRs/1/0/1600w/canva-logotipo-medicina-simple-azul-y-blanco-4UzHG4FY3uw.jpg"
+                    src="imagenes/paciente/Logo.png"
                     alt="Logo Clínica Médica">
             </a>
             <div>
@@ -49,7 +47,7 @@
                 <!-- Menú principal -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                        <a class="snav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
+                        <a class="nav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Nosotros"><span class="hover-effect">Sobre Nosotros</span> </a>
@@ -81,56 +79,9 @@
     </nav>
 
 
-    <!-- Horarios-->
 
-    <!-- Horario de Atención -->
-
-    <div class="row justify-content-center horario-table">
-        <div class="col-lg-8 col-md-10">
-            <table class="table table-bordered table-striped text-center">
-                <thead class="table-primary">
-                    <tr>
-                        <th>Día</th>
-                        <th>Horario de Atención</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Lunes</td>
-                        <td>8:00 AM - 5:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Martes</td>
-                        <td>8:00 AM - 5:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Miércoles</td>
-                        <td>8:00 AM - 5:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Jueves</td>
-                        <td>8:00 AM - 5:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Viernes</td>
-                        <td>8:00 AM - 5:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Sábado</td>
-                        <td>9:00 AM - 1:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Domingo</td>
-                        <td>Cerrado</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 

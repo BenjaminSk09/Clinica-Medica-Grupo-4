@@ -47,20 +47,20 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Menú principal -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                <li class="nav-item">
                         <a class="nav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Nosotros"><span class="hover-effect">Sobre Nosotros</span></a>
+                        <a class="nav-link" href="Nosotros"><span class="hover-effect">Sobre Nosotros</span> </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Medicos"><span>Médicos</span></a>
+                        <a class="nav-link" href="Medicos"><span class="hover-effect">Médicos</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ubicación</a>
+                        <a class="nav-link" href="Ubicacion"><span class="hover-effect">Ubicación</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contáctanos</a>
+                        <a class="nav-link" href="Contactanos"><span class="hover-effect">Contáctanos</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <!-- Botón del menú desplegable -->
@@ -84,8 +84,8 @@
         <div class="doctor-card">
             <img src="https://w7.pngwing.com/pngs/703/42/png-transparent-user-icon-icono-de-usuario-pictogram-profile-avatar.png"
                 alt="Foto del Doctor">
+                <h2>Doctor 1</h2>
             <div class="doctor-info">
-                <h2>Abner Gamaliel Santos López</h2>
                 <p><strong>Cortesía</strong></p>
                 <p><strong>Especialidad:</strong> Ginecología y Obstetricia, Urología Ginecológica</p>
                 <p><strong>Ubicación:</strong> 6ta av. 9-18 zona 10, edif. Sixtino II ala II nivel 9 clínica 901</p>
@@ -100,7 +100,7 @@
         <div class="doctor-card">
             <img src="https://w7.pngwing.com/pngs/703/42/png-transparent-user-icon-icono-de-usuario-pictogram-profile-avatar.png" alt="Foto de la Doctora">
             <div class="doctor-info">
-                <h2>Aida Maritza Ramírez Ortiz</h2>
+                <h2>Doctor 2</h2>
                 <p><strong>Titular</strong></p>
                 <p><strong>Especialidad:</strong> Cardiología</p>
                 <p><strong>Ubicación:</strong> Av. Reforma 14-20 zona 1, Torre Médica nivel 2 clínica 204</p>

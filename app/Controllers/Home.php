@@ -20,4 +20,12 @@ class Home extends BaseController
     {
         return view('paciente/Medicos');
     }
+    public function Ubicacion(): string
+    {
+        return view('paciente/Ubicacion');
+    }
+    public function Contactanos(): string
+    {
+        return view('paciente/Contactanos');
+    }
 }
