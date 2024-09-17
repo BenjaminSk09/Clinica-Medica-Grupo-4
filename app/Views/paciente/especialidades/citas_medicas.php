@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal del Paciente</title>
+    <title>Portal del Paciente - Citas Médicas</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="<?= base_url('diseno_css/paciente/vista_inicio.css')?>" rel="stylesheet">
+    <link href="<?= base_url('diseno_css/paciente/citas_medicas.css')?>" rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +45,7 @@
                         <a class="nav-link" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Citas Médicas</a>
+                        <a class="nav-link active" href="#">Citas Médicas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Mis Resultados</a>
@@ -64,46 +64,48 @@
         </div>
     </nav>
 
-    <!-- Sección de Bienvenida -->
-    <div class="bienvenida">
-        <h2>Bienvenido al Portal del Paciente</h2>
-        <p>Accede a tus citas, resultados médicos y más desde la comodidad de tu hogar.</p>
-    </div>
+    <!-- Sección de Citas Médicas -->
+    <div class="container mt-5">
+        <h2 class="text-center">Gestiona tus Citas Médicas</h2>
+        <p class="text-center">Aquí puedes revisar, programar o cancelar tus citas médicas.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Próximas Citas</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Consulta con el Dr. López - 20/09/2024 - 10:00 AM</li>
+                    <li class="list-group-item">Examen de Laboratorio - 25/09/2024 - 8:30 AM</li>
+                    <li class="list-group-item">Consulta de Control - 30/09/2024 - 12:00 PM</li>
+                </ul>
+            </div>
 
-    <!-- Servicios para Pacientes -->
-    <div class="servicios-pacientes">
-        <div class="servicio">
-            <img src="https://cdn-icons-png.flaticon.com/512/3209/3209765.png" alt="Citas Médicas">
-            <h3>Citas Médicas</h3>
-            <p>Programa y gestiona tus citas médicas de forma rápida y sencilla.</p>
-            <br>
-            <button type="button" class="btn btn-dark">Ingresar</button>
-        </div>
-        <div class="servicio">
-            <img src="https://cdn-icons-png.flaticon.com/512/3039/3039473.png" alt="Resultados de Exámenes">
-            <h3>Resultados de Exámenes</h3>
-            <p>Consulta tus resultados de laboratorio y estudios clínicos en línea.</p>
-            <br>
-            <button type="button" class="btn btn-dark">Ingresar</button>
-        </div>
-        <div class="servicio">
-            <img src="https://cdn-icons-png.flaticon.com/512/1256/1256656.png" alt="Historia Clínica">
-            <h3>Historia Clínica</h3>
-            <p>Accede a tu historial médico completo desde cualquier lugar.</p>
-            <br>
-            <button type="button" class="btn btn-dark">Ingresar</button>
-        </div>
-        <div class="servicio">
-            <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Recetas">
-            <h3>Recetas Médicas</h3>
-            <p>Revisa tus recetas y solicita renovaciones en línea.</p>
-            <br>
-            <button type="button" class="btn btn-dark">Ingresar</button>
+            <div class="col-md-6">
+                <h3>Programar Nueva Cita</h3>
+                <form action="<?= base_url('/citas/programar') ?>" method="post">
+                    <div class="mb-3">
+                        <label for="fecha" class="form-label">Fecha de la Cita</label>
+                        <input type="date" class="form-control" id="fecha" name="fecha" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="hora" class="form-label">Hora de la Cita</label>
+                        <input type="time" class="form-control" id="hora" name="hora" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="doctor" class="form-label">Selecciona el Doctor</label>
+                        <select class="form-select" id="doctor" name="doctor" required>
+                            <option value="Dr. López">Dr. López</option>
+                            <option value="Dra. Pérez">Dra. Pérez</option>
+                            <option value="Dr. García">Dr. García</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Programar Cita</button>
+                </form>
+            </div>
         </div>
     </div>
 
     <!-- Pie de página -->
-    <footer>
+    <footer class="mt-5">
         <p>© 2024 Clinica Medica | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
     </footer>
 
