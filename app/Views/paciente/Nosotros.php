@@ -19,7 +19,7 @@
     <header>
         <div class="logo">
             <a href=""> <img
-                    src="imagenes/paciente/Logo.png"
+                    src="https://marketplace.canva.com/EAFdCebXgRs/1/0/1600w/canva-logotipo-medicina-simple-azul-y-blanco-4UzHG4FY3uw.jpg"
                     alt="Logo Clínica Médica">
             </a>
             <div>
@@ -45,8 +45,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Menú principal -->
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
+                    <li class="nav-item">
                         <a class="nav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
                     </li>
                     <li class="nav-item">
@@ -130,10 +130,10 @@
 
 
 
-    <br> 
-<!--Nuestros Valores-->
+    <br>
+    <!--Nuestros Valores-->
 
-<div class="valores-container">
+    <div class="valores-container">
         <h1 class="text-center">Nuestros valores</h1>
         <div class="tabs">
             <!-- Botones para cambiar el contenido de los valores -->
@@ -202,6 +202,57 @@
             </div>
         </div>
     </div>
+
+    <br>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Institucional -->
+                <div class="col-md-4">
+                    <h5>INSTITUCIONAL</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Horarios de atención</a></li>
+                        <li><a href="#">Coberturas que atendemos</a></li>
+                        <li><a href="#">Credencial de servicios SAAV</a></li>
+                        <li><a href="#">Reservar turnos</a></li>
+                        <li><a href="#">Cómo llegar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contáctenos -->
+                <div class="col-md-4">
+                    <h5>CONTÁCTENOS</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Consultas y sugerencias</a></li>
+                        <li><a href="#">Trabaje con nostros</a></li>
+                        <li><a href="#">Profesionales de la salud</a></li>
+                        <li><a href="#">Agente propaganda pagada</a></li>
+                        <li><a href="#">Formulario de solicitud</a></li>
+                    </ul>
+                </div>
+
+                <!-- Información de Interés -->
+                <div class="col-md-4">
+                    <h5>INFORMACIÓN DE INTERÉS</h5>
+                    <ul class="list-unstyled">
+                        <li>Plasma rico en plaquetas</li>
+                        <li><a href="#"> Vacunación antigripal
+                                2024</a></li>
+                        <li><a href="#"> Prevención del dengue</a></li>
+                        <li><a href="#"> Acumputura</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p>Todos los derechos reservados ® | República de Guatemala| Clinica Medica</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

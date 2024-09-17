@@ -47,9 +47,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Menú principal -->
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                        <a class="snav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Nosotros"><span class="hover-effect">Sobre Nosotros</span> </a>
@@ -129,8 +129,117 @@
     </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<br>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Institucional -->
+                <div class="col-md-4">
+                    <h5>INSTITUCIONAL</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Horarios de atención</a></li>
+                        <li><a href="#">Coberturas que atendemos</a></li>
+                        <li><a href="#">Credencial de servicios SAAV</a></li>
+                        <li><a href="#">Reservar turnos</a></li>
+                        <li><a href="#">Cómo llegar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contáctenos -->
+                <div class="col-md-4">
+                    <h5>CONTÁCTENOS</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Consultas y sugerencias</a></li>
+                        <li><a href="#">Trabaje con nostros</a></li>
+                        <li><a href="#">Profesionales de la salud</a></li>
+                        <li><a href="#">Agente propaganda pagada</a></li>
+                        <li><a href="#">Formulario de solicitud</a></li>
+                    </ul>
+                </div>
+
+                <!-- Información de Interés -->
+                <div class="col-md-4">
+                    <h5>INFORMACIÓN DE INTERÉS</h5>
+                    <ul class="list-unstyled">
+                        <li>Plasma rico en plaquetas</li>
+                        <li><a href="#"> Vacunación antigripal
+                                2024</a></li>
+                        <li><a href="#"> Prevención del dengue</a></li>
+                        <li><a href="#"> Acumputura</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p>Todos los derechos reservados ® | República de Guatemala| Clinica Medica</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <style>
+        
+
+.footer {
+    background-color: #164446;
+    /* Color de fondo */
+    padding: 70px 10px;
+    /* Espaciado arriba y abajo */
+    color: #9acccc;
+    /* Color del texto */
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ace2e2;
+    padding-bottom: 10px;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li a {
+    color: #8fcccc;
+    /* Color de los enlaces */
+    text-decoration: none;
+    /* Sin subrayado */
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+    /* Subrayado al pasar el ratón */
+}
+
+.footer img {
+    margin-right: 5px;
+    /* Espacio entre la imagen y el texto */
+    vertical-align: middle;
+    /* Alineación vertical */
+}
+
+.footer .row.mt-4 {
+    border-top: 1px solid #e1e1e1;
+    /* Línea superior */
+    margin-top: 40px;
+    /* Margen superior */
+    padding-top: 20px;
+    /* Espaciado superior */
+}
+
+.footer .text-center p {
+    margin: 0;
+    /* Margen del texto */
+}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

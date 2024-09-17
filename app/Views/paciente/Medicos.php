@@ -46,8 +46,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Menú principal -->
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
+                    <li class="nav-item">
                         <a class="nav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
                     </li>
                     <li class="nav-item">
@@ -78,13 +78,13 @@
             </div>
         </div>
     </nav>
-<br>                
+    <br>
     <!-- Tarjeta de Doctor -->
     <div class="doctor1">
         <div class="doctor-card">
             <img src="https://w7.pngwing.com/pngs/703/42/png-transparent-user-icon-icono-de-usuario-pictogram-profile-avatar.png"
                 alt="Foto del Doctor">
-                <h2>Doctor 1</h2>
+            <h2>Doctor 1</h2>
             <div class="doctor-info">
                 <p><strong>Cortesía</strong></p>
                 <p><strong>Especialidad:</strong> Ginecología y Obstetricia, Urología Ginecológica</p>
@@ -93,25 +93,74 @@
                 <a href="#" class="profile-link">Ver perfil &gt;</a>
             </div>
         </div>
-    <!-- Agrega más tarjetas de doctores según sea necesario -->
+        <!-- Agrega más tarjetas de doctores según sea necesario -->
     </div>
     <div class="doctor2">
-        <!-- Tarjeta de Doctor adicional (Ejemplo) -->
         <div class="doctor-card">
-            <img src="https://w7.pngwing.com/pngs/703/42/png-transparent-user-icon-icono-de-usuario-pictogram-profile-avatar.png" alt="Foto de la Doctora">
+            <img src="https://w7.pngwing.com/pngs/703/42/png-transparent-user-icon-icono-de-usuario-pictogram-profile-avatar.png"
+                alt="Foto del Doctor">
+            <h2>Doctor 1</h2>
             <div class="doctor-info">
-                <h2>Doctor 2</h2>
-                <p><strong>Titular</strong></p>
-                <p><strong>Especialidad:</strong> Cardiología</p>
-                <p><strong>Ubicación:</strong> Av. Reforma 14-20 zona 1, Torre Médica nivel 2 clínica 204</p>
-                <p><strong>Contacto:</strong> 2244-1122/5566-3344</p>
+                <p><strong>Cortesía</strong></p>
+                <p><strong>Especialidad:</strong> Ginecología y Obstetricia, Urología Ginecológica</p>
+                <p><strong>Ubicación:</strong> 6ta av. 9-18 zona 10, edif. Sixtino II ala II nivel 9 clínica 901</p>
+                <p><strong>Contacto:</strong> 2369-4148/5592-3789</p>
                 <a href="#" class="profile-link">Ver perfil &gt;</a>
             </div>
         </div>
+        <!-- Agrega más tarjetas de doctores según sea necesario -->
     </div>
-   
 
 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Institucional -->
+                <div class="col-md-4">
+                    <h5>INSTITUCIONAL</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Horarios de atención</a></li>
+                        <li><a href="#">Coberturas que atendemos</a></li>
+                        <li><a href="#">Credencial de servicios SAAV</a></li>
+                        <li><a href="#">Reservar turnos</a></li>
+                        <li><a href="#">Cómo llegar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contáctenos -->
+                <div class="col-md-4">
+                    <h5>CONTÁCTENOS</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Consultas y sugerencias</a></li>
+                        <li><a href="#">Trabaje con nostros</a></li>
+                        <li><a href="#">Profesionales de la salud</a></li>
+                        <li><a href="#">Agente propaganda pagada</a></li>
+                        <li><a href="#">Formulario de solicitud</a></li>
+                    </ul>
+                </div>
+
+                <!-- Información de Interés -->
+                <div class="col-md-4">
+                    <h5>INFORMACIÓN DE INTERÉS</h5>
+                    <ul class="list-unstyled">
+                        <li>Plasma rico en plaquetas</li>
+                        <li><a href="#"> Vacunación antigripal
+                                2024</a></li>
+                        <li><a href="#"> Prevención del dengue</a></li>
+                        <li><a href="#"> Acumputura</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p>Todos los derechos reservados ® | República de Guatemala| Clinica Medica</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

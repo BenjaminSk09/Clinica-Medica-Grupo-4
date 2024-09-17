@@ -44,8 +44,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Menú principal -->
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
+                    <li class="nav-item ">
                         <a class="nav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
                     </li>
                     <li class="nav-item">
@@ -59,7 +59,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Contactanos"><span class="hover-effect">Contáctanos</span></a>
-                    </li>x
+                    </li>
                     <li class="nav-item dropdown">
                         <!-- Botón del menú desplegable -->
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
