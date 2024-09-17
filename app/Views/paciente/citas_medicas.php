@@ -42,10 +42,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="<?= base_url('/'); ?>">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Citas Médicas</a>
+                    <a class="nav-link" href="<?= base_url('paciente'); ?>">Portal del Paciente</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Mis Resultados</a>

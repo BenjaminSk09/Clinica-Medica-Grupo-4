@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal del Paciente</title>
+    <title>Portal del Paciente - Mis Resultados</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="<?= base_url('diseno_css/paciente/vista_inicio.css')?>" rel="stylesheet">
+    <link href="<?= base_url('diseno_css/paciente/mis_resultados.css')?>" rel="stylesheet">
 </head>
 
 <body>
@@ -44,10 +45,13 @@
                         <a class="nav-link" href="<?= base_url('/'); ?>">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Medicas</a>
+                        <a class="nav-link" href="<?= base_url('paciente'); ?>">Portal del Paciente</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mis Resultados</a>
+                        <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Médicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="<?= base_url('mis-resultados'); ?>">Mis Resultados</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Historia Clínica</a>
@@ -63,46 +67,25 @@
         </div>
     </nav>
 
-    <!-- Sección de Bienvenida -->
-    <div class="bienvenida">
-        <h2>Bienvenido al Portal del Paciente</h2>
-        <p>Accede a tus citas, resultados médicos y más desde la comodidad de tu hogar.</p>
-    </div>
+    <!-- Sección de Resultados Médicos -->
+    <div class="container mt-5">
+        <h2 class="text-center">Tus Resultados Médicos</h2>
+        <p class="text-center">Aquí puedes revisar los resultados de tus exámenes y pruebas médicas.</p>
 
-    <!-- Servicios para Pacientes -->
-    <div class="servicios-pacientes">
-        <div class="servicio">
-            <img src="https://cdn-icons-png.flaticon.com/512/3209/3209765.png" alt="Citas Médicas">
-            <h3>Citas Médicas</h3>
-            <p>Programa y gestiona tus citas médicas de forma rápida y sencilla.</p>
-            <br>
-            <a class="btn btn-primary" href="<?= base_url('citas-medicas'); ?>">Ingresar</a>
-        </div>
-        <div class="servicio">
-            <img src="https://cdn-icons-png.flaticon.com/512/3039/3039473.png" alt="Resultados de Exámenes">
-            <h3>Resultados de Exámenes</h3>
-            <p>Consulta tus resultados de laboratorio y estudios clínicos en línea.</p>
-            <br>
-            <button type="button" class="btn btn-dark">Ingresar</button>
-        </div>
-        <div class="servicio">
-            <img src="https://cdn-icons-png.flaticon.com/512/1256/1256656.png" alt="Historia Clínica">
-            <h3>Historia Clínica</h3>
-            <p>Accede a tu historial médico completo desde cualquier lugar.</p>
-            <br>
-            <button type="button" class="btn btn-dark">Ingresar</button>
-        </div>
-        <div class="servicio">
-            <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Recetas">
-            <h3>Recetas Médicas</h3>
-            <p>Revisa tus recetas y solicita renovaciones en línea.</p>
-            <br>
-            <button type="button" class="btn btn-dark">Ingresar</button>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Resultados Recientes</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Examen de Sangre - Fecha: 20/09/2024 - <a href="#">Ver Resultado</a></li>
+                    <li class="list-group-item">Radiografía de Tórax - Fecha: 25/09/2024 - <a href="#">Ver Resultado</a></li>
+                    <li class="list-group-item">Electrocardiograma - Fecha: 30/09/2024 - <a href="#">Ver Resultado</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <!-- Pie de página -->
-    <footer>
+    <footer class="mt-5">
         <p>© 2024 Clinica Medica | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
     </footer>
 

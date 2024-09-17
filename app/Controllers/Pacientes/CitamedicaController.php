@@ -1,17 +1,19 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Pacientes;
 
-use App\Models\CitasMedicasModel;  // Asegúrate de tener un modelo para las citas
+use App\Controllers\BaseController;
+use App\Models\CitasModel;  // Importa el modelo CitasModel
 
 class CitaMedicaController extends BaseController
 {
-    // Mostrar todas las citas
+    // Método para mostrar todas las citas
     public function index(): string
     {
-        $citasModel = new CitasMedicasModel();
-        $datos['citas'] = $citasModel->findAll();  // Obtiene todas las citas desde la base de datos
+        $citas = new CitasModel();  // Crea una instancia del modelo
+        $datos['datos'] = $citas->findAll();  // Obtiene todas las citas
 
-        return view('/citas/vista_citas', $datos);  // Retorna la vista con los datos de las citas
+        // Retorna la vista 'citas_medicas' con los datos
+        return view('/paciente/citas_medicas', $datos);
     }
 }

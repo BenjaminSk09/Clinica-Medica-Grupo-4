@@ -15,4 +15,6 @@ $routes->get('Contactanos','Home::Contactanos');
 /*Pagina paciente*/ 
 $routes->get('paciente', 'Pacientes\PacienteController::index');
 
+$routes->get('citas-medicas', 'Pacientes\CitaMedicaController::index');
+
 /*Pagina empleados*/ 

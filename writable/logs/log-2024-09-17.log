@@ -248,3 +248,99 @@ in SYSTEMPATH\Router\Router.php on line 492.
  6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
  7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-17 15:37:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/citas_medicas.php"
+[Method: GET, Route: citas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/citas_medicas.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/citas_medicas', [], true)
+ 3 APPPATH\Controllers\Pacientes\CitaMedicaController.php(17): view('/paciente/citas_medicas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\CitaMedicaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\CitaMedicaController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-17 15:39:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/citas_medicas.php"
+[Method: GET, Route: citas-medicas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/citas_medicas.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/citas_medicas', [], true)
+ 3 APPPATH\Controllers\Pacientes\CitaMedicaController.php(17): view('/paciente/citas_medicas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\CitaMedicaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\CitaMedicaController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-17 15:44:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/citas_medicas.php"
+[Method: GET, Route: citas-medicas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/citas_medicas.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/citas_medicas', [], true)
+ 3 APPPATH\Controllers\Pacientes\CitaMedicaController.php(17): view('/paciente/citas_medicas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\CitaMedicaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\CitaMedicaController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-17 15:44:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/citas_medicas.php"
+[Method: GET, Route: citas-medicas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/citas_medicas.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/citas_medicas', [], true)
+ 3 APPPATH\Controllers\Pacientes\CitaMedicaController.php(17): view('/paciente/citas_medicas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\CitaMedicaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\CitaMedicaController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-17 15:44:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/citas_medicas.php"
+[Method: GET, Route: citas-medicas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/citas_medicas.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/citas_medicas', [], true)
+ 3 APPPATH\Controllers\Pacientes\CitaMedicaController.php(17): view('/paciente/citas_medicas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\CitaMedicaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\CitaMedicaController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-17 15:44:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/citas_medicas.php"
+[Method: GET, Route: citas-medicas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/citas_medicas.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/citas_medicas', [], true)
+ 3 APPPATH\Controllers\Pacientes\CitaMedicaController.php(17): view('/paciente/citas_medicas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\CitaMedicaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\CitaMedicaController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-17 15:44:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/citas_medicas.php"
+[Method: GET, Route: citas-medicas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/citas_medicas.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/citas_medicas', [], true)
+ 3 APPPATH\Controllers\Pacientes\CitaMedicaController.php(17): view('/paciente/citas_medicas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\CitaMedicaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\CitaMedicaController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-17 15:44:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/citas_medicas.php"
+[Method: GET, Route: citas-medicas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/citas_medicas.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/citas_medicas', [], true)
+ 3 APPPATH\Controllers\Pacientes\CitaMedicaController.php(17): view('/paciente/citas_medicas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\CitaMedicaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\CitaMedicaController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
