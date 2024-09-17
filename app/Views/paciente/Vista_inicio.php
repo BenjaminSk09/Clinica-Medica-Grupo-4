@@ -59,7 +59,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Contactanos"><span class="hover-effect">Contáctanos</span></a>
-                    </li>
+                    </li>x
                     <li class="nav-item dropdown">
                         <!-- Botón del menú desplegable -->
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
