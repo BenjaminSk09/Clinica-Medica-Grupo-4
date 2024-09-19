@@ -110,6 +110,22 @@
         </div>
         <!-- Agrega más tarjetas de doctores según sea necesario -->
     </div>
+    <div class="doctor3">
+        <div class="doctor-card">
+            <img src="https://w7.pngwing.com/pngs/703/42/png-transparent-user-icon-icono-de-usuario-pictogram-profile-avatar.png"
+                alt="Foto del Doctor">
+            <h2>Doctor 1</h2>
+            <div class="doctor-info">
+                <p><strong>Cortesía</strong></p>
+                <p><strong>Especialidad:</strong> Ginecología y Obstetricia, Urología Ginecológica</p>
+                <p><strong>Ubicación:</strong> 6ta av. 9-18 zona 10, edif. Sixtino II ala II nivel 9 clínica 901</p>
+                <p><strong>Contacto:</strong> 2369-4148/5592-3789</p>
+                <a href="#" class="profile-link">Ver perfil &gt;</a>
+            </div>
+        </div>
+        <!-- Agrega más tarjetas de doctores según sea necesario -->
+    </div>
+
 
 
     <footer class="footer">

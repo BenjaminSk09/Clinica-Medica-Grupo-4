@@ -254,14 +254,10 @@ nav a {
         text-align: center;
     }
 }
-.doctor1, .doctor2{
+.doctor1, .doctor2, .doctor3{
     display: flex;
     justify-content: center;
 }
-
-
-
-
 .footer {
     background-color: #164446;
     /* Color de fondo */

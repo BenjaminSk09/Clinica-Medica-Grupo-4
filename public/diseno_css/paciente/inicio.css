@@ -22,8 +22,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #84c7c2 ;
-    border-bottom: 1px solid #ddd;
+    background-color: #0077ff ;
+    border-bottom: 1px solid #00a2ff;
 }
 
 .logo {
@@ -208,9 +208,9 @@ nav a {
         max-width: 100%;
     }
 }
-
+/* FOOTER MODIGICACION*/
 .footer {
-    background-color: #164446;
+    background-color: #0066ff;
     /* Color de fondo */
     padding: 20px 10px;
     /* Espaciado arriba y abajo */

@@ -78,12 +78,12 @@
             </div>
         </div>
     </nav>
-   
-    
-<!--Ubicacion-->
-<div class="container">
+
+
+    <!--Ubicacion-->
+    <div class="container">
         <div class="left-column">
-            <h2>SERVICIO DE LABORATORIO CLÍNICO Y RADIOLOGÍA</h2>
+            <h2>SERVICIO DE LABORATORIO CLÍNICO</h2>
             <p><strong>DIRECCIÓN:</strong></p>
             <p>6a. ave. 3-22 Zona 10, Guatemala, Guatemala</p>
             <button>Ir con Waze</button>
@@ -93,7 +93,9 @@
                 <!-- Mapa de Google -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.508332589819!2d-90.50688258468391!3d14.612839489798317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a20fdf89eaf9%3A0xf29bafead3c01891!2s6a.%20Avenida%203-22%2C%20Cdad.%20de%20Guatemala%2C%20Guatemala!5e0!3m2!1ses!2sgt!4v1695044810401!5m2!1ses!2sgt"
-                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+                    
             </div>
             <div class="contact-hours">
                 <div class="contact">
@@ -121,7 +123,7 @@
         </div>
     </div>
 
-<!--FOOTER-->
+    <!--FOOTER-->
     <footer class="footer">
         <div class="container">
             <div class="row">
