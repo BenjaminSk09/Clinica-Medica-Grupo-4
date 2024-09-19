@@ -7,7 +7,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="<?= base_url('diseno_css/paciente/contactanos.css') ?>" rel="stylesheet"> 
+    <link href="<?= base_url('diseno_css/paciente/contactanos.css') ?>" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Menú principal -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
                     </li>
                     <li class="nav-item">
@@ -71,6 +71,7 @@
             </div>
         </div>
     </nav>
+
     <br>
 
     <!--Contactanos-->
@@ -102,113 +103,8 @@
     </div>
 
 
-    <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-    }
-
-    body {
-        background-color: #f8f8f8;
-        padding: 20px;
-    }
-
-    .contact-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: white;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .contact-info {
-        flex: 1;
-        margin-right: 20px;
-    }
-
-    .contact-info h2 {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-
-    .contact-info p {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .contact-info i {
-        font-size: 16px;
-        margin-right: 5px;
-    }
-
-    .contact-form {
-        flex: 1;
-        margin-left: 20px;
-    }
-
-    .contact-form form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contact-form label {
-        font-size: 16px;
-        margin-bottom: 5px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 14px;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        width: 100%;
-    }
-
-    .contact-form button {
-        background-color: #f4f4f4;
-        color: black;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .contact-form button:hover {
-        background-color: #ddd;
-    }
-
-    @media (max-width: 768px) {
-        .contact-container {
-            flex-direction: column;
-        }
-
-        .contact-info,
-        .contact-form {
-            margin: 0;
-            padding: 0;
-        }
-
-        .contact-form {
-            margin-top: 20px;
-        }
-    }
-     
-    
-
-    </style>
-
-    <br> 
-      <footer class="footer">
+    <br>
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <!-- Institucional -->
@@ -257,6 +153,12 @@
             </div>
         </div>
     </footer>
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

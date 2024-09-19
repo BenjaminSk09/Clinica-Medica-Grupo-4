@@ -36,6 +36,7 @@
             <a href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a>
         </div>
     </header>
+
     <!-- Navegación principal -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -78,62 +79,9 @@
         </div>
     </nav>
 
+<!--Nuestros Valores-->
 
-
-
-    <div class="nostros">
-        <div class="container">
-            <div class="main-text">
-                <h2>Tú, nuestra razón de <span>ser</span></h2>
-                <p>
-                    <strong>Nos preocupamos por ti para aliviar tu sufrimiento y el de tu familia en momentos de
-                        enfermedad.</strong> Gracias a esta visión hemos logrado convertirnos en líderes de humanismo,
-                    conocimiento y tecnología al servicio del ser humano. <strong>Todo por y gracias a ti.</strong>
-                </p>
-                <p>
-                    Y no pararemos. Hemos definido procesos asistenciales y administrativos eficientes, seguros y un
-                    sistema de comunicación en red que te da acceso a la información y consultas que necesites de forma
-                    inmediata. A la vez que trabajamos porque cada espacio que visites tenga un entorno agradable que
-                    refleje el respeto que tenemos hacia el ser humano, de modo que sientas paz y armonía cada vez que
-                    te encuentres en nuestras instalaciones.
-                </p>
-                <button class="btn-green">Ver servicios médicos</button>
-            </div>
-            <div class="missions">
-                <div class="mission-item">
-                    <div class="icon-circle">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Nuestra Misión</h3>
-                    <p>Hospital El Pilar es una entidad guatemalteca con raíces españolas, centradas en la prevención de
-                        enfermedades y promoción de la salud, que tiene como meta la excelencia en su servicio,
-                        ofreciendo al paciente una solución eficiente, dotada de alta tecnología, centrada en sus
-                        necesidades en un entorno de mejora continua para facilitar siempre una excelente experiencia.
-                    </p>
-                </div>
-                <div class="mission-item">
-                    <div class="icon-circle">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Nuestra Visión</h3>
-                    <p>Ser reconocidos como centro de excelencia en cuanto a la práctica clínica, convirtiéndonos en
-                        líderes del sector salud en la aplicación de proyectos de innovación focalizados en la mejora de
-                        la experiencia sanitaria preventiva, diagnóstica y curativa, promotores de un trato
-                        personalizado y adecuado a las necesidades de cada paciente a través de un enfoque integral con
-                        capacidad de alta especialización.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-    <br>
-    <!--Nuestros Valores-->
-
-    <div class="valores-container">
+<div class="valores-container">
         <h1 class="text-center">Nuestros valores</h1>
         <div class="tabs">
             <!-- Botones para cambiar el contenido de los valores -->
@@ -202,6 +150,60 @@
             </div>
         </div>
     </div>
+    <br>
+
+
+    <div class="nostros">
+        <div class="container">
+            <div class="main-text">
+                <h2>Tú, nuestra razón de <span>ser</span></h2>
+                <p>
+                    <strong>Nos preocupamos por ti para aliviar tu sufrimiento y el de tu familia en momentos de
+                        enfermedad.</strong> Gracias a esta visión hemos logrado convertirnos en líderes de humanismo,
+                    conocimiento y tecnología al servicio del ser humano. <strong>Todo por y gracias a ti.</strong>
+                </p>
+                <p>
+                    Y no pararemos. Hemos definido procesos asistenciales y administrativos eficientes, seguros y un
+                    sistema de comunicación en red que te da acceso a la información y consultas que necesites de forma
+                    inmediata. A la vez que trabajamos porque cada espacio que visites tenga un entorno agradable que
+                    refleje el respeto que tenemos hacia el ser humano, de modo que sientas paz y armonía cada vez que
+                    te encuentres en nuestras instalaciones.
+                </p>
+                <button class="btn-green">Ver servicios médicos</button>
+            </div>
+            <div class="missions">
+                <div class="mission-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Nuestra Misión</h3>
+                    <p>Hospital El Pilar es una entidad guatemalteca con raíces españolas, centradas en la prevención de
+                        enfermedades y promoción de la salud, que tiene como meta la excelencia en su servicio,
+                        ofreciendo al paciente una solución eficiente, dotada de alta tecnología, centrada en sus
+                        necesidades en un entorno de mejora continua para facilitar siempre una excelente experiencia.
+                    </p>
+                </div>
+                <div class="mission-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Nuestra Visión</h3>
+                    <p>Ser reconocidos como centro de excelencia en cuanto a la práctica clínica, convirtiéndonos en
+                        líderes del sector salud en la aplicación de proyectos de innovación focalizados en la mejora de
+                        la experiencia sanitaria preventiva, diagnóstica y curativa, promotores de un trato
+                        personalizado y adecuado a las necesidades de cada paciente a través de un enfoque integral con
+                        capacidad de alta especialización.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <br>
+    
 
     <br>
     <footer class="footer">
