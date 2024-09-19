@@ -113,47 +113,20 @@
 
     <!-- Epecialidades -->
     <div class="servicios">
+        <?php 
+            foreach($datos as $especialidad):
+        ?>
         <div class="servicio">
-            <a href="<?= base_url('nutri'); ?>"><img
-                    src="https://www.ceupe.com/images/easyblog_articles/4305/b2ap3_large_profesion-de-nutricionista-clinico.jpg"
+            <a href="<?= base_url('especialidades_medicos')."/".$especialidad['id_especialidad']; ?>"><img
+                    src="<?=$especialidad['imagen']?>"
                     alt="">
             </a>
-            <p>Nutricionistas</p>
+            <p><?=$especialidad['nombre_especialidad'];?></p>
         </div>
-        <div class="servicio"> <a href="cardiologia"><img
-                    src="https://i0.wp.com/angios.com/wp-content/uploads/2023/04/2.jpg?fit=1000%2C1000&ssl=1"
-                    alt=""></a>
-            <p>Cardiología</p>
-        </div>
-        <div class="servicio"> <a href="dermatologia"><img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw__KrmhQndjLwdZi-irYzru3_q0CbOx8YgA&s"
-                    alt=""></a>
-            <p>Dermatología</p>
-        </div>
-        <div class="servicio"> <a href="traumatologia"><img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZuYldrUuUU0A7OoNRzGYAC05HK2799mPmdg&s"
-                    alt=""></a>
-            <p>Traumatología</p>
-        </div>
-        <div class="servicio"> <a href="servicio_electronicos"><img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYz1wolq40AC4_Hgp9PHs7hCDj5Vywp5BwZQ&s"
-                    alt=""></a>
-            <p>Servicios Electrónicos</p>
-        </div>
-        <div class="servicio"> <a href="inmunologia"><img
-                    src="https://www.ui1.es/sites/default/files/blog/images/sistema_inmunologico.jpg" alt=""></a>
-            <p>Inmunología</p>
-        </div>
-        <div class="servicio"> <a href="hematologia"><img
-                    src="https://www.vitalseguro.com/wp-content/uploads/2021/09/hematologi%CC%81a.png" alt=""></a>
-            <p>Hematología</p>
-        </div>
-        <div class="servicio"> <a href="radiologia"><img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDYc-7V_v3UXb8SI9XO2y4rA_gsRmfDlZGRw&s"
-                    alt=""></a>
-            <p>Radiología</p>
-        </div>
-        
+        <?php 
+            endforeach;
+        ?>
+         
     </div>
 
 
