@@ -199,21 +199,19 @@ nav a {
 }
 
 
-
-
 .footer {
-    background-color: #0000ff;
+    background-color: #007bff;
     /* Color de fondo */
-    padding: 20px 10px;
+    padding: 70px 10px;
     /* Espaciado arriba y abajo */
-    color: #ffffff;
+    color: #9acccc;
     /* Color del texto */
 }
 
 .footer h5 {
     font-weight: bold;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #ace2e2;
     padding-bottom: 10px;
 }
 
@@ -223,7 +221,7 @@ nav a {
 }
 
 .footer ul li a {
-    color: #ffffff;
+    color: #8fcccc;
     /* Color de los enlaces */
     text-decoration: none;
     /* Sin subrayado */
@@ -244,7 +242,7 @@ nav a {
 .footer .row.mt-4 {
     border-top: 1px solid #e1e1e1;
     /* Línea superior */
-    margin-top: 40px;
+    margin-top: 50px;
     /* Margen superior */
     padding-top: 20px;
     /* Espaciado superior */

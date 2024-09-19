@@ -19,11 +19,14 @@
     <!-- Encabezado -->
     <header>
         <div class="logo">
-            <a href=""> <img src="imagenes/paciente/Logo.png" alt="Logo Clínica Médica">
+            <a href="http://localhost/Clinica-Medica-Grupo-4/public/"> <img src="imagenes/paciente/Logo.png"
+                    alt="Logo Clínica Médica">
             </a>
             <div>
-                <h1>Clínica Medica</h1>
-                <p>Servicios Medicos</p>
+              
+                    <h1>Clínica Medica</h1>
+                    <p>Servicios Medicos</p>
+            
             </div>
         </div>
 
@@ -118,15 +121,14 @@
         ?>
         <div class="servicio">
             <a href="<?= base_url('especialidades_medicos')."/".$especialidad['id_especialidad']; ?>"><img
-                    src="<?=$especialidad['imagen']?>"
-                    alt="">
+                    src="<?=$especialidad['imagen']?>" alt="">
             </a>
             <p><?=$especialidad['nombre_especialidad'];?></p>
         </div>
         <?php 
             endforeach;
         ?>
-         
+
     </div>
 
 
