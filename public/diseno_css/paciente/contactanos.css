@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: white;
+    background-color: #0008ff;
     border-bottom: 1px solid #ddd;
 }
 
@@ -52,8 +52,8 @@ header {
 }
 
 .social-icons i {
-    margin-left: 15px;
-    font-size: 18px;
+    margin-left: 20px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -144,15 +144,6 @@ nav a {
     color: rgb(72, 219, 200); /* Cambia d color al pasar el ratón */
 }
 
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
 
 body {
     background-color: #f8f8f8;

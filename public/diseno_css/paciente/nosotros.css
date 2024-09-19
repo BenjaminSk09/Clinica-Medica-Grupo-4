@@ -1,16 +1,3 @@
-body,
-h1,
-h2,
-p,
-ul,
-li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
     background-color: #f4f4f4;
     color: #333;
@@ -21,8 +8,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
+    background-color: rgb(0, 72, 255);
+    border-bottom: 1px solid #ffffff;
 }
 
 .logo {
@@ -39,7 +26,7 @@ header {
 .search-bar {
     display: flex;
     align-items: center;
-    background-color: #eee;
+    background-color: #000000;
     padding: 5px;
     border-radius: 20px;
 }
@@ -61,8 +48,8 @@ nav {
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid #000000;
 }
 
 nav ul {
@@ -109,71 +96,6 @@ nav a {
 
 .navbar-nav .nav-link {
     font-weight: bold;
-}
-
-.search-bar {
-    max-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.social-icons a {
-    margin-left: 10px;
-    color: #000;
-}
-
-
-@media (max-width: 993px) {
-    .navbar-nav {
-        text-align: center;
-        /* Centra el texto del menú desplegable */
-    }
-
-    .navbar-collapse {
-        justify-content: center;
-        /* Centra los elementos del menú en pantallas pequeñas */
-    }
-}
-
-.fixed-image {
-    width: 100%;
-    /* Ancho 100% del contenedor */
-    height: 400px;
-    /* Altura fija para pantallas grandes */
-    object-fit: cover;
-    /* Ajusta la imagen para cubrir el contenedor sin distorsionarse */
-}
-
-/* Media query para pantallas menores a 768px */
-@media (max-width: 768px) {
-    .carousel-inner {
-        margin: 0 5px;
-        /* Márgenes de 5px a los lados */
-    }
-
-    .fixed-image {
-        height: 250px;
-        /* Menor altura para pantallas pequeñas */
-    }
-}
-/*Color de las letras*/
-.hover-effect {
-    color: black; /* Color de texto inicial */
-    transition: color 0.3s ease; /* Transición suave */
-}
-
-.hover-effect:hover {
-    color: rgb(72, 219, 200); /* Cambia d color al pasar el ratón */
-}
-.horario-container {
-    background-color: #f8f9fa;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.horario-table {
-    margin-top: 30px;
 }
 
 
@@ -400,18 +322,18 @@ nav a {
 
 
 .footer {
-    background-color: #164446;
+    background-color: #001eff;
     /* Color de fondo */
     padding: 20px 10px;
     /* Espaciado arriba y abajo */
-    color: #9acccc;
+    color: #ffffff;
     /* Color del texto */
 }
 
 .footer h5 {
     font-weight: bold;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ace2e2;
+    border-bottom: 1px solid #ffffff;
     padding-bottom: 10px;
 }
 
@@ -421,7 +343,7 @@ nav a {
 }
 
 .footer ul li a {
-    color: #8fcccc;
+    color: #ffffff;
     /* Color de los enlaces */
     text-decoration: none;
     /* Sin subrayado */
@@ -440,7 +362,7 @@ nav a {
 }
 
 .footer .row.mt-4 {
-    border-top: 1px solid #e1e1e1;
+    border-top: 1px solid #ffffff;
     /* Línea superior */
     margin-top: 40px;
     /* Margen superior */
@@ -451,4 +373,4 @@ nav a {
 .footer .text-center p {
     margin: 0;
     /* Margen del texto */
-}
+ }

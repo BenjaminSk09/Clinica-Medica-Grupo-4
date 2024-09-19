@@ -22,8 +22,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #0077ff ;
-    border-bottom: 1px solid #00a2ff;
+    background-color: #0008ff ;
+    border-bottom: 1px solid #ddd;
 }
 
 .logo {
@@ -210,18 +210,18 @@ nav a {
 }
 /* FOOTER MODIGICACION*/
 .footer {
-    background-color: #0066ff;
+    background-color: #006aff;
     /* Color de fondo */
     padding: 20px 10px;
     /* Espaciado arriba y abajo */
-    color: #9acccc;
+    color: #ffffff;
     /* Color del texto */
 }
 
 .footer h5 {
     font-weight: bold;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ace2e2;
+    border-bottom: 1px solid #ffffff;
     padding-bottom: 10px;
 }
 
@@ -231,7 +231,7 @@ nav a {
 }
 
 .footer ul li a {
-    color: #8fcccc;
+    color: #ffffff;
     /* Color de los enlaces */
     text-decoration: none;
     /* Sin subrayado */
@@ -270,7 +270,7 @@ nav a {
 }
 
 .hover-effect:hover {
-    color: rgb(72, 219, 200); /* Cambia a rojo al pasar el ratón */
+    color: rgb(0, 72, 255); /* Cambia a rojo al pasar el ratón */
 }
 
 
