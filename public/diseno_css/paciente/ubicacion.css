@@ -175,14 +175,14 @@ nav a {
 /*Ubicacion*/
 /* Estilos personalizados */
 .contact-info {
-    text-align: center;
+    text-align: justify;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .maps-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -222,7 +222,7 @@ nav a {
     /* Color de fondo */
     padding: 20px 10px;
     /* Espaciado arriba y abajo */
-    color: #9acccc;
+    color: #ffffff;
     /* Color del texto */
 }
 

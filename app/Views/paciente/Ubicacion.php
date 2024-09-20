@@ -19,7 +19,7 @@
     <!-- Encabezado -->
     <header>
         <div class="logo">
-            <a href=""> <img
+            <a href="http://localhost/Clinica-Medica-Grupo-4/public/"> <img
                     src="https://marketplace.canva.com/EAFdCebXgRs/1/0/1600w/canva-logotipo-medicina-simple-azul-y-blanco-4UzHG4FY3uw.jpg"
                     alt="Logo Clínica Médica">
             </a>
