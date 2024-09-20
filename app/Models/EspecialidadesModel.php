@@ -11,7 +11,8 @@ class EspecialidadesModel extends Model
 
     protected $allowedFields = [
         'nombre_especialidad',
-        'descripcion'
+        'descripcion',
+        'imagen'
     ];  // Campos que se pueden insertar o actualizar
 
     // Reglas de validación para los campos

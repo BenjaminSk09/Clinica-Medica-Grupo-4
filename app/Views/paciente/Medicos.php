@@ -110,36 +110,7 @@
         </div>
         <!-- Agrega más tarjetas de doctores según sea necesario -->
     </div>
-    <div class="doctor1">
-        <div class="doctor-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuBUVvD8RprJvUG7Qxqs_HEaiRAeNccPlUaw&s"
-                alt="Foto del Doctor">
-            <h2>Doctor 1</h2>
-            <div class="doctor-info">
-                <p><strong>Cortesía</strong></p>
-                <p><strong>Especialidad:</strong> Ginecología y Obstetricia, Urología Ginecológica</p>
-                <p><strong>Ubicación:</strong> 6ta av. 9-18 zona 10, edif. Sixtino II ala II nivel 9 clínica 901</p>
-                <p><strong>Contacto:</strong> 2369-4148/5592-3789</p>
-                <a href="Contactanos" class="profile-link">Agendar cita &gt;</a>
-            </div>
-        </div>
-        <!-- Agrega más tarjetas de doctores según sea necesario -->
-    </div>
-    <div class="doctor1">
-        <div class="doctor-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ta32WMuUK_9lhf_IgHjR3KaZaeOVJxw2Dg&s"
-                alt="Foto del Doctor">
-            <h2>Doctor 1</h2>
-            <div class="doctor-info">
-                <p><strong>Cortesía</strong></p>
-                <p><strong>Especialidad:</strong> Ginecología y Obstetricia, Urología Ginecológica</p>
-                <p><strong>Ubicación:</strong> 6ta av. 9-18 zona 10, edif. Sixtino II ala II nivel 9 clínica 901</p>
-                <p><strong>Contacto:</strong> 2369-4148/5592-3789</p>
-                <a href="Contactanos" class="profile-link">Agendar cita &gt;</a>
-            </div>
-        </div>
-        <!-- Agrega más tarjetas de doctores según sea necesario -->
-    </div>  
+
 
     <footer class="footer">
         <div class="container">

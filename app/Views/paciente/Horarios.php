@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <div class="social-icons">
+        <div class="social-icons ">
             <a href="http://localhost/Clinica-Medica-Grupo-4/public/"><i class="fas fa-home"></i></a>
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
@@ -182,63 +182,7 @@
     </footer>
 
 
-    <style>
-        
 
-.footer {
-    background-color: #164446;
-    /* Color de fondo */
-    padding: 70px 10px;
-    /* Espaciado arriba y abajo */
-    color: #9acccc;
-    /* Color del texto */
-}
-
-.footer h5 {
-    font-weight: bold;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ace2e2;
-    padding-bottom: 10px;
-}
-
-.footer ul {
-    padding: 0;
-    list-style: none;
-}
-
-.footer ul li a {
-    color: #8fcccc;
-    /* Color de los enlaces */
-    text-decoration: none;
-    /* Sin subrayado */
-}
-
-.footer ul li a:hover {
-    text-decoration: underline;
-    /* Subrayado al pasar el ratón */
-}
-
-.footer img {
-    margin-right: 5px;
-    /* Espacio entre la imagen y el texto */
-    vertical-align: middle;
-    /* Alineación vertical */
-}
-
-.footer .row.mt-4 {
-    border-top: 1px solid #e1e1e1;
-    /* Línea superior */
-    margin-top: 40px;
-    /* Margen superior */
-    padding-top: 20px;
-    /* Espaciado superior */
-}
-
-.footer .text-center p {
-    margin: 0;
-    /* Margen del texto */
-}
-    </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

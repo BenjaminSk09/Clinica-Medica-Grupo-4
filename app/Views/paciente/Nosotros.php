@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="<?= base_url('diseno_css/paciente/nosotros.css') ?>" rel="stylesheet">
-    <script src="codigo_js/paciente/nosotros.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 
 </head>
 
 <body>
+    <!--Medicos-->
     <!-- Encabezado -->
     <header>
         <div class="logo">
@@ -36,7 +37,6 @@
             <a href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a>
         </div>
     </header>
-
     <!-- Navegación principal -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -78,134 +78,222 @@
             </div>
         </div>
     </nav>
+    <!--Sobre Nosotros-->
+    <style>
+    /*ESTE ES EL CODIGO DE SOLO NOSOTROS*/
+    /* Estilos personalizados */
+    body {
+        font-family: Arial, sans-serif;
+    }
 
-<!--Nuestros Valores-->
+    .about-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
 
-<div class="valores-container">
-        <h1 class="text-center">Nuestros valores</h1>
-        <div class="tabs">
-            <!-- Botones para cambiar el contenido de los valores -->
-            <button class="tab active" onclick="showValue('respeto')">Respeto</button>
-            <button class="tab" onclick="showValue('compromiso')">Compromiso</button>
-            <button class="tab" onclick="showValue('integridad')">Integridad</button>
-            <button class="tab" onclick="showValue('trabajo')">Trabajo en equipo</button>
-            <button class="tab" onclick="showValue('innovacion')">Innovación</button>
-        </div>
+    .about-text {
+        flex: 1 1 50%;
+        padding-right: 20px;
+    }
 
-        <div class="values-content">
-            <!-- Contenido de Respeto -->
-            <div class="value" id="respeto">
-                <div class="value-icon" style="background-color: #20c997;">
-                    <!-- Imagen de icono de Respeto -->
-                    <img src="" alt="Respeto">
-                </div>
-                <div class="value-description">
-                    <h3>Respeto</h3>
-                    <p>Trato de manera digna a todas las personas.</p>
-                </div>
+    .about-image img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .about-title {
+        color: #0d6efd;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .highlight {
+        font-weight: bold;
+    }
+
+    .cta-section {
+        text-align: center;
+        background-color: #f8f9fa;
+        padding: 40px 20px;
+    }
+
+    .cta-section h2 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #0d6efd;
+        margin-bottom: 10px;
+    }
+
+    .cta-section p {
+        font-weight: bold;
+        color: #6c757d;
+        margin-bottom: 20px;
+    }
+
+    .cta-section a {
+        background-color: #0d6efd;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .vision-mision-section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .vision-mision-card {
+        flex: 1 1 45%;
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .vision-mision-card h3 {
+        color: #0d6efd;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .vision-mision-card p {
+        margin-bottom: 0;
+    }
+
+    .valores-section {
+        background-color: #f8f9fa;
+        padding: 40px 20px;
+    }
+
+    .valores-title {
+        font-size: 32px;
+        font-weight: bold;
+        color: #0d6efd;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .valores-grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .valor-card {
+        flex: 1 1 18%;
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .valor-card h4 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #0d6efd;
+        margin-bottom: 10px;
+    }
+
+    .valor-card p {
+        font-size: 14px;
+        color: #6c757d;
+    }
+
+    @media (max-width: 768px) {
+
+        .about-section,
+        .vision-mision-section,
+        .valores-grid {
+            flex-direction: column;
+        }
+
+        .about-text {
+            padding-right: 0;
+        }
+
+        .valor-card {
+            flex: 1 1 100%;
+            margin-bottom: 20px;
+        }
+    }
+    </style>
+    <!-- Sección Acerca de -->
+    <div class="container mt-5">
+        <div class="about-section">
+            <div class="about-text">
+                <p class="text-muted">¿Quiénes somos?</p>
+                <h1 class="about-title">Acerca de <span class="highlight">Nuestra Clinica</span></h1>
+                <p>Somos una empresa Guatemalteca, enfocada en brindar un servicio integral de cuidados hospitalarios en
+                    casa, centrados en el bienestar del paciente y su familia.</p>
+                <p>Contamos con un equipo de profesionales y especialistas altamente calificados dedicados a brindar
+                    soluciones adaptadas a las necesidades individuales de cada paciente.</p>
+                <p>Brindamos la mejor atención y tratamiento médico con dedicación personalizada, de forma segura y
+                    tranquila en la comodidad del hogar y de la mano de la familia.</p>
             </div>
-
-            <!-- Contenido de Compromiso -->
-            <div class="value" id="compromiso" style="display: none;">
-                <div class="value-icon" style="background-color: #007bff;">
-                    <img src="compromiso-icon.png" alt="Compromiso">
-                </div>
-                <div class="value-description">
-                    <h3>Compromiso</h3>
-                    <p>Compromiso con la calidad y la atención al paciente.</p>
-                </div>
-            </div>
-
-            <!-- Contenido de Integridad -->
-            <div class="value" id="integridad" style="display: none;">
-                <div class="value-icon" style="background-color: #ffc107;">
-                    <img src="integridad-icon.png" alt="Integridad">
-                </div>
-                <div class="value-description">
-                    <h3>Integridad</h3>
-                    <p>Honestidad y ética en cada acción.</p>
-                </div>
-            </div>
-
-            <!-- Contenido de Trabajo en equipo -->
-            <div class="value" id="trabajo" style="display: none;">
-                <div class="value-icon" style="background-color: #17a2b8;">
-                    <img src="trabajo-icon.png" alt="Trabajo en equipo">
-                </div>
-                <div class="value-description">
-                    <h3>Trabajo en equipo</h3>
-                    <p>Colaboración y esfuerzo compartido para alcanzar objetivos comunes.</p>
-                </div>
-            </div>
-
-            <!-- Contenido de Innovación -->
-            <div class="value" id="innovacion" style="display: none;">
-                <div class="value-icon" style="background-color: #e83e8c;">
-                    <img src="innovacion-icon.png" alt="Innovación">
-                </div>
-                <div class="value-description">
-                    <h3>Innovación</h3>
-                    <p>Búsqueda constante de mejoras y nuevas soluciones.</p>
-                </div>
+            <div class="about-image">
+                <img src="https://via.placeholder.com/500x300" alt="Atención médica">
             </div>
         </div>
     </div>
-    <br>
 
+    <!-- Sección CTA -->
+    <div class="cta-section">
+        <p class="text-muted">Nuestra Clinica</p>
+        <h2>Nuestra naturaleza es cuidar</h2>
+        <a href="Contactanos" class="btn">Contáctenos ahora</a>
+    </div>
 
-    <div class="nostros">
+    <!-- Sección Visión y Misión -->
+    <div class="container mt-5">
+        <div class="vision-mision-section">
+            <div class="vision-mision-card">
+                <h3>Nuestra visión</h3>
+                <p>Ser el servicio hospitalario y atención médica en casa más completo, ético y respetable de Guatemala.
+                </p>
+            </div>
+            <div class="vision-mision-card">
+                <h3>Nuestra misión</h3>
+                <p>Ser un modelo de prestación de servicios hospitalarios y de atención médica en casa, que sea seguro,
+                    confiable y de atención profesional que de manera personalizada se adapte a las necesidades de salud
+                    de cada paciente y su familia, de una forma sostenible en el tiempo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Nuestros Valores -->
+    <div class="valores-section">
+        <h2 class="valores-title">Nuestros valores</h2>
         <div class="container">
-            <div class="main-text">
-                <h2>Tú, nuestra razón de <span>ser</span></h2>
-                <p>
-                    <strong>Nos preocupamos por ti para aliviar tu sufrimiento y el de tu familia en momentos de
-                        enfermedad.</strong> Gracias a esta visión hemos logrado convertirnos en líderes de humanismo,
-                    conocimiento y tecnología al servicio del ser humano. <strong>Todo por y gracias a ti.</strong>
-                </p>
-                <p>
-                    Y no pararemos. Hemos definido procesos asistenciales y administrativos eficientes, seguros y un
-                    sistema de comunicación en red que te da acceso a la información y consultas que necesites de forma
-                    inmediata. A la vez que trabajamos porque cada espacio que visites tenga un entorno agradable que
-                    refleje el respeto que tenemos hacia el ser humano, de modo que sientas paz y armonía cada vez que
-                    te encuentres en nuestras instalaciones.
-                </p>
-                <button class="btn-green">Ver servicios médicos</button>
-            </div>
-            <div class="missions">
-                <div class="mission-item">
-                    <div class="icon-circle">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Nuestra Misión</h3>
-                    <p>Hospital El Pilar es una entidad guatemalteca con raíces españolas, centradas en la prevención de
-                        enfermedades y promoción de la salud, que tiene como meta la excelencia en su servicio,
-                        ofreciendo al paciente una solución eficiente, dotada de alta tecnología, centrada en sus
-                        necesidades en un entorno de mejora continua para facilitar siempre una excelente experiencia.
-                    </p>
+            <div class="valores-grid">
+                <div class="valor-card">
+                    <h4>Integridad</h4>
+                    <p>Tenemos apego inquebrantable a los valores que nos representan.</p>
                 </div>
-                <div class="mission-item">
-                    <div class="icon-circle">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Nuestra Visión</h3>
-                    <p>Ser reconocidos como centro de excelencia en cuanto a la práctica clínica, convirtiéndonos en
-                        líderes del sector salud en la aplicación de proyectos de innovación focalizados en la mejora de
-                        la experiencia sanitaria preventiva, diagnóstica y curativa, promotores de un trato
-                        personalizado y adecuado a las necesidades de cada paciente a través de un enfoque integral con
-                        capacidad de alta especialización.</p>
+                <div class="valor-card">
+                    <h4>Vocación de Servicio</h4>
+                    <p>Somos apasionados por el bienestar integral de nuestros pacientes y sus familias.</p>
+                </div>
+                <div class="valor-card">
+                    <h4>Empatía</h4>
+                    <p>Nos centramos en el bienestar de nuestros pacientes y sus familias.</p>
+                </div>
+                <div class="valor-card">
+                    <h4>Innovación</h4>
+                    <p>Nos capacitamos en nuevos procesos, equipos y servicios. Lo mejor para brindar un servicio de
+                        alta calidad.</p>
+                </div>
+                <div class="valor-card">
+                    <h4>Ética</h4>
+                    <p>Nuestros procesos e información son transparentes, honestos y al alcance de todos.</p>
                 </div>
             </div>
         </div>
-
     </div>
-
-
-
-
-    <br>
-    
-
-    <br>
+    <!--FOOOTER-->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -255,7 +343,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

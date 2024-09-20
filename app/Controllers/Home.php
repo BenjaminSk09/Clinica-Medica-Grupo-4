@@ -1,12 +1,16 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\EspecialidadesModel;
 
 class Home extends BaseController
 {
     public function index(): string
     {
-        return view('paciente/Vista_inicio');
+        $especialidades = new EspecialidadesModel();
+        $datos['datos']=$especialidades->orderBy('nombre_especialidad')->findAll();
+        //print_r($datos);
+        return view('paciente/Vista_inicio',$datos);
     }
     public function Horarios(): string
     {
