@@ -204,7 +204,7 @@ nav a {
 }
 /* FOOTER MODIGICACION*/
 .footer {
-    background-color: #0099ff;
+    background-color: #0008ff;
     /* Color de fondo */
     padding: 20px 10px;
     /* Espaciado arriba y abajo */
@@ -264,7 +264,7 @@ nav a {
 }
 
 .hover-effect:hover {
-    color: rgb(255, 255, 255); /* Cambia a rojo al pasar el ratón */
+    color: rgb(0, 26, 255); /* Cambia a rojo al pasar el ratón */
 }
 
 
