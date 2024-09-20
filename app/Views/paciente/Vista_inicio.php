@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <div class="social-icons">
+        <div class="social-icons text-white">
             <a href="http://localhost/Clinica-Medica-Grupo-4/public/"><i class="fas fa-home"></i></a>
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
