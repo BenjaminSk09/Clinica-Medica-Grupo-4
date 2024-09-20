@@ -1,0 +1,72 @@
+body {
+    background-color: #f8f9fa; /* Fondo suave */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #007bff; /* Color del encabezado */
+    color: white;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px; /* Ajusta el tamaño del logo */
+    margin-right: 10px;
+}
+
+.social-icons {
+    font-size: 1.5rem; /* Tamaño de los íconos sociales */
+}
+
+.social-icons i {
+    margin: 0 10px;
+    color: white; /* Color de los íconos */
+    cursor: pointer;
+}
+
+h2 {
+    color: #343a40; /* Color del título de la sección */
+    margin-bottom: 20px;
+}
+
+.table th {
+    background-color: #007bff; /* Color de encabezado de tabla */
+    color: white;
+}
+
+.table td {
+    vertical-align: middle; /* Centrar verticalmente el contenido de las celdas */
+}
+
+footer {
+    background-color: #007bff; /* Color de fondo del pie de página */
+    color: white; /* Color del texto */
+    padding: 10px 0;
+}
+
+footer a {
+    color: white; /* Color de los enlaces en el pie de página */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,76 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Color de fondo suave */
+}
+
+header {
+    background: #007bff; /* Color del encabezado */
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 50px; /* Ajusta el tamaño de la imagen del logo */
+    margin-right: 10px;
+}
+
+.social-icons {
+    margin-right: 20px;
+}
+
+.social-icons i {
+    margin: 0 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #343a40;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .social-icons i {
+        margin: 0 5px;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 769px) {
+    .navbar-nav {
+        margin-left: auto;
+    }
+}

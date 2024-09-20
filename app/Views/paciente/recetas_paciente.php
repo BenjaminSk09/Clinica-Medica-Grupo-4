@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal del Paciente - Citas Médicas</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Recetas Médicas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="<?= base_url('diseno_css/paciente/citas_medicas.css')?>" rel="stylesheet">
+    <link href="<?= base_url('diseno_css/paciente/recetas_medicas.css')?>" rel="stylesheet">
 </head>
 
 <body>
@@ -32,7 +31,7 @@
         </div>
     </header>
 
-    <!-- Navegación principal -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -48,13 +47,13 @@
                     <a class="nav-link" href="<?= base_url('paciente'); ?>">Portal del Paciente</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Médicas</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Mis Resultados</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Historia Clínica</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('recetas'); ?>">Recetas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Perfil</a>
@@ -64,48 +63,43 @@
         </div>
     </nav>
 
-    <!-- Sección de Citas Médicas -->
-    <div class="container mt-5">
-        <h2 class="text-center">Gestiona tus Citas Médicas</h2>
-        <p class="text-center">Aquí puedes revisar, programar o cancelar tus citas médicas.</p>
-        
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Próximas Citas</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">Consulta con el Dr. López - 20/09/2024 - 10:00 AM</li>
-                    <li class="list-group-item">Examen de Laboratorio - 25/09/2024 - 8:30 AM</li>
-                    <li class="list-group-item">Consulta de Control - 30/09/2024 - 12:00 PM</li>
-                </ul>
-            </div>
+    <!-- Sección de Recetas Médicas -->
+    <div class="container my-5">
+        <h2>Recetas Médicas</h2>
+        <p>Aquí puedes ver las recetas que te ha prescrito tu médico.</p>
 
-            <div class="col-md-6">
-                <h3>Programar Nueva Cita</h3>
-                <form action="<?= base_url('/citas/programar') ?>" method="post">
-                    <div class="mb-3">
-                        <label for="fecha" class="form-label">Fecha de la Cita</label>
-                        <input type="date" class="form-control" id="fecha" name="fecha" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="hora" class="form-label">Hora de la Cita</label>
-                        <input type="time" class="form-control" id="hora" name="hora" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="doctor" class="form-label">Selecciona el Doctor</label>
-                        <select class="form-select" id="doctor" name="doctor" required>
-                            <option value="Dr. López">Dr. López</option>
-                            <option value="Dra. Pérez">Dra. Pérez</option>
-                            <option value="Dr. García">Dr. García</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Programar Cita</button>
-                </form>
-            </div>
-        </div>
+        <!-- Tabla de recetas -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Médico</th>
+                    <th>Medicamento</th>
+                    <th>Dosis</th>
+                    <th>Instrucciones</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí irían las recetas obtenidas desde la base de datos -->
+                <tr>
+                    <td>01/09/2024</td>
+                    <td>Dr. López</td>
+                    <td>Ibuprofeno 400mg</td>
+                    <td>1 cada 8 horas</td>
+                    <td>Tomar después de las comidas</td>
+                    <td>
+                        <a href="#" class="btn btn-success btn-sm">Renovar</a>
+                        <a href="#" class="btn btn-info btn-sm">Ver</a>
+                    </td>
+                </tr>
+                <!-- Más recetas -->
+            </tbody>
+        </table>
     </div>
 
     <!-- Pie de página -->
-    <footer class="mt-5">
+    <footer class="text-center mt-5">
         <p>© 2024 Clinica Medica | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
     </footer>
 

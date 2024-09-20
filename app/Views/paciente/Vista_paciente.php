@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <!-- Encabezado -->
-    <header>
+     <!-- Encabezado -->
+     <header>
         <div class="logo">
             <img src="https://marketplace.canva.com/EAFdCebXgRs/1/0/1600w/canva-logotipo-medicina-simple-azul-y-blanco-4UzHG4FY3uw.jpg"
                 alt="Logo Clínica Médica">
@@ -53,7 +53,7 @@
                         <a class="nav-link" href="#">Historia Clínica</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Recetas</a>
+                    <a class="nav-link" href="<?= base_url('recetas'); ?>">Recetas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Perfil</a>
@@ -97,7 +97,7 @@
             <h3>Recetas Médicas</h3>
             <p>Revisa tus recetas y solicita renovaciones en línea.</p>
             <br>
-            <button type="button" class="btn btn-dark">Ingresar</button>
+            <a class="btn btn-primary" href="<?= base_url('recetas'); ?>">Ingresar</a>
         </div>
     </div>
 

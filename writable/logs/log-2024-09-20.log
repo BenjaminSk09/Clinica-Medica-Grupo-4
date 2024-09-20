@@ -1,0 +1,921 @@
+CRITICAL - 2024-09-20 00:37:46 --> Error: Class "App\Models\RecetasModel" not found
+[Method: GET, Route: recetas]
+in APPPATH\Controllers\Pacientes\RecetasController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 00:44:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_medicas.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_medicas.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_medicas', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(22): view('/paciente/recetas_medicas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 00:46:51 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\RecetasController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: recetas]
+in APPPATH\Controllers\Pacientes\RecetasController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:09:36 --> ErrorException: Undefined variable $citas
+[Method: GET, Route: recetas]
+in APPPATH\Controllers\Pacientes\RecetasController.php on line 13.
+ 1 APPPATH\Controllers\Pacientes\RecetasController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $citas', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Controllers\\Pacientes\\RecetasController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:09:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_pacientes.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_pacientes.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_pacientes', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(15): view('/paciente/recetas_pacientes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:09:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_pacientes.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_pacientes.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_pacientes', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(15): view('/paciente/recetas_pacientes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:10:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(15): view('/paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:14:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:14:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:14:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:14:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:14:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:14:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:14:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:14:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:14:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:14:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:15:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('/paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:15:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('/paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:15:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('/paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:15:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('/paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:15:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('/paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:17:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('/paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:17:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('/paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:17:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('/paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:17:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('/paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:17:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('/paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:17:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/paciente/recetas_paciente.php"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/paciente/recetas_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/recetas_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\RecetasController.php(19): view('/paciente/recetas_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\RecetasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\RecetasController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:18:04 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Pacientes/RecetasController::index"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Router\Router.php on line 492.
+ 1 SYSTEMPATH\Router\Router.php(492): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Pacientes/RecetasController::index')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->checkRoutes('recetas')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('recetas')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:18:04 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Pacientes/RecetasController::index"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Router\Router.php on line 492.
+ 1 SYSTEMPATH\Router\Router.php(492): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Pacientes/RecetasController::index')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->checkRoutes('recetas')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('recetas')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:18:05 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Pacientes/RecetasController::index"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Router\Router.php on line 492.
+ 1 SYSTEMPATH\Router\Router.php(492): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Pacientes/RecetasController::index')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->checkRoutes('recetas')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('recetas')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 01:18:05 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Pacientes/RecetasController::index"
+[Method: GET, Route: recetas]
+in SYSTEMPATH\Router\Router.php on line 492.
+ 1 SYSTEMPATH\Router\Router.php(492): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Pacientes/RecetasController::index')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->checkRoutes('recetas')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('recetas')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 02:17:40 --> ParseError: syntax error, unexpected double-quoted string "></a>", expecting "," or ";"
+[Method: GET, Route: citas-medicas]
+in APPPATH\Views\paciente\citas_medicas.php on line 59.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/citas_medicas', [], true)
+ 3 APPPATH\Controllers\Pacientes\CitamedicaController.php(17): view('/paciente/citas_medicas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\CitaMedicaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\CitaMedicaController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 02:17:43 --> ParseError: syntax error, unexpected double-quoted string "></a>", expecting "," or ";"
+[Method: GET, Route: citas-medicas]
+in APPPATH\Views\paciente\citas_medicas.php on line 59.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/citas_medicas', [], true)
+ 3 APPPATH\Controllers\Pacientes\CitamedicaController.php(17): view('/paciente/citas_medicas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\CitaMedicaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\CitaMedicaController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:15:46 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 60.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:16:25 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 72.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 72)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:16:51 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 60.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:16:52 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 60.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:16:52 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 60.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:16:52 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 60.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:16:52 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 60.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:17:29 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 74.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 74)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:17:29 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 74.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 74)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:17:30 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 74.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 74)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:17:30 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 74.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 74)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:17:41 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 77.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:17:42 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 77.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:17:42 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 77.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:17:42 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 77.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:17:42 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 77.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:17:43 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 77.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:19:59 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:20:00 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:20:00 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:20:00 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:20:00 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:20:01 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:20:01 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:20:01 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:20:01 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:20:01 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:21:52 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:21:52 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:21:52 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:22:50 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:22:51 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:22:51 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:22:51 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:22:51 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:22:51 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:24:25 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 77.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(16): view('/paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:26:41 --> ErrorException: Cannot redeclare App\Controllers\Pacientes\PerfilController::index()
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-20 03:26:41 --> ErrorException: Cannot redeclare App\Controllers\Pacientes\PerfilController::index()
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-20 03:26:58 --> ParseError: Unmatched '}'
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Controllers\\Pacientes\\PerfilController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pacientes\\PerfilController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pacientes\\PerfilController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Pacientes\\PerfilController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:27:04 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:29:51 --> ArgumentCountError: Too few arguments to function App\Controllers\Pacientes\PerfilController::index(), 0 passed in C:\xamp\htdocs\Clinica-Medica-Grupo-4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: perfil_pacientes]
+in APPPATH\Controllers\Pacientes\PerfilController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:33:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/perfil_paciente.php"
+[Method: GET, Route: paciente/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/perfil_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\PerfilController.php(22): view('paciente/perfil_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:33:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/perfil_paciente.php"
+[Method: GET, Route: paciente/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/perfil_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\PerfilController.php(22): view('paciente/perfil_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:34:44 --> ErrorException: Attempt to read property "nombre" on array
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 33.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre" on array', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(22): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:35:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/perfil_paciente.php"
+[Method: GET, Route: paciente/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/perfil_paciente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_paciente', [], true)
+ 3 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_paciente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 03:36:19 --> ErrorException: Undefined property: stdClass::$correo
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 34.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$correo', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

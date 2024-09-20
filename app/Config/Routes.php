@@ -16,5 +16,7 @@ $routes->get('Contactanos','Home::Contactanos');
 $routes->get('paciente', 'Pacientes\PacienteController::index');
 
 $routes->get('citas-medicas', 'Pacientes\CitaMedicaController::index');
+$routes->get('recetas', 'Pacientes\RecetasController::index');
+$routes->get('paciente/(:num)', 'Pacientes\PerfilController::index/$1');
 
 /*Pagina empleados*/ 
