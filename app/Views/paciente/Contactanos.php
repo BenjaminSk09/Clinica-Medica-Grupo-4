@@ -8,13 +8,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="<?= base_url('diseno_css/paciente/contactanos.css') ?>" rel="stylesheet">
+
+
 </head>
 
 <body>
+
+
+    <!--Medicos-->
     <!-- Encabezado -->
     <header>
         <div class="logo">
-            <a href=""> <img src="imagenes/paciente/Logo.png" alt="Logo Clínica Médica">
+            <a href=""> <img
+                    src="https://marketplace.canva.com/EAFdCebXgRs/1/0/1600w/canva-logotipo-medicina-simple-azul-y-blanco-4UzHG4FY3uw.jpg"
+                    alt="Logo Clínica Médica">
             </a>
             <div>
                 <h1>Clínica Medica</h1>
@@ -40,7 +47,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Menú principal -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
                     </li>
                     <li class="nav-item">
@@ -71,11 +78,9 @@
             </div>
         </div>
     </nav>
-
-    <br>
-
-    <!--Contactanos-->
-    <div class="contact-container">
+<!--Contactanos-->
+<!--Contactanos-->
+<div class="contact-container">
         <div class="contact-info">
             <h2>Contáctanos</h2>
             <p><strong>Dirección:</strong></p>
@@ -101,9 +106,6 @@
             </form>
         </div>
     </div>
-
-
-    <br>
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -153,12 +155,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

@@ -80,7 +80,7 @@
     </nav>
     <!--Sobre Nosotros-->
     <style>
-    /*ESTE ES EL CODIGO DE SOLO NOSOTROS*/
+         /*ESTE ES EL CODIGO DE SOLO NOSOTROS*/
     /* Estilos personalizados */
     body {
         font-family: Arial, sans-serif;
