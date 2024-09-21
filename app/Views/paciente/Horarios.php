@@ -25,8 +25,10 @@
                     alt="Logo Clínica Médica">
             </a>
             <div>
+                <a href="http://localhost/Clinica-Medica-Grupo-4/public/" class="text-white letras_links">
                 <h1>Clínica Medica</h1>
                 <p>Servicios Medicos</p>
+                </a>
             </div>
         </div>
 

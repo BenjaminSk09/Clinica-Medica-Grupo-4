@@ -24,8 +24,10 @@
                     alt="Logo Clínica Médica">
             </a>
             <div>
+                <a href="http://localhost/Clinica-Medica-Grupo-4/public/" class="text-white letras_links">
                 <h1>Clínica Medica</h1>
                 <p>Servicios Medicos</p>
+                </a>
             </div>
         </div>
 
@@ -79,163 +81,22 @@
         </div>
     </nav>
     <!--Sobre Nosotros-->
-    <style>
-         /*ESTE ES EL CODIGO DE SOLO NOSOTROS*/
-    /* Estilos personalizados */
-    body {
-        font-family: Arial, sans-serif;
-    }
-
-    .about-section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 50px;
-    }
-
-    .about-text {
-        flex: 1 1 50%;
-        padding-right: 20px;
-    }
-
-    .about-image img {
-        max-width: 100%;
-        border-radius: 8px;
-    }
-
-    .about-title {
-        color: #0d6efd;
-        font-size: 24px;
-        font-weight: bold;
-    }
-
-    .highlight {
-        font-weight: bold;
-    }
-
-    .cta-section {
-        text-align: center;
-        background-color: #f8f9fa;
-        padding: 40px 20px;
-    }
-
-    .cta-section h2 {
-        font-size: 32px;
-        font-weight: bold;
-        color: #0d6efd;
-        margin-bottom: 10px;
-    }
-
-    .cta-section p {
-        font-weight: bold;
-        color: #6c757d;
-        margin-bottom: 20px;
-    }
-
-    .cta-section a {
-        background-color: #0d6efd;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-    }
-
-    .vision-mision-section {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px;
-    }
-
-    .vision-mision-card {
-        flex: 1 1 45%;
-        background-color: #f8f9fa;
-        padding: 20px;
-        border-radius: 8px;
-    }
-
-    .vision-mision-card h3 {
-        color: #0d6efd;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .vision-mision-card p {
-        margin-bottom: 0;
-    }
-
-    .valores-section {
-        background-color: #f8f9fa;
-        padding: 40px 20px;
-    }
-
-    .valores-title {
-        font-size: 32px;
-        font-weight: bold;
-        color: #0d6efd;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .valores-grid {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .valor-card {
-        flex: 1 1 18%;
-        background-color: white;
-        border-radius: 8px;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .valor-card h4 {
-        font-size: 18px;
-        font-weight: bold;
-        color: #0d6efd;
-        margin-bottom: 10px;
-    }
-
-    .valor-card p {
-        font-size: 14px;
-        color: #6c757d;
-    }
-
-    @media (max-width: 768px) {
-
-        .about-section,
-        .vision-mision-section,
-        .valores-grid {
-            flex-direction: column;
-        }
-
-        .about-text {
-            padding-right: 0;
-        }
-
-        .valor-card {
-            flex: 1 1 100%;
-            margin-bottom: 20px;
-        }
-    }
-    </style>
+   
     <!-- Sección Acerca de -->
     <div class="container mt-5">
         <div class="about-section">
             <div class="about-text">
                 <p class="text-muted">¿Quiénes somos?</p>
                 <h1 class="about-title">Acerca de <span class="highlight">Nuestra Clinica</span></h1>
-                <p>Somos una empresa Guatemalteca, enfocada en brindar un servicio integral de cuidados hospitalarios en
+                <p class="text-black">Somos una empresa Guatemalteca, enfocada en brindar un servicio integral de cuidados hospitalarios en
                     casa, centrados en el bienestar del paciente y su familia.</p>
-                <p>Contamos con un equipo de profesionales y especialistas altamente calificados dedicados a brindar
+                <p class="text-black">Contamos con un equipo de profesionales y especialistas altamente calificados dedicados a brindar
                     soluciones adaptadas a las necesidades individuales de cada paciente.</p>
-                <p>Brindamos la mejor atención y tratamiento médico con dedicación personalizada, de forma segura y
+                <p class="text-black">Brindamos la mejor atención y tratamiento médico con dedicación personalizada, de forma segura y
                     tranquila en la comodidad del hogar y de la mano de la familia.</p>
             </div>
             <div class="about-image">
-                <img src="https://via.placeholder.com/500x300" alt="Atención médica">
+                <img src="imagenes/paciente/clinica_medica.jpg" alt="Atención médica" width="500px" height="300px">
             </div>
         </div>
     </div>
@@ -252,12 +113,12 @@
         <div class="vision-mision-section">
             <div class="vision-mision-card">
                 <h3>Nuestra visión</h3>
-                <p>Ser el servicio hospitalario y atención médica en casa más completo, ético y respetable de Guatemala.
+                <p class="text-black">Ser el servicio hospitalario y atención médica en casa más completo, ético y respetable de Guatemala.
                 </p>
             </div>
             <div class="vision-mision-card">
                 <h3>Nuestra misión</h3>
-                <p>Ser un modelo de prestación de servicios hospitalarios y de atención médica en casa, que sea seguro,
+                <p class="text-black">Ser un modelo de prestación de servicios hospitalarios y de atención médica en casa, que sea seguro,
                     confiable y de atención profesional que de manera personalizada se adapte a las necesidades de salud
                     de cada paciente y su familia, de una forma sostenible en el tiempo.</p>
             </div>

@@ -24,9 +24,11 @@
                     alt="Logo Clínica Médica">
             </a>
             <div>
+                <a href="http://localhost/Clinica-Medica-Grupo-4/public/" class="text-white letras_links">
                 <h1>Clínica Medica</h1>
                 <p>Servicios Medicos</p>
-            </div>
+                </a>
+            </div>>
         </div>
 
         <div class="social-icons">
@@ -85,19 +87,18 @@
         <div class="contact-info">
             <h2>Contáctanos</h2>
             <p><strong>Dirección:</strong></p>
-            <p>1ª. Avenida 5-67, zona 2, Aldea Boca del Monte, del Municipio de Villa Canales del Departamento de
-                Guatemala.</p>
-            <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong><br> (502) 2442-8017</p>
+            <p>Calle Doroteo Guamuch Flores 7-15 zona 5, Guatemala, C.A.</p>
+            <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong><br> (502) 2410-5555</p>
         </div>
         <div class="contact-form">
             <form action="" method="POST">
-                <label for="name">Nombre <span>*</span></label>
+                <label for="name">Nombre <span></span></label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">Email <span>*</span></label>
+                <label for="email">Email <span></span></label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="subject">Asunto <span>*</span></label>
+                <label for="subject">Asunto <span></span></label>
                 <input type="text" id="subject" name="subject" required>
 
                 <label for="message">Message</label>

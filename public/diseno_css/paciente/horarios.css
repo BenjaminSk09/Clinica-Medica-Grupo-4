@@ -232,3 +232,7 @@ nav a {
     margin: 0;
     /* Margen del texto */
 }
+/*link de clinica medica*/
+.letras_links{
+    text-decoration: none;
+}

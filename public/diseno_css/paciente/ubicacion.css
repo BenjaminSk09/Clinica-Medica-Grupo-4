@@ -21,8 +21,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgb(0, 72, 255);
-    border-bottom: 1px solid #ddd;
+    background-color: #0008ff;
+    border-bottom: 1px solid #f5f4f4;
 }
 
 .logo {
@@ -80,6 +80,7 @@ nav a {
 }
 
 
+
 .navbar-brand img {
     width: 40px;
     /* Logo tamaño ajustado */
@@ -98,7 +99,7 @@ nav a {
 
 .social-icons a {
     margin-left: 10px;
-    color: #000;
+    color: #ffffff;
 }
 
 
@@ -135,27 +136,6 @@ nav a {
         /* Menor altura para pantallas pequeñas */
     }
 }
-/*Color de las letras*/
-.hover-effect {
-    color: black; /* Color de texto inicial */
-    transition: color 0.3s ease; /* Transición suave */
-}
-
-.hover-effect:hover {
-    color: rgb(72, 219, 200); /* Cambia d color al pasar el ratón */
-}
-.horario-container {
-    background-color: #f8f9fa;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.horario-table {
-    margin-top: 30px;
-}
-
-
 
 
 /*Color de las letras*/
@@ -203,13 +183,16 @@ nav a {
     .maps-section {
         flex-direction: column;
         text-align: center;
+      
     }
 
     .maps-section iframe,
     .qr-code img {
         width: 100%;
         max-width: 100%;
-        height: auto;
+        height: 200px;
+        display: flex;
+        justify-content: center;
     }
 
     .qr-code {
@@ -269,4 +252,8 @@ nav a {
 .footer .text-center p {
     margin: 0;
     /* Margen del texto */
+}
+/*link de clinica medica*/
+.letras_links{
+    text-decoration: none;
 }
