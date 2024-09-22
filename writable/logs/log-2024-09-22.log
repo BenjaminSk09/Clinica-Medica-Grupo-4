@@ -446,3 +446,17 @@ in APPPATH\Views\paciente\Vista_inicio.php on line 124.
  9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 18:14:21 --> ErrorException: Undefined array key "imagen"
+[Method: GET, Route: /]
+in APPPATH\Views\paciente\Vista_inicio.php on line 124.
+ 1 APPPATH\Views\paciente\Vista_inicio.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php', 124)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/Vista_inicio', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('paciente/Vista_inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
