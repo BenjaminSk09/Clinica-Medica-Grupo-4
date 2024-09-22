@@ -47,16 +47,10 @@
                     <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Medicas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mis Resultados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Historia Clínica</a>
-                    </li>
-                    <li class="nav-item">
                     <a class="nav-link" href="<?= base_url('recetas'); ?>">Recetas</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Perfil</a>
+                    <li class="nav-item">   
+                    <a class="nav-link" href="<?= base_url('paciente/3'); ?>">Perfil</a>
                     </li>
                 </ul>
             </div>
@@ -79,18 +73,11 @@
             <a class="btn btn-primary" href="<?= base_url('citas-medicas'); ?>">Ingresar</a>
         </div>
         <div class="servicio">
-            <img src="https://cdn-icons-png.flaticon.com/512/3039/3039473.png" alt="Resultados de Exámenes">
-            <h3>Resultados de Exámenes</h3>
-            <p>Consulta tus resultados de laboratorio y estudios clínicos en línea.</p>
-            <br>
-            <button type="button" class="btn btn-dark">Ingresar</button>
-        </div>
-        <div class="servicio">
             <img src="https://cdn-icons-png.flaticon.com/512/1256/1256656.png" alt="Historia Clínica">
-            <h3>Historia Clínica</h3>
-            <p>Accede a tu historial médico completo desde cualquier lugar.</p>
+            <h3>Perfil</h3>
+            <p>Accede a tu pefil completo desde cualquier lugar.</p>
             <br>
-            <button type="button" class="btn btn-dark">Ingresar</button>
+            <a class="btn btn-primary" href="<?= base_url('paciente/3'); ?>">Ingresar</a>
         </div>
         <div class="servicio">
             <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Recetas">

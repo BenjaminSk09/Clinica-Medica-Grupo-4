@@ -1,0 +1,448 @@
+CRITICAL - 2024-09-22 16:14:45 --> ErrorException: Undefined property: stdClass::$correo
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 34.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$correo', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:17:19 --> ErrorException: Undefined property: stdClass::$genero
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 41.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$genero', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:17:20 --> ErrorException: Undefined property: stdClass::$genero
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 41.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$genero', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:17:20 --> ErrorException: Undefined property: stdClass::$genero
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 41.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$genero', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:17:20 --> ErrorException: Undefined property: stdClass::$genero
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 41.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$genero', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:17:20 --> ErrorException: Undefined property: stdClass::$genero
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 41.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$genero', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:17:20 --> ErrorException: Undefined property: stdClass::$genero
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 41.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$genero', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:17:21 --> ErrorException: Undefined property: stdClass::$genero
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 41.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$genero', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:17:21 --> ErrorException: Undefined property: stdClass::$genero
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 41.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$genero', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:17:21 --> ErrorException: Undefined property: stdClass::$genero
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 41.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$genero', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:17:21 --> ErrorException: Undefined property: stdClass::$genero
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 41.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$genero', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:39:25 --> ErrorException: Undefined property: stdClass::$genero
+[Method: GET, Route: paciente/1]
+in APPPATH\Views\paciente\Perfil_pacientes.php on line 41.
+ 1 APPPATH\Views\paciente\Perfil_pacientes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$genero', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Perfil_pacientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientes', [], true)
+ 5 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:55:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/perfil_pacientesñ.php"
+[Method: GET, Route: paciente/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/perfil_pacientesñ.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientesñ', [], true)
+ 3 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientesñ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:55:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/perfil_pacientesñ.php"
+[Method: GET, Route: paciente/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/perfil_pacientesñ.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientesñ', [], true)
+ 3 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientesñ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:55:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "paciente/perfil_pacientesñ.php"
+[Method: GET, Route: paciente/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paciente/perfil_pacientesñ.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/perfil_pacientesñ', [], true)
+ 3 APPPATH\Controllers\Pacientes\PerfilController.php(24): view('paciente/perfil_pacientesñ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PerfilController->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PerfilController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:57:50 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "(:num)"
+[Method: GET, Route: paciente/%28:num%29]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('paciente/(:num)')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('paciente/(:num)')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 16:57:59 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "(:num)"
+[Method: GET, Route: paciente/%28:num%29]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('paciente/(:num)')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('paciente/(:num)')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:00:12 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\Vista_paciente.php on line 59.
+ 1 APPPATH\Views\paciente\Vista_paciente.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php', 59)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/vista_paciente', [], true)
+ 5 APPPATH\Controllers\Pacientes\PacienteController.php(16): view('/paciente/vista_paciente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PacienteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PacienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:00:25 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\Vista_paciente.php on line 59.
+ 1 APPPATH\Views\paciente\Vista_paciente.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php', 59)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/vista_paciente', [], true)
+ 5 APPPATH\Controllers\Pacientes\PacienteController.php(16): view('/paciente/vista_paciente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PacienteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PacienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:00:58 --> ErrorException: Undefined variable $pacientes
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\Vista_paciente.php on line 59.
+ 1 APPPATH\Views\paciente\Vista_paciente.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pacientes', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php', 59)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/vista_paciente', [], true)
+ 5 APPPATH\Controllers\Pacientes\PacienteController.php(16): view('/paciente/vista_paciente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PacienteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PacienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:00:59 --> ErrorException: Undefined variable $pacientes
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\Vista_paciente.php on line 59.
+ 1 APPPATH\Views\paciente\Vista_paciente.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pacientes', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php', 59)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/vista_paciente', [], true)
+ 5 APPPATH\Controllers\Pacientes\PacienteController.php(16): view('/paciente/vista_paciente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PacienteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PacienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:00:59 --> ErrorException: Undefined variable $pacientes
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\Vista_paciente.php on line 59.
+ 1 APPPATH\Views\paciente\Vista_paciente.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pacientes', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php', 59)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/vista_paciente', [], true)
+ 5 APPPATH\Controllers\Pacientes\PacienteController.php(16): view('/paciente/vista_paciente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PacienteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PacienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:00:59 --> ErrorException: Undefined variable $pacientes
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\Vista_paciente.php on line 59.
+ 1 APPPATH\Views\paciente\Vista_paciente.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pacientes', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php', 59)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/vista_paciente', [], true)
+ 5 APPPATH\Controllers\Pacientes\PacienteController.php(16): view('/paciente/vista_paciente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PacienteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PacienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:00:59 --> ErrorException: Undefined variable $pacientes
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\Vista_paciente.php on line 59.
+ 1 APPPATH\Views\paciente\Vista_paciente.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pacientes', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php', 59)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/vista_paciente', [], true)
+ 5 APPPATH\Controllers\Pacientes\PacienteController.php(16): view('/paciente/vista_paciente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PacienteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PacienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:02:16 --> ErrorException: Undefined array key "imagen"
+[Method: GET, Route: /]
+in APPPATH\Views\paciente\Vista_inicio.php on line 124.
+ 1 APPPATH\Views\paciente\Vista_inicio.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php', 124)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/Vista_inicio', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('paciente/Vista_inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:02:23 --> ErrorException: Undefined array key "imagen"
+[Method: GET, Route: /]
+in APPPATH\Views\paciente\Vista_inicio.php on line 124.
+ 1 APPPATH\Views\paciente\Vista_inicio.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php', 124)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/Vista_inicio', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('paciente/Vista_inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:03:02 --> ErrorException: Undefined array key "imagen"
+[Method: GET, Route: /]
+in APPPATH\Views\paciente\Vista_inicio.php on line 124.
+ 1 APPPATH\Views\paciente\Vista_inicio.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php', 124)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/Vista_inicio', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('paciente/Vista_inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:05:54 --> ErrorException: Undefined array key "imagen"
+[Method: GET, Route: /]
+in APPPATH\Views\paciente\Vista_inicio.php on line 124.
+ 1 APPPATH\Views\paciente\Vista_inicio.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php', 124)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/Vista_inicio', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('paciente/Vista_inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:07:16 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\Vista_paciente.php on line 59.
+ 1 APPPATH\Views\paciente\Vista_paciente.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php', 59)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_paciente.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/paciente/vista_paciente', [], true)
+ 5 APPPATH\Controllers\Pacientes\PacienteController.php(16): view('/paciente/vista_paciente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes\PacienteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes\PacienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:17:05 --> ErrorException: Undefined array key "imagen"
+[Method: GET, Route: /]
+in APPPATH\Views\paciente\Vista_inicio.php on line 124.
+ 1 APPPATH\Views\paciente\Vista_inicio.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php', 124)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/Vista_inicio', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('paciente/Vista_inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 17:17:28 --> ErrorException: Undefined array key "imagen"
+[Method: GET, Route: /]
+in APPPATH\Views\paciente\Vista_inicio.php on line 124.
+ 1 APPPATH\Views\paciente\Vista_inicio.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php', 124)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/Vista_inicio', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('paciente/Vista_inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 18:10:41 --> ErrorException: Undefined array key "imagen"
+[Method: GET, Route: /]
+in APPPATH\Views\paciente\Vista_inicio.php on line 124.
+ 1 APPPATH\Views\paciente\Vista_inicio.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php', 124)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/Vista_inicio', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('paciente/Vista_inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 18:13:26 --> ErrorException: Undefined array key "imagen"
+[Method: GET, Route: /]
+in APPPATH\Views\paciente\Vista_inicio.php on line 124.
+ 1 APPPATH\Views\paciente\Vista_inicio.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php', 124)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamp\\htdocs\\Clinica-Medica-Grupo-4\\app\\Views\\paciente\\Vista_inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paciente/Vista_inicio', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('paciente/Vista_inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
