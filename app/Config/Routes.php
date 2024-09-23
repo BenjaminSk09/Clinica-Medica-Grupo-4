@@ -20,3 +20,8 @@ $routes->get('recetas', 'Pacientes\RecetasController::index');
 $routes->get('paciente/(:num)', 'Pacientes\PerfilController::index/$1');
 
 /*Pagina empleados*/ 
+/*Medicoas*/
+$routes->get('medicos/pagina_doctor', 'Empleado\Medicos\MedicosController::pagina_doctor');
+
+/*Login empleados*/
+$routes->get('login_empleados', 'Empleados\LoginEmpleadosController::LoginEmpleado');
