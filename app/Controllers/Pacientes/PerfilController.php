@@ -24,4 +24,6 @@ public function index($id)
     return view('paciente/perfil_pacientes', ['paciente' => (object) $paciente]);
 }
 
+
+
 }

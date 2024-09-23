@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil del Paciente - Citas Médicas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="<?= base_url('diseno_css/paciente/perfil_paciente.css')?>" rel="stylesheet">
+    <link href="<?= base_url('diseno_css/paciente/perfil_paciente.css') ?>" rel="stylesheet">
 </head>
-
 <body>
     <!-- Encabezado -->
     <header>
@@ -31,8 +29,8 @@
         </div>
     </header>
 
- <!-- Navegación principal -->
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navegación principal -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +42,7 @@
                         <a class="nav-link" href="<?= base_url('/'); ?>">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Medicas</a>
+                        <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Médicas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Mis Resultados</a>
@@ -53,7 +51,7 @@
                         <a class="nav-link" href="#">Historia Clínica</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url('recetas'); ?>">Recetas</a>
+                        <a class="nav-link" href="<?= base_url('recetas'); ?>">Recetas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Perfil</a>
@@ -63,24 +61,62 @@
         </div>
     </nav>
 
-   <!-- Sección de Perfil del Paciente -->
-   <div class="container mt-5"> <!-- Añadir margen superior para separar la sección del encabezado -->
-        <div class="card shadow-sm p-4 mb-5 bg-white rounded"> <!-- Clase de tarjeta Bootstrap -->
-            <h2 class="text-center mb-4">Perfil del Paciente</h2> <!-- Añadir margen inferior -->
-            <p class="text-center text-muted mb-4">Aquí puedes ver la información personal y médica del paciente.</p> <!-- Añadir texto gris y margen -->
+    <!-- Sección de Perfil del Paciente -->
+    <div class="container mt-5">
+        <div class="card shadow-sm p-4 mb-5 bg-white rounded">
+            <h2 class="text-center mb-4">Perfil del Paciente</h2>
+            <p class="text-center text-muted mb-4">Aquí puedes ver y editar la información personal y médica del paciente.</p>
 
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <h3 class="text-primary"><?= $paciente->nombre . ' ' . $paciente->apellido ?></h3> <!-- Texto en azul -->
-                    <div class="mb-3"><strong>Correo:</strong> <?= $paciente->email ?></div>
-                    <div class="mb-3"><strong>Teléfono:</strong> <?= $paciente->telefono ?></div>
-                    <div class="mb-3"><strong>Dirección:</strong> <?= $paciente->direccion ?></div>
-                    <div class="mb-3"><strong>Fecha de Nacimiento:</strong> <?= $paciente->fecha_nacimiento ?></div>
-                    <div class="mb-3"><strong>Peso:</strong> <?= $paciente->peso ?> kg</div>
-                    <div class="mb-3"><strong>Altura:</strong> <?= $paciente->altura ?> cm</div>
-                    <div class="mb-3"><strong>Grupo Sanguíneo:</strong> <?= $paciente->grupo_sanguineo ?></div>
-                    <div class="mb-3"><strong>Género:</strong> <?= $paciente->id_genero ?></div>
-                    <div class="mb-3"><strong>Estado:</strong> <?= $paciente->activo ? 'Activo' : 'Inactivo' ?></div>
+                    <h3 class="text-primary"><?= $paciente->nombre . ' ' . $paciente->apellido ?></h3>
+                    
+                    <!-- Campos editables -->
+                    <div class="mb-3">
+                        <strong>Correo:</strong>
+                        <span class="view-data"><?= $paciente->email ?></span>
+                        <form class="edit-form">
+                            <input type="text" class="form-control" id="email" value="<?= $paciente->email ?>">
+                        </form>
+                        <i class="fas fa-edit edit-button" data-field="email"></i>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Teléfono:</strong>
+                        <span class="view-data"><?= $paciente->telefono ?></span>
+                        <form class="edit-form">
+                            <input type="text" class="form-control" id="telefono" value="<?= $paciente->telefono ?>">
+                        </form>
+                        <i class="fas fa-edit edit-button" data-field="telefono"></i>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Dirección:</strong>
+                        <span class="view-data"><?= $paciente->direccion ?></span>
+                        <form class="edit-form">
+                            <input type="text" class="form-control" id="direccion" value="<?= $paciente->direccion ?>">
+                        </form>
+                        <i class="fas fa-edit edit-button" data-field="direccion"></i>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Peso:</strong>
+                        <span class="view-data"><?= $paciente->peso ?> kg</span>
+                        <form class="edit-form">
+                            <input type="number" class="form-control" id="peso" value="<?= $paciente->peso ?>">
+                        </form>
+                        <i class="fas fa-edit edit-button" data-field="peso"></i>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Estado:</strong>
+                        <span class="view-data"><?= $paciente->activo ? 'Activo' : 'Inactivo' ?></span>
+                        <form class="edit-form">
+                            <select class="form-control" id="estado">
+                                <option value="1" <?= $paciente->activo ? 'selected' : '' ?>>Activo</option>
+                                <option value="0" <?= !$paciente->activo ? 'selected' : '' ?>>Inactivo</option>
+                            </select>
+                        </form>
+                        <i class="fas fa-edit edit-button" data-field="estado"></i>
+                    </div>
+
+                    <button class="btn btn-primary" id="saveChanges">Guardar Cambios</button>
                 </div>
             </div>
         </div>
@@ -92,6 +128,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= base_url('diseno_js/paciente/perfil_paciente.js') ?>"></script>
 </body>
-
 </html>
