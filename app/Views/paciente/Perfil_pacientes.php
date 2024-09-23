@@ -12,14 +12,12 @@
     <!-- Encabezado -->
     <header>
         <div class="logo">
-            <img src="https://marketplace.canva.com/EAFdCebXgRs/1/0/1600w/canva-logotipo-medicina-simple-azul-y-blanco-4UzHG4FY3uw.jpg"
-                alt="Logo Clínica Médica">
+            <img src="https://marketplace.canva.com/EAFdCebXgRs/1/0/1600w/canva-logotipo-medicina-simple-azul-y-blanco-4UzHG4FY3uw.jpg" alt="Logo Clínica Médica">
             <div>
                 <h1>Portal del Paciente</h1>
                 <p>Clinica Medica</p>
             </div>
         </div>
-
         <div class="social-icons">
             <i class="fas fa-home"></i>
             <i class="fab fa-instagram"></i>
@@ -70,64 +68,42 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     <h3 class="text-primary"><?= $paciente->nombre . ' ' . $paciente->apellido ?></h3>
-                    
-                    <!-- Campos editables -->
-                    <div class="mb-3">
+                    <!-- Campos informativos -->
+                    <div class="mb-1">
                         <strong>Correo:</strong>
                         <span class="view-data"><?= $paciente->email ?></span>
-                        <form class="edit-form">
-                            <input type="text" class="form-control" id="email" value="<?= $paciente->email ?>">
-                        </form>
-                        <i class="fas fa-edit edit-button" data-field="email"></i>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-1">
                         <strong>Teléfono:</strong>
                         <span class="view-data"><?= $paciente->telefono ?></span>
-                        <form class="edit-form">
-                            <input type="text" class="form-control" id="telefono" value="<?= $paciente->telefono ?>">
-                        </form>
-                        <i class="fas fa-edit edit-button" data-field="telefono"></i>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-1">
                         <strong>Dirección:</strong>
                         <span class="view-data"><?= $paciente->direccion ?></span>
-                        <form class="edit-form">
-                            <input type="text" class="form-control" id="direccion" value="<?= $paciente->direccion ?>">
-                        </form>
-                        <i class="fas fa-edit edit-button" data-field="direccion"></i>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-1">
                         <strong>Peso:</strong>
                         <span class="view-data"><?= $paciente->peso ?> kg</span>
-                        <form class="edit-form">
-                            <input type="number" class="form-control" id="peso" value="<?= $paciente->peso ?>">
-                        </form>
-                        <i class="fas fa-edit edit-button" data-field="peso"></i>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-1">
                         <strong>Estado:</strong>
                         <span class="view-data"><?= $paciente->activo ? 'Activo' : 'Inactivo' ?></span>
-                        <form class="edit-form">
-                            <select class="form-control" id="estado">
-                                <option value="1" <?= $paciente->activo ? 'selected' : '' ?>>Activo</option>
-                                <option value="0" <?= !$paciente->activo ? 'selected' : '' ?>>Inactivo</option>
-                            </select>
-                        </form>
-                        <i class="fas fa-edit edit-button" data-field="estado"></i>
                     </div>
-
-                    <button class="btn btn-primary" id="saveChanges">Guardar Cambios</button>
+                    
+                    <!-- Botón de redirección para actualizar información -->
+                    <div class="text-center mt-4">
+                        <a href="<?= base_url('pacientes/editar/' . $paciente->id_paciente) ?>" class="btn btn-primary">Editar Perfil</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <!-- Pie de página -->
     <footer class="mt-5">
         <p>© 2024 Clinica Medica | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="<?= base_url('diseno_js/paciente/perfil_paciente.js') ?>"></script>
 </body>
 </html>

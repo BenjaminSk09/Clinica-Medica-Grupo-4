@@ -19,4 +19,9 @@ $routes->get('citas-medicas', 'Pacientes\CitaMedicaController::index');
 $routes->get('recetas', 'Pacientes\RecetasController::index');
 $routes->get('paciente/(:num)', 'Pacientes\PerfilController::index/$1');
 
-/*Pagina empleados*/ 
+// En app/Config/Routes.php
+
+$routes->get('pacientes/editar/(:num)', 'Pacientes\PacienteController::editar/$1');
+$routes->post('pacientes/actualizar_perfil', 'Pacientes\PacienteController::actualizar');
+
+$routes->get('perfil/(:num)', 'Pacientes\PacienteController::perfil/$1'); // Mostrar perfil del paciente
