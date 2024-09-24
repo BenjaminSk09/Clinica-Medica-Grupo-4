@@ -27,7 +27,9 @@ $routes->post('pacientes/actualizar_perfil', 'Pacientes\PacienteController::actu
 $routes->get('perfil/(:num)', 'Pacientes\PacienteController::perfil/$1'); // Mostrar perfil del paciente
 /*Pagina empleados*/ 
 /*Medicoas*/
-$routes->get('medicos/pagina_doctor', 'Empleado\Medicos\MedicosController::pagina_doctor');
+$routes->get('medicos/pagina_doctor', 'MedicosController::index');
+$routes->get('medicos', 'MedicosController::index'); // Ruta para acceder a la página de médicos
 
-/*Login empleados*/
-$routes->get('login_empleado', 'Empleado\LoginEmpleadosController::LoginEmpleado');
+/* Login empleados */
+$routes->get('login_empleado', 'LoginEmpleadosController::LoginEmpleado');
+$routes->post('login_empleado/auth', 'LoginEmpleadosController::auth'); // Usar POST para la autenticación

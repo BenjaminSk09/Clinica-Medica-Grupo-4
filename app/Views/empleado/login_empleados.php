@@ -4,30 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Empleados</title>
     <link href="<?= base_url('diseno_css/empleado/login_empleados.css') ?>" rel="stylesheet">
-
 </head>
 
 <body class="container">
     <div class="login-box">
+        <?php if (session()->getFlashdata('error')): ?>
+            <div class="alert alert-danger">
+                <?= esc(session()->getFlashdata('error')) ?>
+            </div>
+        <?php endif; ?>
         <p>Login</p>
-        <form>
+        <form action="<?= base_url('login_empleado/auth') ?>" method="post" onsubmit="fadeOutBody()">
             <div class="user-box">
-                <input required="" name="" type="text">
+                <input name="email" type="email" required aria-label="Correo electrónico">
                 <label>Email</label>
             </div>
             <div class="user-box">
-                <input required="" name="" type="password">
-                <label>Password</label>
+                <input name="contrasena" type="password" required aria-label="Contraseña">
+                <label>Contraseña</label>
             </div>
-            <a href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Submit
-            </a>
+            <button type="submit" class="btn">Submit</button>
         </form>
         <p>Don't have an account? <a href="" class="a2">Sign up!</a></p>
     </div>
