@@ -24,7 +24,7 @@ $routes->post('pacientes/actualizar_perfil', 'Pacientes\PacienteController::actu
 $routes->get('perfil/(:num)', 'Pacientes\PacienteController::index/$1'); // Mostrar perfil del paciente
 // En app/Config/Routes.php
 
-
+/*cambio*/
 
 /*Pagina empleados*/ 
 /*Medicoas*/
