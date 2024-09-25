@@ -65,12 +65,14 @@ class PacienteController extends BaseController
         $pacienteModel->update($id_paciente, $datos);
     
         // Redirigir a la página de perfil del paciente con un mensaje de éxito
-        return redirect()->to('/pacientes/perfil/' . $id_paciente)->with('message', 'Información actualizada exitosamente.');
+        return redirect()->to('paciente/' . $id_paciente)->with('message', 'Información actualizada exitosamente.');
+
+        
         
     }
     
 
-    public function perfil($id_paciente) {
+    /*public function perfil($id_paciente) {
         $pacienteModel = new PacientesModel();
         $data['paciente'] = $pacienteModel->getPacienteById($id_paciente);
         // Si necesitas los géneros
@@ -78,6 +80,6 @@ class PacienteController extends BaseController
         $data['generos'] = $generoModel->findAll(); 
 
         return view('paciente/perfil_pacientes', $data);
-    }
+    }*/
 }
 ?>
