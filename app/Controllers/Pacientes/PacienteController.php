@@ -58,12 +58,15 @@ class PacienteController extends BaseController
             'id_genero' => $id_genero, // id_genero verificado
             'activo' => $this->request->getPost('activo')
         ];
-    
+        print_r($datos);
+        
+        
         // Actualizar la información del paciente
         $pacienteModel->update($id_paciente, $datos);
     
         // Redirigir a la página de perfil del paciente con un mensaje de éxito
         return redirect()->to('/pacientes/perfil/' . $id_paciente)->with('message', 'Información actualizada exitosamente.');
+        
     }
     
 
