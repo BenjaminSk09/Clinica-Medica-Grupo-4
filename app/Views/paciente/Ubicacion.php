@@ -25,8 +25,8 @@
             </a>
             <div>
                 <a href="http://localhost/Clinica-Medica-Grupo-4/public/" class="text-white letras_links">
-                <h1>Clínica Medica</h1>
-                <p>Servicios Medicos</p>
+                    <h1>Clínica Medica</h1>
+                    <p>Servicios Medicos</p>
                 </a>
             </div>
         </div>
@@ -72,7 +72,7 @@
                         </a>
                         <!-- Elementos del menú desplegable -->
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Empleado</a></li>
+                            <li><a class="dropdown-item" href="login_empleado">Empleado</a></li>
                             <li><a class="dropdown-item" href="#">Paciente</a></li>
                         </ul>
                     </li>
