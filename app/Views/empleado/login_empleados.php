@@ -11,9 +11,9 @@
 <body class="container">
     <div class="login-box">
         <?php if (session()->getFlashdata('error')): ?>
-            <div class="alert alert-danger">
-                <?= esc(session()->getFlashdata('error')) ?>
-            </div>
+        <div class="alert alert-danger">
+            <?= esc(session()->getFlashdata('error')) ?>
+        </div>
         <?php endif; ?>
         <p>Login</p>
         <form action="<?= base_url('login_empleado/auth') ?>" method="post" onsubmit="fadeOutBody()">

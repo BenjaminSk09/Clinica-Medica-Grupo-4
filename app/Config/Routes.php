@@ -12,10 +12,10 @@ $routes->get('Nosotros','Home::Nosotros');
 //$routes->get('medicos','MedicosController::index');
 $routes->get('Ubicacion','Home::Ubicacion');
 $routes->get('Contactanos','Home::Contactanos');
+$routes->get('especialidades_medicos/(:num)','MedicosController::especialidadesMedicos/$1'); //para redirigir a los medicos de la especialidad disponibles de home
 
 /*Pagina paciente*/ 
 $routes->get('paciente', 'Pacientes\PacienteController::index');
-
 $routes->get('citas-medicas', 'Pacientes\CitaMedicaController::index');
 $routes->get('recetas', 'Pacientes\RecetasController::index');
 $routes->get('paciente/(:num)', 'Pacientes\PerfilController::index/$1');
@@ -28,11 +28,11 @@ $routes->get('perfil/(:num)', 'Pacientes\PacienteController::index/$1'); // Most
 
 /*Pagina empleados*/ 
 /*Medicoas*/
-$routes->get('medicos/pagina_doctor', 'MedicosController::index');
+$routes->get('medicos/pagina_doctor', 'MedicosController::borrarCache');
 $routes->get('medicos', 'MedicosController::index'); // Ruta para acceder a la página de médicos
 
 /* Login empleados */
 $routes->get('login_empleado', 'LoginEmpleadosController::LoginEmpleado');
 $routes->post('login_empleado/auth', 'LoginEmpleadosController::auth'); // Usar POST para la autenticación
 
-$routes->get('especialidades_medicos/(:num)','MedicosController::especialidadesMedicos/$1');
+
