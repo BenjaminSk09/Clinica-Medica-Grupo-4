@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Médica</title>
-</head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link href="<?= base_url('diseno_css/paciente/inicio.css') ?>" rel="stylesheet">
-
+    <title>plantilla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="<?= base_url('diseno_css/paciente/medicos.css') ?>" rel="stylesheet">
 
 
 </head>
 
 <body>
 
+
+    
     <!-- Encabezado -->
     <header>
         <div class="logo">
-            <a href="http://localhost/Clinica-Medica-Grupo-4/public/"> <img src="imagenes/paciente/Logo.png"
+            <a href="http://localhost/Clinica-Medica-Grupo-4/public/"> <img
+                    src="https://marketplace.canva.com/EAFdCebXgRs/1/0/1600w/canva-logotipo-medicina-simple-azul-y-blanco-4UzHG4FY3uw.jpg"
                     alt="Logo Clínica Médica">
             </a>
             <div>
@@ -30,7 +31,7 @@
             </div>
         </div>
 
-        <div class="social-icons text-white">
+        <div class="social-icons">
             <a href="http://localhost/Clinica-Medica-Grupo-4/public/"><i class="fas fa-home"></i></a>
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
@@ -48,7 +49,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Menú principal -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
                     </li>
                     <li class="nav-item">
@@ -71,7 +72,7 @@
                         </a>
                         <!-- Elementos del menú desplegable -->
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="login_empleado">Empleado</a></li>
+                            <li><a class="dropdown-item" href="#">Empleado</a></li>
                             <li><a class="dropdown-item" href="#">Paciente</a></li>
                         </ul>
                     </li>
@@ -79,59 +80,13 @@
             </div>
         </div>
     </nav>
-
-
-
-
-    <!-- Imagenes de carrusel-->
-    <div class="container my-4">
-        <!-- Contenedor centrado -->
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://www.unitecoprofesional.es/blog/wp-content/uploads/2021/05/sesiones-clinicas.jpg"
-                        class="d-block w-100 img-fluid fixed-image" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://www.clinica25demayo.com.ar/wp-content/uploads/especialidades-12-clinica-medica.jpg"
-                        class="d-block w-100 img-fluid fixed-image" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://mibluemedical.com/wp-content/uploads/elementor/thumbs/Captura-de-Pantalla-2022-09-23-a-las-15.34.38-pv7dcchde73d8jwcmge8bkzbdvo5h0eouabpuz28ym.png"
-                        class="d-block w-100 img-fluid fixed-image" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-
-    <!-- Epecialidades -->
-    <div class="servicios">
-        <?php 
-            foreach($datos as $especialidad):
-        ?>
-        <div class="servicio">
-            <a href="<?= base_url('especialidades_medicos')."/".$especialidad['id_especialidad']; ?>"><img
-                    src="<?=$especialidad['imagen']?>" alt="">
-            </a>
-            <p><?=$especialidad['nombre_especialidad'];?></p>
-        </div>
-        <?php 
-            endforeach;
-        ?>
-
-    </div>
-
-
+    <br>
+    
+    <!--contenido que cambia en las páginas-->
+    
+        <?= $this->renderSection('contenido') ?>
+        
+    <!--finaliza contenido -->
 
 
 
@@ -184,10 +139,7 @@
             </div>
         </div>
     </footer>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 

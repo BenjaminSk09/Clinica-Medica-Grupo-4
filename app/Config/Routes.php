@@ -9,7 +9,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('Horarios','Home::Horarios');
 $routes->get('Nosotros','Home::Nosotros');
-$routes->get('Medicos','Home::Medicos');
+//$routes->get('medicos','MedicosController::index');
 $routes->get('Ubicacion','Home::Ubicacion');
 $routes->get('Contactanos','Home::Contactanos');
 
@@ -34,3 +34,5 @@ $routes->get('medicos', 'MedicosController::index'); // Ruta para acceder a la p
 /* Login empleados */
 $routes->get('login_empleado', 'LoginEmpleadosController::LoginEmpleado');
 $routes->post('login_empleado/auth', 'LoginEmpleadosController::auth'); // Usar POST para la autenticación
+
+$routes->get('especialidades_medicos/(:num)','MedicosController::especialidadesMedicos/$1');

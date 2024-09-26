@@ -14,7 +14,27 @@ class MedicosModel extends Model
         'id_especialidad',
         'horario_atencion',
         'numero_licencia'
-    ];  // Campos que se pueden insertar o actualizar
+    ];  
+    
+    public function especialidadesMedicos($id){
+        // Cambia 'tabla_secundaria' y los nombres de columnas según tu esquema
+        return $this->db->table('empleados')
+            ->join('medicos', 'empleados.id_empleado = medicos.id_empleado')
+            ->select('empleados.nombre, empleados.apellido, empleados.telefono, medicos.id_especialidad') // Selecciona las columnas que necesites
+            ->where('medicos.id_especialidad',$id)
+            ->get()
+            ->getResultArray(); // O usa ->getResult() si prefieres objetos
+    }
+    public function obtenerMedicos(){
+        // Cambia 'tabla_secundaria' y los nombres de columnas según tu esquema
+        return $this->db->table('empleados')
+            ->join('medicos', 'empleados.id_empleado = medicos.id_empleado')
+            ->select('empleados.nombre, empleados.apellido, empleados.telefono, medicos.id_especialidad') // Selecciona las columnas que necesites
+            ->get()
+            ->getResultArray(); // O usa ->getResult() si prefieres objetos
+    }
+    
+    // Campos que se pueden insertar o actualizar
 
     // Reglas de validación para los campos
     //estan aca abajo como comentario:

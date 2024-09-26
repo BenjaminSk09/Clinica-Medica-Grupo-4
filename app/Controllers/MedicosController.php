@@ -1,6 +1,8 @@
 <?php 
 namespace App\Controllers;
 
+use App\Models\MedicosModel;
+
 class MedicosController extends BaseController
 {
     protected $session;
@@ -12,6 +14,13 @@ class MedicosController extends BaseController
 
     public function index()
     {
+        $medicos = new MedicosModel();
+
+        $datos['datos']=$medicos->obtenerMedicos();
+        //print_r($datos);
+        return view('paciente/Medicos',$datos);
+    }
+    public function borrarCache(){
         // Configurar las cabeceras para evitar el caché
         $this->response->setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
         $this->response->setHeader('Cache-Control', 'post-check=0, pre-check=0', false);
@@ -31,5 +40,14 @@ class MedicosController extends BaseController
             log_message('error', $e->getMessage());
             return redirect()->to(base_url('error')); // Redirigir a una página de error
         }
+    }
+    public function especialidadesMedicos($id){
+        $medicos = new MedicosModel();
+
+        $datos['datos']=$medicos->especialidadesMedicos($id);
+        //print_r($datos);
+        return view('paciente/Medicos',$datos);
+
+
     }
 }
