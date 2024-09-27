@@ -72,7 +72,7 @@
                         </a>
                         <!-- Elementos del menú desplegable -->
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Empleado</a></li>
+                            <li><a class="dropdown-item" href="login_empleado">Empleado</a></li>
                             <li><a class="dropdown-item" href="#">Paciente</a></li>
                         </ul>
                     </li>

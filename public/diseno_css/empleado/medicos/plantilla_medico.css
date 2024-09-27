@@ -1,0 +1,132 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.topbar nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logout {
+    color: white;
+    text-decoration: none;
+    background-color: #f44336;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.date-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #eaeaea;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.view-options {
+    display: flex;
+    gap: 10px;
+}
+
+.view-btn {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.appointment-list {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+thead {
+    background-color: #f0f0f0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .topbar nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .calendar-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .view-options {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
