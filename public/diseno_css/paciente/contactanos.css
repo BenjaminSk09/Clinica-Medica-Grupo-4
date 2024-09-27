@@ -1,13 +1,10 @@
-
-
-
 .contact-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -53,13 +50,13 @@
     font-size: 14px;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     border-radius: 5px;
     width: 100%;
 }
 
 .contact-form button {
-    background-color: #f4f4f4;
+    background-color: #000000;
     color: black;
     padding: 10px 15px;
     border: none;
@@ -70,7 +67,7 @@
 }
 
 .contact-form button:hover {
-    background-color: #ddd;
+    background-color: #000000;
 }
 
 @media (max-width: 768px) {

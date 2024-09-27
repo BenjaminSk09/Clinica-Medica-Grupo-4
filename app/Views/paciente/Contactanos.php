@@ -5,7 +5,7 @@
 <!--Contactanos-->
 <link href="<?= base_url('diseno_css/paciente/contactanos.css') ?>" rel="stylesheet">
 
-<div class="contact-container">
+<div class="contact-container text-black">
     <div class="contact-info">
         <h2>Contáctanos</h2>
         <p><strong>Dirección:</strong></p>

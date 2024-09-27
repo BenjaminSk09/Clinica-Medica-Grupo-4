@@ -50,19 +50,19 @@
                 <!-- Menú principal -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
                     <li class="nav-item">
-                        <a class="nav-link" href="Horarios"><span class="hover-effect">Horarios</span></a>
+                        <a class="nav-link" href="<?=base_url('Horarios')?>"><span class="hover-effect">Horarios</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Nosotros"><span class="hover-effect">Sobre Nosotros</span> </a>
+                        <a class="nav-link" href="<?=base_url('Nosotros')?>"><span class="hover-effect">Sobre Nosotros</span> </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?=base_url('medicos')?>"><span class="hover-effect">Médicos</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Ubicacion"><span class="hover-effect">Ubicación</span></a>
+                        <a class="nav-link" href="<?=base_url('Ubicacion')?>"><span class="hover-effect">Ubicación</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contactanos"><span class="hover-effect">Contáctanos</span></a>
+                        <a class="nav-link" href="<?=base_url('Contactanos')?>"><span class="hover-effect">Contáctanos</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <!-- Botón del menú desplegable -->
