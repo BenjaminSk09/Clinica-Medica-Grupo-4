@@ -43,17 +43,9 @@
                         <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Médicas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mis Resultados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Historia Clínica</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="<?= base_url('recetas'); ?>">Recetas</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Perfil</a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>

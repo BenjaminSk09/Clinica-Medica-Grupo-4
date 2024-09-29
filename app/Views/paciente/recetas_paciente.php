@@ -50,18 +50,15 @@
                         <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Médicas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mis Resultados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Historia Clínica</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Perfil</a>
+                    <a class="nav-link" href="<?= base_url('paciente/1'); ?>">Perfil</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <!-- Sección de Recetas Médicas -->
     <div class="container my-5">
@@ -77,7 +74,6 @@
                     <th>Medicamento</th>
                     <th>Dosis</th>
                     <th>Instrucciones</th>
-                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -89,8 +85,7 @@
                     <td>1 cada 8 horas</td>
                     <td>Tomar después de las comidas</td>
                     <td>
-                        <a href="#" class="btn btn-success btn-sm">Renovar</a>
-                        <a href="#" class="btn btn-info btn-sm">Ver</a>
+
                     </td>
                 </tr>
                 <!-- Más recetas -->
