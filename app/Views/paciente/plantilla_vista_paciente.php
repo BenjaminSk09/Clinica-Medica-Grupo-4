@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal del Paciente</title>
+    <title>Pagina Principal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="<?= base_url('diseno_css/paciente/vista_inicio.css')?>" rel="stylesheet">
+    <link href="<?= base_url('diseno_css/paciente/perfil_paciente.css') ?>" rel="stylesheet">
 </head>
 
 <body>
-     <!-- Encabezado -->
-     <header>
+    <!-- Encabezado -->
+    <header>
         <div class="logo">
             <img src="https://marketplace.canva.com/EAFdCebXgRs/1/0/1600w/canva-logotipo-medicina-simple-azul-y-blanco-4UzHG4FY3uw.jpg"
                 alt="Logo Clínica Médica">
@@ -21,7 +21,6 @@
                 <p>Clinica Medica</p>
             </div>
         </div>
-
         <div class="social-icons">
             <i class="fas fa-home"></i>
             <i class="fab fa-instagram"></i>
@@ -44,57 +43,31 @@
                         <a class="nav-link" href="<?= base_url('/'); ?>">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Medicas</a>
+                        <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Médicas</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url('recetas'); ?>">Recetas</a>
+                        <a class="nav-link" href="<?= base_url('recetas'); ?>">Recetas</a>
                     </li>
-                    <li class="nav-item">   
-                    <a class="nav-link" href="<?= base_url('paciente/1'); ?>">Perfil</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('paciente/1'); ?>">Perfil</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Sección de Bienvenida -->
-    <div class="bienvenida">
-        <h2>Bienvenido al Portal del Paciente</h2>
-        <p>Accede a tus citas, resultados médicos y más desde la comodidad de tu hogar.</p>
-    </div>
+    <!--contenido dependiendo de la pagina-->
 
-    <!-- Servicios para Pacientes -->
-    <div class="servicios-pacientes">
-        <div class="servicio">
-            <img src="https://cdn-icons-png.flaticon.com/512/3209/3209765.png" alt="Citas Médicas">
-            <h3>Citas Médicas</h3>
-            <p>Programa y gestiona tus citas médicas de forma rápida y sencilla.</p>
-            <br>
-            <a class="btn btn-primary" href="<?= base_url('citas-medicas'); ?>">Ingresar</a>
-        </div>
-        <div class="servicio">
-            <img src="https://cdn-icons-png.flaticon.com/512/1256/1256656.png" alt="Historia Clínica">
-            <h3>Perfil</h3>
-            <p>Accede a tu pefil completo desde cualquier lugar.</p>
-            <br>
-            <a class="btn btn-primary" href="<?= base_url('paciente/3'); ?>">Ingresar</a>
-        </div>
-        <div class="servicio">
-            <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Recetas">
-            <h3>Recetas Médicas</h3>
-            <p>Revisa tus recetas y solicita renovaciones en línea.</p>
-            <br>
-            <a class="btn btn-primary" href="<?= base_url('recetas'); ?>">Ingresar</a>
-        </div>
-    </div>
+    <?= $this->renderSection('contenido') ?>
+
+    <!--termina el contenido -->
 
     <!-- Pie de página -->
-    <footer>
+    <footer class="mt-5">
         <p>© 2024 Clinica Medica | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 </html>

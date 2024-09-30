@@ -2,33 +2,32 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     background-color: #f8f9fa; /* Color de fondo suave */
 }
 
 header {
-    background: #007bff; /* Color del encabezado */
-    color: #fff;
-    padding: 20px 0;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 20px;
 }
 
 .logo img {
-    width: 50px; /* Ajusta el tamaño de la imagen del logo */
+    width: 80px; /* Ajusta el tamaño de la imagen del logo */
     margin-right: 10px;
 }
 
 .social-icons {
     margin-right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .social-icons i {
@@ -38,9 +37,19 @@ header {
 }
 
 .navbar {
-    margin-bottom: 20px;
+    background-color: #e9ecef;
+    padding: 10px 0 ;
+
 }
 
+.navbar-nav .nav-link{
+    font-size: 1.1rem;
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
 footer {
     text-align: center;
     padding: 10px 0;
@@ -51,45 +60,8 @@ footer {
     width: 100%;
 }
 
-/* Estilos para la tarjeta de perfil del paciente */
-.container {
-    max-width: 900px;
-    margin-top: 40px;
-}
-
-.profile-card {
-    background-color: #ffffff; /* Fondo blanco */
-    border: 1px solid #e0e0e0; /* Borde suave */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    transition: transform 0.3s ease-in-out;
-}
-
-.profile-card:hover {
-    transform: translateY(-5px); /* Efecto hover */
-}
-
-.profile-card h3 {
-    color: #007bff; /* Color del título */
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.profile-card p {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #333;
-}
-
-.profile-card p strong {
-    color: #555;
-}
-
-/* Ajustes adicionales */
-.profile-card .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+footer a{
+    color: #007bff;
 }
 
 /* Estilos para pantallas pequeñas */

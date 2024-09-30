@@ -22,6 +22,16 @@ $routes->get('paciente/(:num)', 'Pacientes\PerfilController::index/$1');
 $routes->get('pacientes/editar/(:num)', 'Pacientes\PacienteController::editar/$1');
 $routes->post('pacientes/actualizar_perfil', 'Pacientes\PacienteController::actualizar');
 $routes->get('perfil/(:num)', 'Pacientes\PacienteController::index/$1'); // Mostrar perfil del paciente
+
+// ruta para citas// 
+$routes->group('paciente', function($routes) {
+    // Ruta para mostrar las citas médicas
+    $routes->get('citas', 'Pacientes\CitaMedicaController::index');
+    
+    // Ruta para programar una nueva cita
+    $routes->post('citas/programar', 'Pacientes\CitaMedicaController::programar');
+});
+
 // En app/Config/Routes.php
 
 /*cambio*/
