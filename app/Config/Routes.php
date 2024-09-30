@@ -36,3 +36,6 @@ $routes->get('login_empleado', 'LoginEmpleadosController::LoginEmpleado');
 $routes->post('login_empleado/auth', 'LoginEmpleadosController::auth'); // Usar POST para la autenticación
 
 
+////Medicos
+$routes->get('recetasDoctor', 'RecetasDoctorController::Recetas');
+$routes->get('historialPaciente', 'HistorialPacienteMedicoController::HistorialMedico');

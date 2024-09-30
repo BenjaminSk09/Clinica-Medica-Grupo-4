@@ -62,7 +62,7 @@ class LoginEmpleadosController extends BaseController
         ];
         $session->set($data);
     }
-
+    /** validadicon usuarios pcainete*/
     private function redirectByRole($id_rol)
     {
         switch ($id_rol) {
