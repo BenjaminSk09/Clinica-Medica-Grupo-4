@@ -5,10 +5,10 @@
 <!--Contactanos-->
 <link href="<?= base_url('diseno_css/paciente/contactanos.css') ?>" rel="stylesheet">
 
-<div class="contact-container text-black">
-    <?php   
+<?php   
         foreach($datos as $clinicas):
     ?>
+<div class="contact-container text-black">
     <div class="contact-info">
         <h2>Contáctanos</h2>
         <p><strong>Dirección:</strong></p>
@@ -32,10 +32,10 @@
             <button type="submit">Enviar</button>
         </form>
     </div>
-    <?php
+   
+</div>
+<?php
         endforeach;
     ?>
-</div>
-
 <br>
 <?= $this->endSection() ?>
