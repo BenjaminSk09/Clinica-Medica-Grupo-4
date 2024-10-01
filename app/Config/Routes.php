@@ -11,10 +11,10 @@ $routes->get('Horarios','Home::Horarios');
 $routes->get('Nosotros','Home::Nosotros');
 //$routes->get('medicos','MedicosController::index');
 $routes->get('Ubicacion','Home::Ubicacion');
-$routes->get('Contactanos','Home::Contactanos');
+$routes->get('home_reservas','EmpresasController::verClinicas');
 $routes->get('especialidades_medicos/(:num)','MedicosController::especialidadesMedicos/$1'); //para redirigir a los medicos de la especialidad disponibles de home
 
-/*Pagina paciente*/ 
+/*Pagina paciente*/
 $routes->get('paciente', 'Pacientes\PacienteController::index');
 $routes->get('citas-medicas', 'Pacientes\CitaMedicaController::index');
 $routes->get('recetas', 'Pacientes\RecetasController::index');
@@ -49,3 +49,4 @@ $routes->post('login_empleado/auth', 'LoginEmpleadosController::auth'); // Usar 
 ////Medicos
 $routes->get('recetasDoctor', 'RecetasDoctorController::Recetas');
 $routes->get('historialPaciente', 'HistorialPacienteMedicoController::HistorialMedico');
+
