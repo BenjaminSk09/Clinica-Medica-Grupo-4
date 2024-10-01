@@ -47,6 +47,7 @@ $routes->post('login_empleado/auth', 'LoginEmpleadosController::auth'); // Usar 
 
 
 ////Medicos
-$routes->get('recetasDoctor', 'RecetasDoctorController::Recetas');
+$routes->get('recetasDoctor', 'DetalleCitasController::Recetas');
 $routes->get('historialPaciente', 'HistorialPacienteMedicoController::HistorialMedico');
+$routes->get('observaciones', 'NotasMedicasController::notasMedicas');
 

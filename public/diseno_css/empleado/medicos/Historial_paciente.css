@@ -1,0 +1,11 @@
+/* Buscador */
+.search-section {
+    margin: 20px;
+    text-align: center;
+}
+
+.search-section input {
+    padding: 10px;
+    width: 50%;
+    max-width: 40
+}

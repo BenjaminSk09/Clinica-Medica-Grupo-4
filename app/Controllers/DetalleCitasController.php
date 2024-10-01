@@ -3,7 +3,7 @@
 namespace App\Controllers;
 use App\Models\RecetasModel;
 
-class RecetasDoctorController extends BaseController
+class DetalleCitasController extends BaseController
 {
     public function Recetas(): string
     {
