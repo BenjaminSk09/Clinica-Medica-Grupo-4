@@ -15,21 +15,36 @@ $routes->get('home_reservas','EmpresasController::verClinicas');
 $routes->get('especialidades_medicos/(:num)','MedicosController::especialidadesMedicos/$1'); //para redirigir a los medicos de la especialidad disponibles de home
 
 /*Pagina paciente*/
-$routes->get('paciente', 'Pacientes\PacienteController::index');
-$routes->get('citas-medicas', 'Pacientes\CitaMedicaController::index');
-$routes->get('recetas', 'Pacientes\RecetasController::index');
-$routes->get('paciente/(:num)', 'Pacientes\PerfilController::index/$1');
-$routes->get('pacientes/editar/(:num)', 'Pacientes\PacienteController::editar/$1');
-$routes->post('pacientes/actualizar_perfil', 'Pacientes\PacienteController::actualizar');
-$routes->get('perfil/(:num)', 'Pacientes\PacienteController::index/$1'); // Mostrar perfil del paciente
+// Rutas para el controlador unificado "PacienteController"
 
-// ruta para citas// 
+// Ruta para mostrar la lista de pacientes
+$routes->get('paciente', 'Pacientes\PacienteController::indexPacientes');
+
+// Ruta para mostrar las citas médicas
+$routes->get('citas-medicas', 'Pacientes\PacienteController::indexCitas');
+
+// Ruta para mostrar las recetas
+$routes->get('recetas', 'Pacientes\PacienteController::indexRecetas');
+
+// Ruta para mostrar el perfil del paciente por ID
+$routes->get('paciente/(:num)', 'Pacientes\PacienteController::indexPerfil/$1');
+
+// Ruta para editar el perfil del paciente
+$routes->get('pacientes/editar/(:num)', 'Pacientes\PacienteController::editarPaciente/$1');
+
+// Ruta para actualizar el perfil del paciente (POST)
+$routes->post('pacientes/actualizar_perfil', 'Pacientes\PacienteController::actualizarPaciente');
+
+// Ruta para mostrar el perfil de un paciente específico por ID
+$routes->get('perfil/(:num)', 'Pacientes\PacienteController::indexPerfil/$1');
+
+// Grupo de rutas para citas médicas
 $routes->group('paciente', function($routes) {
     // Ruta para mostrar las citas médicas
-    $routes->get('citas', 'Pacientes\CitaMedicaController::index');
+    $routes->get('citas', 'Pacientes\PacienteController::indexCitas');
     
-    // Ruta para programar una nueva cita
-    $routes->post('citas/programar', 'Pacientes\CitaMedicaController::programar');
+    // Ruta para programar una nueva cita (POST)
+    $routes->post('citas/programar', 'Pacientes\PacienteController::programarCita');
 });
 
 // En app/Config/Routes.php
