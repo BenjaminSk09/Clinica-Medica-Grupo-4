@@ -51,3 +51,11 @@ $routes->get('recetasDoctor', 'MedicosController::Recetas');
 $routes->get('historialPaciente', 'MedicosController::HistorialMedico');
 $routes->get('observaciones', 'MedicosController::notasMedicas');
 
+/*Pagina empleados*/ 
+$routes->get('ad-especialidades','EspecialidadesController::index');
+$routes->get('buscar_especialidad/(:num)','EspecialidadesController::buscarEspecialidad/$1');
+$routes->get('ad-especialidades-nuevo','EspecialidadesController::nuevaEspecialidad');
+$routes->post('ad-especialidades-agregar','EspecialidadesController::agregarEspecialidad');
+$routes->get('ad-especialidades-editar/(:num)','EspecialidadesController::editarEspecialidad/$1');
+$routes->put('ad-especialidades-editar','EspecialidadesController::ActualizarEspecialidad');
+$routes->delete('ad-especialidades-eliminar/(:num)','EspecialidadesController::EliminarEspecialidad/$1');

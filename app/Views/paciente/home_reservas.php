@@ -12,8 +12,10 @@
     <div class="contact-info">
         <h2>Contáctanos</h2>
         <p><strong>Dirección:</strong></p>
-        <p><?php $clinicas['direccion']; ?></p>
-        <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong><br> <?php $clinicas['telefono']; ?></p>
+        <p><?php echo $clinicas['direccion'];?></p>
+        <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong><br> <?php echo $clinicas['telefono']; ?></p>
+        <p><strong>Email:</strong></p>
+        <p><?php echo $clinicas['email']; ?></p>
     </div>
     <div class="contact-form">
         <form action="" method="POST">
