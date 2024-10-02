@@ -53,4 +53,19 @@ class MedicosController extends BaseController
             return redirect()->to(base_url('error')); // Redirigir a una página de error
         }
     }
+    //Detalle Cita = Recta
+    public function Recetas(): string
+    {
+        return view('empleado/medicos/escribir_recetas');
+    }
+    //Paciente Pacedimiento = 
+    public function HistorialMedico(): string
+    {
+        return view('empleado/medicos/Historial_paciente_medico');
+    }
+    //
+    public function notasMedicas(): string
+    {
+        return view('empleado/medicos/observaciones_medicos');
+    }
 }
