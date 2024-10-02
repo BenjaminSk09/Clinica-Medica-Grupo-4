@@ -11,7 +11,13 @@ class EmpresasController extends BaseController
         $empresas = new EmpresasModel();
         $datos['datos']=$empresas->findAll();
         return view('paciente/home_reservas',$datos);
+        print_r($datos);
+
         }
+
+        
+
+
     /*
     public function nuevaEmpresa(){
         return view('empresas_nuevas');
