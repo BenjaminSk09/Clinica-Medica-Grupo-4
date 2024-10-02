@@ -1,0 +1,92 @@
+.reservas-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(95, 197, 197);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.reservas-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.reservas-info h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.reservas-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.reservas-info i {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.reservas-form {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.reservas-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservas-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.reservas-form input,
+.reservas-form textarea {
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.reservas-form button {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservas-form button:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .reservas-container {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    .reservas-info, 
+    .reservas-form {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .reservas-form {
+        margin-top: 10px;
+        width: 500px;
+    }
+}
+

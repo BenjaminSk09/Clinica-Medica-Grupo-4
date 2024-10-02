@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class EmpresasModel extends Model
 {
-    protected $table      = 'empresas';  // Nombre de la tabla en la base de datos
+    protected $table      = 'empresa';  // Nombre de la tabla en la base de datos
     protected $primaryKey = 'id_empresa';  // Campo primario de la tabla
 
     protected $allowedFields = [

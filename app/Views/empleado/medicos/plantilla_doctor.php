@@ -24,10 +24,9 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Ver citas</a></li>
                     <li><a href="<?=base_url('recetasDoctor')?>">Escribir recetas</a></li>
-                    <li><a href="<?=base_url('')?>">Historial de Paciente</a></li>
-                    <li><a href="<?=base_url('#')?>">Agregar Observaciones</a></li>
+                    <li><a href="<?=base_url('historialPaciente')?>">Historial de Paciente</a></li>
+                    <li><a href="<?=base_url('observaciones')?>">Agregar Observaciones</a></li>
                 </ul>
             </nav>
             <div class="user-info">
@@ -36,14 +35,14 @@
             </div>
         </div>
     </header>
-
+    <br>
     <!-- Contenido principal -->
     <main>
         <div class="calendar-header">
-            <a href="" class="btn btn-primary logout">+ Paciente</a> 
-            <a href="" class="btn btn-primary logout">+ Cita</a> 
+            <a href="" class="btn btn-primary logout">+ Paciente</a>
+            <a href="" class="btn btn-primary logout">+ Cita</a>
         </div>
-
+        <br>
         <div class="filters">
             <div class="dropdown">
                 <label>Ver Citas por SALA</label>

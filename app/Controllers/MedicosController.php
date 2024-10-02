@@ -20,6 +20,18 @@ class MedicosController extends BaseController
         //print_r($datos);
         return view('paciente/Medicos',$datos);
     }
+    
+    public function especialidadesMedicos($id){
+        $medicos = new MedicosModel();
+
+        $datos['datos']=$medicos->especialidadesMedicos($id);
+        //print_r($datos);
+        return view('paciente/Medicos',$datos);
+
+
+    }
+
+
     public function borrarCache(){
         // Configurar las cabeceras para evitar el caché
         $this->response->setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
@@ -41,13 +53,19 @@ class MedicosController extends BaseController
             return redirect()->to(base_url('error')); // Redirigir a una página de error
         }
     }
-    public function especialidadesMedicos($id){
-        $medicos = new MedicosModel();
-
-        $datos['datos']=$medicos->especialidadesMedicos($id);
-        //print_r($datos);
-        return view('paciente/Medicos',$datos);
-
-
+    //Detalle Cita = Recta
+    public function Recetas(): string
+    {
+        return view('empleado/medicos/escribir_recetas');
+    }
+    //Paciente Pacedimiento = 
+    public function HistorialMedico(): string
+    {
+        return view('empleado/medicos/Historial_paciente_medico');
+    }
+    //
+    public function notasMedicas(): string
+    {
+        return view('empleado/medicos/observaciones_medicos');
     }
 }

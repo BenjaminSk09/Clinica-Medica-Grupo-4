@@ -1,18 +1,3 @@
-
-h1, h2 {
-    margin: 0;
-}
-
-/* Header */
-header {
-    background-color: #004466;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
 .logo h1 {
     font-size: 1.8rem;
 }

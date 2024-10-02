@@ -11,10 +11,10 @@ $routes->get('Horarios','Home::Horarios');
 $routes->get('Nosotros','Home::Nosotros');
 //$routes->get('medicos','MedicosController::index');
 $routes->get('Ubicacion','Home::Ubicacion');
-$routes->get('Contactanos','Home::Contactanos');
+$routes->get('home_reservas','EmpresasController::verClinicas');
 $routes->get('especialidades_medicos/(:num)','MedicosController::especialidadesMedicos/$1'); //para redirigir a los medicos de la especialidad disponibles de home
 
-/*Pagina paciente*/ 
+/*Pagina paciente*/
 $routes->get('paciente', 'Pacientes\PacienteController::index');
 $routes->get('citas-medicas', 'Pacientes\CitaMedicaController::index');
 $routes->get('recetas', 'Pacientes\RecetasController::index');
@@ -47,5 +47,18 @@ $routes->post('login_empleado/auth', 'LoginEmpleadosController::auth'); // Usar 
 
 
 ////Medicos
-$routes->get('recetasDoctor', 'RecetasDoctorController::Recetas');
-$routes->get('historialPaciente', 'HistorialPacienteMedicoController::HistorialMedico');
+$routes->get('recetasDoctor', 'MedicosController::Recetas');
+$routes->get('historialPaciente', 'MedicosController::HistorialMedico');
+$routes->get('observaciones', 'MedicosController::notasMedicas');
+
+/*Pagina empleados*/ 
+$routes->get('ad-especialidades','EspecialidadesController::index');
+$routes->get('buscar_especialidad/(:num)','EspecialidadesController::buscarEspecialidad/$1');
+$routes->get('ad-especialidades-nuevo','EspecialidadesController::nuevaEspecialidad');
+$routes->post('ad-especialidades-agregar','EspecialidadesController::agregarEspecialidad');
+$routes->get('ad-especialidades-editar/(:num)','EspecialidadesController::editarEspecialidad/$1');
+$routes->put('ad-especialidades-editar','EspecialidadesController::ActualizarEspecialidad');
+$routes->delete('ad-especialidades-eliminar/(:num)','EspecialidadesController::EliminarEspecialidad/$1');
+
+/*Empleado/a secretaria/o*/
+$routes->get('pagina_secretaria', 'EmpleadoController::mainSecretaria');
