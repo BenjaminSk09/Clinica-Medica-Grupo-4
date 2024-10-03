@@ -53,7 +53,6 @@ $routes->group('paciente', function($routes) {
 
 /*Pagina empleados*/ 
 /*Medicoas*/
-$routes->get('medicos/pagina_doctor', 'MedicosController::borrarCache');
 $routes->get('medicos', 'MedicosController::index'); // Ruta para acceder a la página de médicos
 
 /* Login empleados */
@@ -65,6 +64,7 @@ $routes->post('login_empleado/auth', 'LoginEmpleadosController::auth'); // Usar 
 $routes->get('recetasDoctor', 'MedicosController::Recetas');
 $routes->get('historialPaciente', 'MedicosController::HistorialMedico');
 $routes->get('observaciones', 'MedicosController::notasMedicas');
+$routes->get('pagina_doctor','CitasController::verCitasMedico');
 
 /*Pagina empleados*/ 
 $routes->get('ad-especialidades','EspecialidadesController::index');

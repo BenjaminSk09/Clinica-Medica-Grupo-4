@@ -69,7 +69,7 @@ class LoginEmpleadosController extends BaseController
             case 1:  // Administrador
                 return redirect()->to(base_url('admin/dashboard'));
             case 2:  // Médico
-                return redirect()->to(base_url('medicos/pagina_doctor'));
+                return redirect()->to(base_url('pagina_doctor'));
             case 3:  // Secretario
                 return redirect()->to(base_url('pagina_secretaria'));
             default:
