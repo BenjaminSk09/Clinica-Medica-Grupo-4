@@ -22,11 +22,11 @@
             </div>
         </div>
         <div class="social-icons">
-            <i class="fas fa-home"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-twitter"></i>
+        <a href="http://localhost/Clinica-Medica-Grupo-4/public/"><i class="fas fa-home"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://gt.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a>
         </div>
     </header>
 
@@ -41,6 +41,9 @@
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url('/'); ?>">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('paciente'); ?>">Portal del Paciente</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Médicas</a>
