@@ -14,7 +14,7 @@ class PacienteController extends BaseController
     // MÉTODOS RELACIONADOS CON PACIENTES
     // ----------------------------------------------
     
-    public function index(): string
+    public function indexPacientes(): string
     {
         $pacientes = new PacientesModel();
         $datos['datos'] = $pacientes->findAll();
