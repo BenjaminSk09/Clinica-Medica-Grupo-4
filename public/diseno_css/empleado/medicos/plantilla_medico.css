@@ -1,15 +1,4 @@
-/* General styles 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #003366;
-    color: white;
-    padding: 10px;
-}
+General styles 
 
 .topbar {
     display: flex;
@@ -95,4 +84,4 @@ header {
     width: 100px;
     height: 100px;
     margin-right: 10px;
-}*/
+}

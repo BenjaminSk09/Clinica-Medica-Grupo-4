@@ -1,4 +1,4 @@
-<?= $this->extend('empleado/medicos/pagina_secretaria') ?>
+<?= $this->extend('empleado/secretaria/pagina_secretaria') ?>
 
 <?=$this->section('contenido') ?>
     <link href="<?= base_url('diseno_css/empleado/secretaria/pagina_secretaria.css') ?>" rel="stylesheet">
@@ -89,6 +89,45 @@
             </main>
         </div>
     </div>
+<style>
+    table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+thead {
+    background-color: #f0f0f0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .topbar nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .calendar-header {
+        flex-direction: center;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .view-options {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+</style>
 
 <?= $this->endSection() ?>

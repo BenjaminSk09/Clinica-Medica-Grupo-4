@@ -34,7 +34,8 @@
             </nav>
             <div class="user-info d-flex align-items-center">
                 <span class="me-3">pabito@gmail.com</span>
-                <a href="#" class="btn btn-danger">Salir</a>
+                <br>
+                <button class="btn btn-danger">salir</button>
             </div>
         </div>
     </header>
