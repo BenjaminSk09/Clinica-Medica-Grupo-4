@@ -1,4 +1,5 @@
-<?= $this->extend('empleado/secretaria/pagina_secretaria') ?>
+<?= $this->extend('empleado/secretaria/plantilla_secretaria') ?>
+
 
 <?=$this->section('contenido') ?>
     <link href="<?= base_url('diseno_css/empleado/secretaria/pagina_secretaria.css') ?>" rel="stylesheet">
