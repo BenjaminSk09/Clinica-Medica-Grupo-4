@@ -74,6 +74,9 @@ $routes->post('ad-especialidades-agregar','EspecialidadesController::agregarEspe
 $routes->get('ad-especialidades-editar/(:num)','EspecialidadesController::editarEspecialidad/$1');
 $routes->put('ad-especialidades-editar','EspecialidadesController::ActualizarEspecialidad');
 $routes->delete('ad-especialidades-eliminar/(:num)','EspecialidadesController::EliminarEspecialidad/$1');
+//cierre sesion
+$routes->get('logout', 'LoginEmpleadosController::logout');
+
 
 /*Empleado/a secretaria/o*/
 $routes->get('pagina_secretaria', 'EmpleadoController::mainSecretaria');

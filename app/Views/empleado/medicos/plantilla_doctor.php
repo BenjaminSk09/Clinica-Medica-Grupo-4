@@ -30,6 +30,9 @@
                     <li class="nav-item">
                         <a href="<?=base_url('observaciones')?>" class="nav-link text-white">Agregar Observaciones</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="<?=base_url('logout')?>" class="nav-link text-white">Cerrar sesión</a>
+                    </li>
                 </ul>
             </nav>
        
