@@ -47,8 +47,7 @@
     </section>
 </main>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 Doctor Online. Todos los derechos reservados.</p>
-</footer>
+
+
+
 <?= $this->endSection() ?>

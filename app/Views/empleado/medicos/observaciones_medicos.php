@@ -1,54 +1,48 @@
 <?= $this->extend('empleado/medicos/plantilla_doctor') ?>
 <?=$this->section('contenido') ?>
-<link href="<?= base_url('diseno_css/empleado/medicos/pagina_observaciones.css') ?>" rel="stylesheet">
 
 
+<main class="container my-5">
     <!-- Formulario de Observaciones Médicas -->
-    <main>
-        <section class="observations-form">
-            <h2>Registrar Observaciones</h2>
-            <form>
-                <div class="form-group">
-                    <label for="patientName">Nombre del Paciente</label>
-                    <input type="text" id="patientName" placeholder="Nombre del paciente" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="observationDate">Fecha de Observación</label>
-                    <input type="date" id="observationDate" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="observationDetails">Detalles de la Observación</label>
-                    <textarea id="observationDetails" placeholder="Escribe los detalles de la observación" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Guardar Observación</button>
-            </form>
-        </section>
-
-        <!-- Lista de Observaciones -->
-        <section class="observations-list">
-            <h2>Observaciones Recientes</h2>
-            <div class="observation-card">
-                <h3>Juan Pérez</h3>
-                <p><strong>Fecha:</strong> 01/10/2024</p>
-                <p><strong>Observación:</strong> El paciente presenta síntomas leves de resfriado común.</p>
+    <section class="observations-form bg-white p-4 shadow-sm rounded">
+        <h2 class="mb-4">Registrar Observaciones</h2>
+        <form>
+            <div class="mb-3">
+                <label for="patientName" class="form-label">Nombre del Paciente</label>
+                <input type="text" class="form-control" id="patientName" placeholder="Nombre del paciente" required>
             </div>
 
-            <div class="observation-card">
-                <h3>María López</h3>
-                <p><strong>Fecha:</strong> 28/09/2024</p>
-                <p><strong>Observación:</strong> Se recomienda reposo por dolor de cabeza persistente.</p>
+            <div class="mb-3">
+                <label for="observationDate" class="form-label">Fecha de Observación</label>
+                <input type="date" class="form-control" id="observationDate" required>
             </div>
 
-            <!-- Más tarjetas de observación pueden añadirse aquí -->
-        </section>
-    </main>
+            <div class="mb-3">
+                <label for="observationDetails" class="form-label">Detalles de la Observación</label>
+                <textarea class="form-control" id="observationDetails" placeholder="Escribe los detalles de la observación" required></textarea>
+            </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Clínica Médica. Todos los derechos reservados.</p>
-    </footer>
+            <button type="submit" class="btn btn-primary w-100">Guardar Observación</button>
+        </form>
+    </section>
+
+    <!-- Lista de Observaciones -->
+    <section class="observations-list bg-white p-4 shadow-sm rounded mt-5">
+        <h2 class="mb-4">Observaciones Recientes</h2>
+        <div class="observation-card p-3 mb-4 bg-light border-start border-4 border-primary">
+            <h3>Juan Pérez</h3>
+            <p><strong>Fecha:</strong> 01/10/2024</p>
+            <p><strong>Observación:</strong> El paciente presenta síntomas leves de resfriado común.</p>
+        </div>
+
+        <div class="observation-card p-3 mb-4 bg-light border-start border-4 border-primary">
+            <h3>María López</h3>
+            <p><strong>Fecha:</strong> 28/09/2024</p>
+            <p><strong>Observación:</strong> Se recomienda reposo por dolor de cabeza persistente.</p>
+        </div>
+    </section>
+</main>
+
+
 
 <?= $this->endSection() ?>
