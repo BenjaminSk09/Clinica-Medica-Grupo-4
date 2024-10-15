@@ -4,7 +4,7 @@
 <?=$this->section('contenido');?>
 <h1>Especialidades</h1>
 
-<a href="" class="btn btn-primary"><i class="bi-file-plus-fill"></i> Agregar</a>
+<a href="<?=base_url('ad-especialidades-nuevo');?>" class="btn btn-primary"><i class="bi-file-plus-fill"></i> Agregar</a>
 <div class="row">
 
     <?php
