@@ -66,7 +66,7 @@ $routes->get('historialPaciente', 'MedicosController::HistorialMedico');
 $routes->get('observaciones', 'MedicosController::notasMedicas');
 $routes->get('pagina_doctor','CitasController::verCitasMedico');
 
-/*Pagina empleados*/ 
+/*Pagina especialidades*/ 
 $routes->get('ad-especialidades','EspecialidadesController::index');
 $routes->get('buscar_especialidad/(:num)','EspecialidadesController::buscarEspecialidad/$1');
 $routes->get('ad-especialidades-nuevo','EspecialidadesController::nuevaEspecialidad');
@@ -79,4 +79,19 @@ $routes->get('logout', 'LoginEmpleadosController::logout');
 
 
 /*Empleado/a secretaria/o*/
-$routes->get('pagina_secretaria', 'EmpleadoController::mainSecretaria');
+$routes->get('ad_empleados', 'EmpleadoController::index');
+$routes->get('ad_buscar_empleado/(:num)','EmpleadoController::buscar/$1');
+$routes->get('ad-empleado-nuevo','EmpleadoController::nuevo');
+$routes->post('ad-empleado-agregar','EmpleadoController::agregar');
+$routes->get('ad-empleado-editar/(:num)','EmpleadoController::editar/$1');
+$routes->post('ad-empleado-editar','EmpleadoController::Actualizar');
+$routes->get('ad-empleado-eliminar/(:num)','EmpleadoController::Eliminar/$1');
+
+/*Empleado/a Médico/o*/
+$routes->get('ad_medicos', 'MedicosController::index');
+$routes->get('ad_buscar_medico/(:num)','MedicosController::buscar/$1');
+$routes->get('ad-medico-nuevo','MedicosController::nuevo');
+$routes->post('ad-medico-agregar','MedicosController::agregar');
+$routes->get('ad-medico-editar/(:num)','MedicosController::editar/$1');
+$routes->post('ad-medico-editar','MedicosController::Actualizar');
+$routes->get('ad-medico-eliminar/(:num)','MedicosController::Eliminar/$1');
