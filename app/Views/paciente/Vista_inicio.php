@@ -68,7 +68,7 @@
 
 /* Cards especialidades */
 .card {
-    width: 190px;
+    width: 200px;
     background: white;
     padding: .4em;
     border-radius: 6px;
@@ -108,7 +108,7 @@
 .author {
     color: gray;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 15px;
     padding-top: 20px;
 }
 

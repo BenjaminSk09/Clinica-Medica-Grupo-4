@@ -42,7 +42,7 @@ class MedicosController extends BaseController
         if (!$this->session->get('isLoggedIn')) {
             // Si no está logueado, destruye la sesión y redirige al login
             $this->session->destroy();
-            return redirect()->to(base_url('login'));
+            return redirect()->to(base_url('login_empleado'));
         }
 
         // Si está logueado, se renderiza la vista protegida

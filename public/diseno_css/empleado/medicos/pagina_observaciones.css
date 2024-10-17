@@ -80,14 +80,7 @@ label {
     margin-top: 0;
 }
 
-/* Footer */
-footer {
-    background-color: #004466;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-}
+
 
 /* Responsividad */
 @media (max-width: 768px) {

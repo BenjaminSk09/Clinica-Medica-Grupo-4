@@ -53,7 +53,6 @@ $routes->group('paciente', function($routes) {
 
 /*Pagina empleados*/ 
 /*Medicoas*/
-$routes->get('medicos/pagina_doctor', 'MedicosController::borrarCache');
 $routes->get('medicos', 'MedicosController::index'); // Ruta para acceder a la página de médicos
 
 /* Login empleados */
@@ -65,6 +64,7 @@ $routes->post('login_empleado/auth', 'LoginEmpleadosController::auth'); // Usar 
 $routes->get('recetasDoctor', 'MedicosController::Recetas');
 $routes->get('historialPaciente', 'MedicosController::HistorialMedico');
 $routes->get('observaciones', 'MedicosController::notasMedicas');
+$routes->get('pagina_doctor','CitasController::verCitasMedico');
 
 /*Pagina empleados*/ 
 $routes->get('ad-especialidades','EspecialidadesController::index');
@@ -72,8 +72,11 @@ $routes->get('buscar_especialidad/(:num)','EspecialidadesController::buscarEspec
 $routes->get('ad-especialidades-nuevo','EspecialidadesController::nuevaEspecialidad');
 $routes->post('ad-especialidades-agregar','EspecialidadesController::agregarEspecialidad');
 $routes->get('ad-especialidades-editar/(:num)','EspecialidadesController::editarEspecialidad/$1');
-$routes->put('ad-especialidades-editar','EspecialidadesController::ActualizarEspecialidad');
-$routes->delete('ad-especialidades-eliminar/(:num)','EspecialidadesController::EliminarEspecialidad/$1');
+$routes->post('ad-especialidades-editar','EspecialidadesController::ActualizarEspecialidad');
+$routes->get('ad-especialidades-eliminar/(:num)','EspecialidadesController::EliminarEspecialidad/$1');
+//cierre sesion
+$routes->get('logout', 'LoginEmpleadosController::logout');
+
 
 /*Empleado/a secretaria/o*/
 $routes->get('pagina_secretaria', 'EmpleadoController::mainSecretaria');

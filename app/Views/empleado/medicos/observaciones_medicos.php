@@ -43,9 +43,6 @@
     </section>
 </main>
 
-<!-- Footer -->
-<footer class="bg-primary text-white text-center py-3">
-    <p>&copy; 2024 Clínica Médica. Todos los derechos reservados.</p>
-</footer>
+
 
 <?= $this->endSection() ?>

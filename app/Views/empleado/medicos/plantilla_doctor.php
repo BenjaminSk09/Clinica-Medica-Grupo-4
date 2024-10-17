@@ -17,7 +17,7 @@
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="logo d-flex align-items-center">
                 <img src="https://marketplace.canva.com/EAFdCebXgRs/1/0/1600w/canva-logotipo-medicina-simple-azul-y-blanco-4UzHG4FY3uw.jpg" alt="Logo" class="me-2" style="width: 100px; height: 100px;">
-                <h1 class="h4 m-0">Home Doctor</h1>
+                <h1 class="h4 m-0" href="">Clinica Doctor</h1>
             </div>
             <nav class="d-flex">
                 <ul class="nav">
@@ -30,12 +30,12 @@
                     <li class="nav-item">
                         <a href="<?=base_url('observaciones')?>" class="nav-link text-white">Agregar Observaciones</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="<?=base_url('logout')?>" class="nav-link text-white">Cerrar sesión</a>
+                    </li>
                 </ul>
             </nav>
-            <div class="user-info d-flex align-items-center">
-                <span class="me-3">pabito@gmail.com</span>
-                <a href="#" class="btn btn-danger">Salir</a>
-            </div>
+       
         </div>
     </header>
 
