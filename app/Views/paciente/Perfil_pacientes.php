@@ -37,6 +37,22 @@
                     <span class="view-data"><?= $paciente->activo ? 'Activo' : 'Inactivo' ?></span>
                 </div>
 
+                <div class="mb-1">
+                    <strong>Fecha de Nacimiento: </strong>
+                    <span class="view-data"><?= $paciente->fecha_nacimiento ?> </span>
+                </div>  
+                
+                <div class="mb-1">
+                    <strong>Altura: </strong>
+                    <span class="view-data"><?= $paciente->altura ?> M </span>
+                </div>  
+
+                <div class="mb-1">
+                    <strong>Grupo Sanguineo: </strong>
+                    <span class="view-data"><?= $paciente->grupo_sanguineo ?>  </span>
+                </div>  
+
+
                 <!-- Botón de redirección para actualizar información -->
                 <div class="text-center mt-4">
                     <a href="<?= base_url('pacientes/editar/' . $paciente->id_paciente) ?>"
