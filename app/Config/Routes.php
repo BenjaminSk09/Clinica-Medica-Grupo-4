@@ -95,3 +95,6 @@ $routes->post('ad-medico-agregar','MedicosController::agregar');
 $routes->get('ad-medico-editar/(:num)','MedicosController::editar/$1');
 $routes->post('ad-medico-editar','MedicosController::Actualizar');
 $routes->get('ad-medico-eliminar/(:num)','MedicosController::Eliminar/$1');
+
+/*Link de login de secretaria nomas esntra se muestra la pagina de CItas*/
+$routes->get('pagina_secretaria', 'EmpleadoController::mainSecretaria');
