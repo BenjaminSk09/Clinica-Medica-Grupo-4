@@ -50,7 +50,7 @@
                     <a class="nav-link" href="<?= base_url('recetas'); ?>">Recetas</a>
                     </li>
                     <li class="nav-item">   
-                    <a class="nav-link" href="<?= base_url('paciente/1'); ?>">Perfil</a>
+                    <a class="nav-link" href="<?= base_url('paciente/perfil'); ?>">Perfil</a>
                     </li>
                 </ul>
             </div>
@@ -59,9 +59,10 @@
 
     <!-- Sección de Bienvenida -->
     <div class="bienvenida">
-        <h2>Bienvenido al Portal del Paciente</h2>
-        <p>Accede a tus citas, resultados médicos y más desde la comodidad de tu hogar.</p>
-    </div>
+    <h2>Bienvenido al Portal del Paciente, <?= session()->get('nombre_completo'); ?></h2>
+    <p>Accede a tus citas, resultados médicos y más desde la comodidad de tu hogar.</p>
+</div>
+
 
     <!-- Servicios para Pacientes -->
     <div class="servicios-pacientes">

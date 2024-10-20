@@ -99,3 +99,5 @@ class LoginEmpleadosController extends BaseController
         return redirect()->to(base_url('login_empleado'));
     }
 }
+
+

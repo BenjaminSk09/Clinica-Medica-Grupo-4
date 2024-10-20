@@ -11,11 +11,18 @@
 
     <div class="row">
         <div class="col-md-6">
-            <h3>Próximas Citas</h3>
+            <h2 class="text-center">Tus Citas Médicas</h2>
             <ul class="list-group">
-                <li class="list-group-item">Consulta con el Dr. López - 20/09/2024 - 10:00 AM</li>
-                <li class="list-group-item">Examen de Laboratorio - 25/09/2024 - 8:30 AM</li>
-                <li class="list-group-item">Consulta de Control - 30/09/2024 - 12:00 PM</li>
+                <?php if(!empty($citas)): ?>
+                <?php foreach($citas as $cita): ?>
+                <li class="list-group-item">
+                    Consulta con el Dr. <?= esc($cita['id_medico']) ?> - <?= esc($cita['fecha_cita']) ?> -
+                    <?= esc($cita['hora']) ?>
+                </li>
+                <?php endforeach; ?>
+                <?php else: ?>
+                <li class="list-group-item">No tienes citas programadas.</li>
+                <?php endif; ?>
             </ul>
         </div>
 
