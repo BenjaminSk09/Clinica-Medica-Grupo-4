@@ -7,6 +7,7 @@ use App\Models\PacientesModel;
 use App\Models\GenerosModel;
 use App\Models\CitasModel;
 use App\Models\RecetasModel;
+use App\Models\DetalleCitasModel;
 
 class PacienteController extends BaseController
 {
@@ -74,67 +75,37 @@ class PacienteController extends BaseController
     // ----------------------------------------------
 
     public function indexCitas()
-{
-    // Obtener el ID del paciente desde la sesión
-    $idPaciente = session()->get('id_paciente');
-
-    if (!$idPaciente) {
-        return redirect()->to('/login')->with('error', 'Debes iniciar sesión.');
-    }
-
-    $citasModel = new CitasModel();
+    {
+        // Obtener el ID del paciente desde la sesión
+        $idPaciente = session()->get('id_paciente');
     
-    // Obtener las citas del paciente logueado con JOIN para obtener el nombre del médico
-    $citas = $citasModel
-        ->select('fs2024_proyecto2_citas.*, medicos.nombre as nombre_medico')
-        ->join('medicos', 'medicos.id = fs2024_proyecto2_citas.id_medico') // Relacionar con la tabla de médicos
-        ->where('fs2024_proyecto2_citas.id_paciente', $idPaciente)
-        ->findAll();
-
-    // Enviar las citas a la vista
-    $data['citas'] = $citas;
-
-    return view('/paciente/citas_medicas', $data);
-}
-
-public function programarCita()
-{
-    // Verifica que el paciente esté en la sesión
-    $idPaciente = session()->get('id_paciente');
-    if (!$idPaciente) {
-        return redirect()->back()->with('error', 'No se encontró el ID del paciente.');
+        if (!$idPaciente) {
+            return redirect()->to('/login')->with('error', 'Debes iniciar sesión.');
+        }
+    
+        $citasModel = new CitasModel();
+        $detalleCitasModel = new DetalleCitasModel(); // Instancia del modelo de detalles de citas
+    
+        // Obtener las citas del paciente logueado
+        $citas = $citasModel
+            ->where('id_paciente', $idPaciente)
+            ->findAll();
+    
+        // Obtener detalles de las citas
+        foreach ($citas as &$cita) {
+            $detalles = $detalleCitasModel
+                ->where('id_cita', $cita['id_cita'])
+                ->findAll();
+    
+            $cita['detalles'] = $detalles; // Agrega los detalles a la cita
+        }
+    
+        // Enviar las citas a la vista
+        $data['citas'] = $citas;
+    
+        return view('/paciente/citas_medicas', $data);
     }
-
-    // Validar los campos del formulario
-    if (!$this->validate([
-        'fecha' => 'required',
-        'hora'  => 'required',
-        'doctor' => 'required',
-    ])) {
-        return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
-    }
-
-    // Instanciar el modelo
-    $citasModel = new CitasModel();
-
-    // Preparar los datos para insertar
-    $data = [
-        'id_paciente' => $idPaciente,
-        'fecha_cita'  => $this->request->getPost('fecha'),
-        'hora'        => $this->request->getPost('hora'),
-        'id_medico'   => $this->request->getPost('doctor'),
-        'fecha_creacion' => date('Y-m-d H:i:s'),
-        'id_estado'   => 1  // Por ejemplo, 1 puede ser el estado "Programado"
-    ];
-
-    // Insertar la nueva cita en la base de datos
-    if ($citasModel->insert($data)) {
-        return redirect()->to('/paciente/citas')->with('success', 'Cita programada con éxito.');
-    } else {
-        return redirect()->back()->with('error', 'Error al programar la cita.');
-    }
-}
-
+    
 
 public function indexPerfil()
 {
