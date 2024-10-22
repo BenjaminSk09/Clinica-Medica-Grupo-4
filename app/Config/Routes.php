@@ -15,41 +15,23 @@ $routes->get('home_reservas','EmpresasController::verClinicas');
 $routes->get('especialidades_medicos/(:num)','MedicosController::especialidadesMedicos/$1'); //para redirigir a los medicos de la especialidad disponibles de home
 
 /*Pagina paciente*/
-// Rutas para el controlador unificado "PacienteController"
+$routes->get('pacientes/(:num)', 'Pacientes\PacienteController::indexPacientes');// Ruta para mostrar la lista de pacientes
+$routes->get('citas-medicas', 'Pacientes\PacienteController::indexCitas');// Ruta para mostrar las citas médicas
+$routes->get('recetas', 'Pacientes\PacienteController::indexRecetas');// Ruta para mostrar las recetas
+$routes->get('paciente/perfil', 'Pacientes\PacienteController::indexPerfil'); // Nueva ruta para el perfil
 
-// Ruta para mostrar la lista de pacientes
-$routes->get('paciente', 'Pacientes\PacienteController::indexPacientes');
+$routes->get('pacientes/editar/(:num)', 'Pacientes\PacienteController::editarPaciente/$1');// Ruta para editar el perfil del paciente
+$routes->post('pacientes/actualizar_perfil', 'Pacientes\PacienteController::actualizarPaciente');// Ruta para actualizar el perfil del paciente (POST)
+$routes->get('perfil/(:num)', 'Pacientes\PacienteController::indexPerfil/$1');// Ruta para mostrar el perfil de un paciente específico por ID
 
-// Ruta para mostrar las citas médicas
-$routes->get('citas-medicas', 'Pacientes\PacienteController::indexCitas');
 
-// Ruta para mostrar las recetas
-$routes->get('recetas', 'Pacientes\PacienteController::indexRecetas');
 
-// Ruta para mostrar el perfil del paciente por ID
-$routes->get('paciente/(:num)', 'Pacientes\PacienteController::indexPerfil/$1');
+/*Login Pacientes */
+$routes->get('login_paciente', 'Pacientes\LoginPacientesController::loginPaciente');
+$routes->post('login_paciente/auth', 'Pacientes\LoginPacientesController::auth');/// login nuevo prueba pacientes
+$routes->get('logout_paciente', 'Pacientes\LoginPacientesController::logout');
 
-// Ruta para editar el perfil del paciente
-$routes->get('pacientes/editar/(:num)', 'Pacientes\PacienteController::editarPaciente/$1');
 
-// Ruta para actualizar el perfil del paciente (POST)
-$routes->post('pacientes/actualizar_perfil', 'Pacientes\PacienteController::actualizarPaciente');
-
-// Ruta para mostrar el perfil de un paciente específico por ID
-$routes->get('perfil/(:num)', 'Pacientes\PacienteController::indexPerfil/$1');
-
-// Grupo de rutas para citas médicas
-$routes->group('paciente', function($routes) {
-    // Ruta para mostrar las citas médicas
-    $routes->get('citas', 'Pacientes\PacienteController::indexCitas');
-    
-    // Ruta para programar una nueva cita (POST)
-    $routes->post('citas/programar', 'Pacientes\PacienteController::programarCita');
-});
-
-// En app/Config/Routes.php
-
-/*cambio*/
 
 /*Pagina empleados*/ 
 /*Medicoas*/
@@ -98,3 +80,6 @@ $routes->get('ad-medico-eliminar/(:num)','MedicosController::Eliminar/$1');
 
 /*Link de login de secretaria nomas esntra se muestra la pagina de CItas*/
 $routes->get('pagina_secretaria', 'EmpleadoController::mainSecretaria');
+
+// Nueva ruta para manejar errores de login
+$routes->get('error_login', 'LoginEmpleadosController::errorLogin');
