@@ -25,6 +25,18 @@ class CitasModel extends Model
     {
         return $this->insert($data);
     }
+
+    public function obtenerCitasConPaciente($id_medico)
+{
+    return $this->select('citas.*, CONCAT(pacientes.nombre, " ", pacientes.apellido) AS nombre_paciente')
+                ->join('pacientes', 'citas.id_paciente = pacientes.id_paciente')
+                ->where('citas.id_medico', $id_medico)
+                ->where('citas.id_estado', 1) // Solo citas pendientes
+                ->orderBy('citas.fecha_cita', 'ASC')
+                ->findAll();
+}
+
+
 }
 
 
