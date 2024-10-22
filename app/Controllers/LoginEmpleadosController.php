@@ -80,7 +80,7 @@ class LoginEmpleadosController extends BaseController
     public function logout()
     {
         $session = \Config\Services::session();
-
+        
         if ($session->get('isLoggedIn')) {
             $session->destroy();
         }

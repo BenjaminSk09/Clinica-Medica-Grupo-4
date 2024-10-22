@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="social-icons">
-        <a href="http://localhost/Clinica-Medica-Grupo-4/public/"><i class="fas fa-home"></i></a>
+            <a href="http://localhost/Clinica-Medica-Grupo-4/public/"><i class="fas fa-home"></i></a>
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
             <a href="https://gt.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
@@ -43,7 +43,8 @@
                         <a class="nav-link" href="<?= base_url('/'); ?>">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('paciente'); ?>">Portal del Paciente</a>
+                        <a class="nav-link" href="<?= base_url('pacientes/' . session()->get('id_paciente')); ?>">Portal
+                            del Paciente</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Médicas</a>
@@ -52,7 +53,7 @@
                         <a class="nav-link" href="<?= base_url('recetas'); ?>">Recetas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('paciente/1'); ?>">Perfil</a>
+                        <a class="nav-link" href="<?= base_url('paciente/perfil'); ?>">Perfil</a>
                     </li>
                 </ul>
             </div>

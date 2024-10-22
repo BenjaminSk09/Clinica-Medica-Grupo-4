@@ -7,6 +7,7 @@ use App\Models\PacientesModel;
 use App\Models\GenerosModel;
 use App\Models\CitasModel;
 use App\Models\RecetasModel;
+use App\Models\DetalleCitasModel;
 
 class PacienteController extends BaseController
 {
@@ -52,6 +53,7 @@ class PacienteController extends BaseController
         
         //Datos a actualizar
         $datos = [
+            'email' => $this->request->getPost('email'),
             'telefono' => $this->request->getPost('telefono'),
             'direccion' => $this->request->getPost('direccion'),
             'peso' => $this->request->getPost('peso'),
@@ -63,8 +65,10 @@ class PacienteController extends BaseController
         //Actualizar la informacion del paciente
         $pacienteModel->update($id_paciente, $datos);
         //redireccionar a la pagina del perfil del paciente con un mensaje de exito
-        return redirect()->to('paciente/' . $id_paciente)->with('message', 'Información actualizada exitosamente.');
+        return redirect()->to('paciente/perfil' )->with('message', 'Información actualizada exitosamente.');
     }
+
+
 
     // ----------------------------------------------
     // MÉTODOS RELACIONADOS CON CITAS MÉDICAS
@@ -72,68 +76,61 @@ class PacienteController extends BaseController
 
     public function indexCitas()
     {
+        // Obtener el ID del paciente desde la sesión
+        $idPaciente = session()->get('id_paciente');
+    
+        if (!$idPaciente) {
+            return redirect()->to('/login')->with('error', 'Debes iniciar sesión.');
+        }
+    
         $citasModel = new CitasModel();
-        $citas = $citasModel->findAll(); //obtiene todas las citas
+        $detalleCitasModel = new DetalleCitasModel(); // Instancia del modelo de detalles de citas
+    
+        // Obtener las citas del paciente logueado
+        $citas = $citasModel
+            ->where('id_paciente', $idPaciente)
+            ->findAll();
+    
+        // Obtener detalles de las citas
+        foreach ($citas as &$cita) {
+            $detalles = $detalleCitasModel
+                ->where('id_cita', $cita['id_cita'])
+                ->findAll();
+    
+            $cita['detalles'] = $detalles; // Agrega los detalles a la cita
+        }
+    
+        // Enviar las citas a la vista
         $data['citas'] = $citas;
-        //retorna la cita vistas medicas
+    
         return view('/paciente/citas_medicas', $data);
     }
+    
 
-    //Metodo para retornar la vista citas medicas
-    public function programarCita()
-    {
-        //verifica que el id_paciente esta en la sesion
-        $idPaciente = session()->get('id_paciente');
-        if (!$idPaciente) {
-            return redirect()->back()->with('error', 'No se encontró el ID del paciente.');
-        }
+public function indexPerfil()
+{
+    $session = \Config\Services::session();
 
-        //validacion de los campos
-        if (!$this->validate([
-            'fecha' => 'required',
-            'hora' => 'required',
-            'doctor' => 'required',
-        ])) {
-            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
-        }
-
-        $citasModel = new CitasModel();
-        $data = [
-            'id_paciente' => $idPaciente,//usa la variable que se definio previamente 
-            'fecha_cita' => $this->request->getPost('fecha'),
-            'hora' => $this->request->getPost('hora'),
-            'id_medico' => $this->request->getPost('doctor'),
-            'fecha_creacion' => date('Y-m-d H:i:s'),
-            'id_estado' => 1,
-        ];
-
-            //print_r($datos);
-            
-        //insertar la cita
-        if ($citasModel->insert($data)) {
-            return redirect()->to('/paciente/citas')->with('success', 'Cita programada con éxito.');
-        } else {
-            return redirect()->back()->with('error', 'Error al programar la cita.');
-        }
+    // Verificar si el usuario está autenticado
+    if (!$session->get('isLoggedIn')) {
+        return redirect()->to('/login_paciente')->with('error', 'Debes iniciar sesión para acceder a tu perfil.');
     }
 
-    // ----------------------------------------------
-    // MÉTODOS RELACIONADOS CON EL PERFIL DEL PACIENTE
-    // ----------------------------------------------
+    // Obtener el ID del paciente desde la sesión
+    $idPaciente = $session->get('id_paciente');
 
-    public function indexPerfil($id)
-    {
-        $perfilModel = new PacientesModel();
-        //Buscar el paciente especifico por ID
-        $paciente = $perfilModel->find($id);
+    $perfilModel = new PacientesModel();
+    // Buscar el paciente específico por ID
+    $paciente = $perfilModel->find($idPaciente);
 
-        //verificar si se encuentra el paciente
-        if (!$paciente) {
-            return redirect()->to('/paciente')->with('error', 'Paciente no encontrado');
-        }
-        //cuando el array es un objeto retornar lo siguiente
-        return view('paciente/perfil_pacientes', ['paciente' => (object) $paciente]);
+    // Verificar si se encuentra el paciente
+    if (!$paciente) {
+        return redirect()->to('/paciente')->with('error', 'Paciente no encontrado');
     }
+
+    // Cuando el array es un objeto retornar lo siguiente
+    return view('paciente/perfil_pacientes', ['paciente' => (object) $paciente]);
+}
 
     // ----------------------------------------------
     // MÉTODOS RELACIONADOS CON RECETAS MÉDICAS
