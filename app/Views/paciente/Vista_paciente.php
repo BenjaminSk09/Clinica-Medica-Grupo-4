@@ -78,7 +78,7 @@
             <h3>Perfil</h3>
             <p>Accede a tu pefil completo desde cualquier lugar.</p>
             <br>
-            <a class="btn btn-primary" href="<?= base_url('paciente/3'); ?>">Ingresar</a>
+            <a class="btn btn-primary" href="<?= base_url('paciente/perfil'); ?>">Ingresar</a>
         </div>
         <div class="servicio">
             <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Recetas">

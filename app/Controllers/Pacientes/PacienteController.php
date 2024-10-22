@@ -52,6 +52,7 @@ class PacienteController extends BaseController
         
         //Datos a actualizar
         $datos = [
+            'email' => $this->request->getPost('email'),
             'telefono' => $this->request->getPost('telefono'),
             'direccion' => $this->request->getPost('direccion'),
             'peso' => $this->request->getPost('peso'),
@@ -63,8 +64,10 @@ class PacienteController extends BaseController
         //Actualizar la informacion del paciente
         $pacienteModel->update($id_paciente, $datos);
         //redireccionar a la pagina del perfil del paciente con un mensaje de exito
-        return redirect()->to('paciente/' . $id_paciente)->with('message', 'Información actualizada exitosamente.');
+        return redirect()->to('paciente/perfil' )->with('message', 'Información actualizada exitosamente.');
     }
+
+
 
     // ----------------------------------------------
     // MÉTODOS RELACIONADOS CON CITAS MÉDICAS
