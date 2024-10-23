@@ -3,6 +3,7 @@ namespace App\Controllers;
 
 use App\Models\MedicosModel;
 
+
 class MedicosController extends BaseController
 {
     protected $session;
@@ -31,6 +32,7 @@ class MedicosController extends BaseController
 
     }
 
+/* por el momento, no requerido
 
     public function borrarCache(){
         // Configurar las cabeceras para evitar el caché
@@ -51,8 +53,15 @@ class MedicosController extends BaseController
         } catch (\Exception $e) {
             log_message('error', $e->getMessage());
             return redirect()->to(base_url('error')); // Redirigir a una página de error
-        }
+        }*/
     }
+
+
+   
+
+
+
+
     //Detalle Cita = Recta
     public function Recetas(): string
     {
@@ -69,3 +78,5 @@ class MedicosController extends BaseController
         return view('empleado/medicos/observaciones_medicos');
     }
 }
+
+

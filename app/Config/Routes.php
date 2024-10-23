@@ -83,3 +83,6 @@ $routes->get('ad-medico-eliminar/(:num)','MedicosController::Eliminar/$1');
 
 /*Link de login de secretaria nomas esntra se muestra la pagina de CItas*/
 $routes->get('pagina_secretaria', 'EmpleadoController::mainSecretaria');
+
+// Nueva ruta para manejar errores de login
+$routes->get('error_login', 'LoginEmpleadosController::errorLogin');

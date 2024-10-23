@@ -33,13 +33,13 @@ class LoginEmpleadosController extends BaseController
 
             if ($empleado) {
                 // Obtener el rol del empleado
-                $id_rol = $empleadosModel->getRole($empleado['id_empleado']); // Cambié aquí: debías obtener el rol usando el ID de empleado
+                $id_tipo_usuario = $empleadosModel->getRole($empleado['id_empleado']); // Cambié aquí: debías obtener el rol usando el ID de empleado
 
                 // Establecer la sesión
-                $this->setSession($empleado, $id_rol);
+                $this->setSession($empleado, $id_tipo_usuario);
 
                 // Redirigir según el rol
-                return $this->redirectByRole($id_rol);
+                return $this->redirectByRole($id_tipo_usuario);
             }
 
         } catch (\Exception $e) {
@@ -50,22 +50,22 @@ class LoginEmpleadosController extends BaseController
         return redirect()->back()->withInput()->with('error', 'Credenciales no válidas.');
     }
 
-    private function setSession($empleado, $id_rol)
+    private function setSession($empleado, $id_tipo_usuario)
     {
         $session = \Config\Services::session();
         $data = [
             'id_empleado' => $empleado['id_empleado'],
             'email' => $empleado['email'],
             'nombre_completo' => esc($empleado['nombre'] . ' ' . $empleado['apellido']),
-            'id_rol' => $id_rol,
+            'id_tipo_usuario' => $id_tipo_usuario,
             'isLoggedIn' => true
         ];
         $session->set($data);
     }
     /** validadicon usuarios pcainete*/
-    private function redirectByRole($id_rol)
+    private function redirectByRole($id_tipo_usuario)
     {
-        switch ($id_rol) {
+        switch ($id_tipo_usuario) {
             case 1:  // Administrador
                 return redirect()->to(base_url('admin/dashboard'));
             case 2:  // Médico
@@ -98,6 +98,10 @@ class LoginEmpleadosController extends BaseController
 
         return redirect()->to(base_url('login_empleado'));
     }
+
+
+    //una vista simple cuando intenta entrar 
+    public function errorLogin(){
+        return view('empleado/errores_login');
+    }
 }
-
-
