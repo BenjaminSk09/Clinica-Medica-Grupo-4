@@ -5,7 +5,6 @@
 <link href="<?= base_url('diseno_css/paciente/citas_medicas.css') ?>" rel="stylesheet">
 
 <!-- Sección de Citas Médicas -->
-<!-- Sección de Citas Médicas -->
 <div class="container mt-5">
     <h2 class="text-center">Gestiona tus Citas Médicas</h2>
     <p class="text-center">Aquí puedes revisar, programar o cancelar tus citas médicas.</p>
@@ -16,8 +15,14 @@
             <ul class="list-group">
                 <?php if(!empty($citas)): ?>
                     <?php foreach($citas as $cita): ?>
-                        <li class="list-group-item">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
                             Consulta con el Dr. <?= esc($cita['id_medico']) ?> - <?= esc($cita['fecha_cita']) ?> - <?= esc($cita['hora']) ?>
+                            
+                            <!-- Formulario para eliminar la cita -->
+                            <form action="<?= base_url('paciente/citas/eliminar') ?>" method="post" onsubmit="return confirm('¿Estás seguro de que deseas eliminar esta cita?');">
+                                <input type="hidden" name="id_cita" value="<?= esc($cita['id_cita']) ?>">
+                                <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                            </form>
                         </li>
                     <?php endforeach; ?>
                 <?php else: ?>

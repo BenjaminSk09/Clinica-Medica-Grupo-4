@@ -135,7 +135,26 @@ class PacienteController extends BaseController
         }
     }
 
-
+    public function eliminarCita()
+    {
+        // Obtener el ID de la cita desde el formulario
+        $idCita = $this->request->getPost('id_cita');
+    
+        // Cargar el modelo de citas
+        $citasModel = new \App\Models\CitasModel();
+    
+        // Verificar si la cita existe
+        $cita = $citasModel->find($idCita);
+        if (!$cita) {
+            return redirect()->back()->with('error', 'Cita no encontrada.');
+        }
+    
+        // Eliminar la cita
+        $citasModel->delete($idCita);
+    
+        return redirect()->back()->with('success', 'Cita eliminada correctamente.');
+    }
+    
     
 
 public function indexPerfil()

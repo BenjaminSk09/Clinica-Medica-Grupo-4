@@ -34,6 +34,8 @@ $routes->get('logout_paciente', 'Pacientes\LoginPacientesController::logout');
 /* ruta para cita medica*/
 $routes->post('paciente/citas/programar', 'Pacientes\PacienteController::programarCita');
 $routes->get('paciente/citas', 'Pacientes\PacienteController::indexCitas');
+$routes->post('paciente/citas/eliminar', 'Pacientes\PacienteController::eliminarCita');
+
 
 
 /*Pagina empleados*/ 
