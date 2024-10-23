@@ -8,6 +8,8 @@ use App\Models\GenerosModel;
 use App\Models\CitasModel;
 use App\Models\RecetasModel;
 use App\Models\DetalleCitasModel;
+use App\Models\MedicosModel;
+use App\Models\EstadosModel;
 
 class PacienteController extends BaseController
 {
@@ -74,6 +76,7 @@ class PacienteController extends BaseController
     // MÉTODOS RELACIONADOS CON CITAS MÉDICAS
     // ----------------------------------------------
 
+    
     public function indexCitas()
     {
         // Obtener el ID del paciente desde la sesión
@@ -84,27 +87,55 @@ class PacienteController extends BaseController
         }
     
         $citasModel = new CitasModel();
-        $detalleCitasModel = new DetalleCitasModel(); // Instancia del modelo de detalles de citas
+        $medicosModel = new MedicosModel();
     
         // Obtener las citas del paciente logueado
-        $citas = $citasModel
-            ->where('id_paciente', $idPaciente)
-            ->findAll();
+        $citas = $citasModel->where('id_paciente', $idPaciente)->findAll();
     
-        // Obtener detalles de las citas
-        foreach ($citas as &$cita) {
-            $detalles = $detalleCitasModel
-                ->where('id_cita', $cita['id_cita'])
-                ->findAll();
+        // Obtener todos los médicos disponibles para mostrar en el formulario
+        $medicos = $medicosModel->findAll();
     
-            $cita['detalles'] = $detalles; // Agrega los detalles a la cita
-        }
-    
-        // Enviar las citas a la vista
+        // Enviar las citas y los médicos a la vista
         $data['citas'] = $citas;
+        $data['medicos'] = $medicos;
     
         return view('/paciente/citas_medicas', $data);
     }
+
+    public function programarCita()
+    {
+        // Validar la entrada
+        $validation = $this->validate([
+            'fecha' => 'required|valid_date',
+            'hora' => 'required',
+            'doctor' => 'required',
+        ]);
+
+        if (!$validation) {
+            return redirect()->back()->with('errors', $this->validator->getErrors());
+        }
+
+        // Obtener los datos del formulario
+        $data = [
+            'id_paciente' => session()->get('id_paciente'),
+            'fecha_cita' => $this->request->getPost('fecha'),
+            'hora' => $this->request->getPost('hora'),
+            'id_medico' => $this->request->getPost('doctor'),
+            'id_estado' => 1,  // Estado inicial (por ejemplo, "Programada")
+            'fecha_creacion' => date('Y-m-d H:i:s'),  // Fecha actual
+        ];
+
+        $citasModel = new CitasModel();
+
+        // Insertar la cita
+        if ($citasModel->agregarCita($data)) {
+            return redirect()->to('/paciente/citas')->with('success', 'Cita programada con éxito.');
+        } else {
+            return redirect()->back()->with('error', 'Hubo un problema al programar la cita.');
+        }
+    }
+
+
     
 
 public function indexPerfil()

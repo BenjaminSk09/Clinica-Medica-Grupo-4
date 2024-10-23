@@ -31,6 +31,9 @@ $routes->get('login_paciente', 'Pacientes\LoginPacientesController::loginPacient
 $routes->post('login_paciente/auth', 'Pacientes\LoginPacientesController::auth');/// login nuevo prueba pacientes
 $routes->get('logout_paciente', 'Pacientes\LoginPacientesController::logout');
 
+/* ruta para cita medica*/
+$routes->post('paciente/citas/programar', 'Pacientes\PacienteController::programarCita');
+$routes->get('paciente/citas', 'Pacientes\PacienteController::indexCitas');
 
 
 /*Pagina empleados*/ 
