@@ -20,7 +20,7 @@
             <?php if (!empty($citas)) : ?>
                 <?php foreach ($citas as $cita) : ?>
                     <tr>
-                        <td><?= esc($cita['id_paciente']) ?></td>
+                        <td><?= esc($cita['nombre_paciente']) ?></td>
                         <td><?= esc($cita['fecha_cita']) ?></td>
                         <td><?= esc($cita['hora']) ?></td>
                         <td><?= esc($cita['motivo_cita']) ?></td>

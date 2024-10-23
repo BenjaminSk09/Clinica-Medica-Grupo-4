@@ -28,10 +28,7 @@ class CitasController extends BaseController
      $id_medico = $this->session->get('id_empleado');  // ID del médico logueado
  
      $citasModel = new CitasModel();
-     $citasPendientes = $citasModel->where('id_medico', $id_medico)
-                                   ->where('id_estado', 1)  // Estado "Pendiente"
-                                   ->orderBy('fecha_cita', 'ASC')
-                                   ->findAll();
+     $citasPendientes = $citasModel->obtenerCitasConPaciente($id_medico);// aca llamo al metodo de CitasModel que junta los nombre y apellido de paciente
  
      $datos = [
          'citas' => $citasPendientes,
