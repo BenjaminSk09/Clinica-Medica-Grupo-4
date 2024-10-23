@@ -54,7 +54,7 @@ class MedicosController extends BaseController
             log_message('error', $e->getMessage());
             return redirect()->to(base_url('error')); // Redirigir a una página de error
         }*/
-    }
+    
 
 
    
@@ -77,6 +77,5 @@ class MedicosController extends BaseController
     {
         return view('empleado/medicos/observaciones_medicos');
     }
+
 }
-
-
