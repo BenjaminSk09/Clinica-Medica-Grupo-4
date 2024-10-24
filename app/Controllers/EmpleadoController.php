@@ -6,7 +6,13 @@ use App\Models\TipoUsuarioModel;
 use App\Models\EmpresasModel;
 
 class EmpleadoController extends BaseController
-{
+{  
+    //Esto es la parte de Secretaria
+    public function mainSecretaria()
+    {
+        return view('empleado/secretaria/pagina_secretaria');
+    }
+
     public function index()
     {
         $empleado = new EmpleadosModel();
