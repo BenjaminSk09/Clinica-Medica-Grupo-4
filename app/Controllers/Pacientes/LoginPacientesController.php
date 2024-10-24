@@ -70,7 +70,7 @@ class LoginPacientesController extends BaseController
             $session->destroy();
         }
 
-        return redirect()->to(base_url('login_paciente'));
+        return redirect()->to(base_url('/'));
     }
 
     public function checkSessionOnBack()
@@ -84,5 +84,5 @@ class LoginPacientesController extends BaseController
         return redirect()->to(base_url('login_paciente'));
     }
 
-    // Aquí se eliminó la segunda definición de setSession.
+    
 }

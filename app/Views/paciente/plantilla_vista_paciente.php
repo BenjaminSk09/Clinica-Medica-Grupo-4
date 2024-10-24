@@ -56,6 +56,12 @@
                         <a class="nav-link" href="<?= base_url('paciente/perfil'); ?>">Perfil</a>
                     </li>
                 </ul>
+                <!-- Botón de Cerrar Sesión en el lado derecho -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-danger" href="<?= base_url('logout_paciente'); ?>">Cerrar Sesión</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

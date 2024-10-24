@@ -11,8 +11,8 @@
 </head>
 
 <body>
-     <!-- Encabezado -->
-     <header>
+    <!-- Encabezado -->
+    <header>
         <div class="logo">
             <img src="https://marketplace.canva.com/EAFdCebXgRs/1/0/1600w/canva-logotipo-medicina-simple-azul-y-blanco-4UzHG4FY3uw.jpg"
                 alt="Logo Clínica Médica">
@@ -23,14 +23,14 @@
         </div>
 
         <div class="social-icons">
-        <a href="http://localhost/Clinica-Medica-Grupo-4/public/"><i class="fas fa-home"></i></a>
+            <a href="http://localhost/Clinica-Medica-Grupo-4/public/"><i class="fas fa-home"></i></a>
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
             <a href="https://gt.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a>
         </div>
     </header>
-   
+
     <!-- Navegación principal -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -44,13 +44,19 @@
                         <a class="nav-link" href="<?= base_url('/'); ?>">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Medicas</a>
+                        <a class="nav-link" href="<?= base_url('citas-medicas'); ?>">Citas Medicas</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url('recetas'); ?>">Recetas</a>
+                        <a class="nav-link" href="<?= base_url('recetas'); ?>">Recetas</a>
                     </li>
-                    <li class="nav-item">   
-                    <a class="nav-link" href="<?= base_url('paciente/perfil'); ?>">Perfil</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('paciente/perfil'); ?>">Perfil</a>
+                    </li>
+                </ul>
+                <!-- Botón de Cerrar Sesión en el lado derecho -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-danger" href="<?= base_url('logout_paciente'); ?>">Cerrar Sesión</a>
                     </li>
                 </ul>
             </div>
@@ -59,9 +65,9 @@
 
     <!-- Sección de Bienvenida -->
     <div class="bienvenida">
-    <h2>Bienvenido al Portal del Paciente, <?= session()->get('nombre_completo'); ?></h2>
-    <p>Accede a tus citas, resultados médicos y más desde la comodidad de tu hogar.</p>
-</div>
+        <h2>Bienvenido al Portal del Paciente, <?= session()->get('nombre_completo'); ?></h2>
+        <p>Accede a tus citas, resultados médicos y más desde la comodidad de tu hogar.</p>
+    </div>
 
 
     <!-- Servicios para Pacientes -->
