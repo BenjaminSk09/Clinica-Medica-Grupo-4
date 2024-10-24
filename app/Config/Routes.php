@@ -52,6 +52,8 @@ $routes->get('recetasDoctor', 'MedicosController::Recetas');
 $routes->get('historialPaciente', 'MedicosController::HistorialMedico');
 $routes->get('observaciones', 'MedicosController::notasMedicas');
 $routes->get('pagina_doctor','CitasController::verCitasMedico');
+$routes->get('pacientes_atendidos','EstadosCitasController::pacientesAtendidos');
+
 
 /*Pagina especialidades*/ 
 $routes->get('ad-especialidades','EspecialidadesController::index');
