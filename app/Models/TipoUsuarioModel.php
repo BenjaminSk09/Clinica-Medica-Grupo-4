@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class TipoUsuarioModel extends Model
 {
-    protected $table      = 'tipo_usuario';  // Nombre de la tabla en la base de datos
+    protected $table      = 'tipos_usuarios';  // Nombre de la tabla en la base de datos
     protected $primaryKey = 'id_tipo_usuario';  // Campo primario de la tabla
 
     protected $allowedFields = [
