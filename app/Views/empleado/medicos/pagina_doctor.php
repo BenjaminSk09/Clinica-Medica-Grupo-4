@@ -25,7 +25,7 @@
                         <td><?= esc($cita['hora']) ?></td>
                         <td><?= esc($cita['motivo_cita']) ?></td>
                         <td>
-                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
+                            <a href="#" class="btn btn-primary btn-sm btn-center">Ver Detalles</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

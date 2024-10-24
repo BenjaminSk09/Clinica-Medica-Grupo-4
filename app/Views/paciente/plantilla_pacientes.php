@@ -59,9 +59,6 @@
                         <a class="nav-link" href="<?=base_url('medicos')?>"><span class="hover-effect">Médicos</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?=base_url('Ubicacion')?>"><span class="hover-effect">Ubicación</span></a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="<?=base_url('home_reservas')?>"><span class="hover-effect">Contáctanos</span></a>
                     </li>
                     <li class="nav-item dropdown">
