@@ -38,6 +38,24 @@ class CitasController extends BaseController
  }
  
 
+ public function recibir_paciente()
+ {
+     $id_cita = $this->request->getPost('id_cita');  // Tomamos el ID de la cita del formulario
+ 
+     if ($id_cita) {
+         $model = new CitaModel(); // Asegúrate de que el modelo esté definido
+         $model->update($id_cita, ['id_estado' => 3]);  // Actualizamos 'id_estado' a 3 (recibido)
+ 
+         // Redirigir a la vista de pacientes atendidos
+         return redirect()->to(base_url('pacientes_atendidos'));
+     }
+ 
+     // Manejar errores si no se recibe el 'id_cita'
+     return redirect()->back()->with('error', 'No se pudo actualizar el estado de la cita.');
+ }
+ 
+
+
 
 
  //literamente, borra el cache para que no se guarde la sesion ingresada y evitar problemas de seguridad.
