@@ -15,7 +15,7 @@
                     <h5 class="card-title"><?=$doctor['nombre']." ".$doctor['apellido'];?></h5>
                     <p class="card-text"><strong>Especialidad:</strong></p>
                     <p class="card-text"><strong>Contacto:</strong> <?=$doctor['telefono'] ?></p>
-                    <a href="Contactanos" class="profile-link text-success fw-bold">Agendar cita &gt;</a>
+                    <a href="home_reservas" class="profile-link text-success fw-bold">Agendar cita &gt;</a>
                 </div>
             </div>
         </div>

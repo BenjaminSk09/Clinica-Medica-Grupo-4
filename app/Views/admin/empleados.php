@@ -2,38 +2,51 @@
 
 
 <?=$this->section('contenido');?>
-<h1>Especialidades</h1>
+<h1>Empleados</h1>
 
-<a href="<?=base_url('ad-especialidades-nuevo');?>" class="btn btn-primary"><i class="bi-file-plus-fill"></i>
+<a href="<?=base_url('ad-empleado-nuevo');?>" class="btn btn-primary m-4" ><i class="bi-file-plus-fill"></i>
     Agregar</a>
-<div class="row">
+
+    <table class="table table-striped" id="dataTable">
+
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Tipo de usuario</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
 
     <?php
-    foreach($datos as $especialidad ):
+    $numero=0;
+
+    foreach($datos as $empleado ):
+        $numero++;
+
     ?>
 
-    <div class="col-4 mt-4">
-
-        <div class="card" style="width: 18rem;">
-            <img src="<?=$especialidad['imagen']?>" class="card-img-top" alt="imagen de especialdiad">
-            <div class="card-body">
-                <h5 class="card-title"><?=$especialidad['nombre_especialidad']?></h5>
-                <p class="card-text"><?=$especialidad['descripcion']?></p>
-                <a href="<?=base_url('buscar_especialidad/').$especialidad['id_especialidad']?>"
+    <tr>
+        <td><?=$numero;?></td>
+        <td><?=$empleado['nombre'];?></td>
+        <td><?=$empleado['apellido'];?></td>
+        <td><?=$empleado['tipo_usuario'];?></td>
+        <td>
+        <a href="<?=base_url('ad_buscar_empleado/').$empleado['id_empleado']?>"
                     class="btn btn-primary"><i class="bi-pencil-square"></i> Editar </a>
-                <button class="btn btn-danger delete-btn" data-id="<?= $especialidad['id_especialidad']?>"><i
+        <button class="btn btn-danger delete-btn" data-id="<?= $empleado['id_empleado']?>"><i
                         class="bi-trash3-fill"></i> Eliminar </a></button>
+        </td>
+    </tr>
 
-            </div>
-        </div>
-
-    </div>
 
 
     <?php
     endforeach
 ?>
-</div>
+</table>
 
 <script>
 document.querySelectorAll('.delete-btn').forEach(button => {
@@ -53,7 +66,7 @@ document.querySelectorAll('.delete-btn').forEach(button => {
         }).then((result) => {
             if (result.isConfirmed) {
                 // Redirigir al controlador para eliminar el elemento
-                window.location.href = "<?= base_url('ad-especialidades-eliminar/') ?>" +
+                window.location.href = "<?= base_url('ad-empleado-eliminar/') ?>" +
                 itemId;
             }
         });

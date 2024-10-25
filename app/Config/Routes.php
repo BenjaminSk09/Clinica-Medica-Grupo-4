@@ -52,6 +52,8 @@ $routes->get('recetasDoctor', 'MedicosController::Recetas');
 $routes->get('historialPaciente', 'MedicosController::HistorialMedico');
 $routes->get('observaciones', 'MedicosController::notasMedicas');
 $routes->get('pagina_doctor','CitasController::verCitasMedico');
+$routes->get('pacientes_atendidos','EstadosCitasController::pacientesAtendidos');
+
 
 /*Pagina especialidades*/ 
 $routes->get('ad-especialidades','EspecialidadesController::index');
@@ -71,7 +73,7 @@ $routes->get('ad_buscar_empleado/(:num)','EmpleadoController::buscar/$1');
 $routes->get('ad-empleado-nuevo','EmpleadoController::nuevo');
 $routes->post('ad-empleado-agregar','EmpleadoController::agregar');
 $routes->get('ad-empleado-editar/(:num)','EmpleadoController::editar/$1');
-$routes->post('ad-empleado-editar','EmpleadoController::Actualizar');
+$routes->post('ad-empleado-editar/(:num)','EmpleadoController::Actualizar/$1');
 $routes->get('ad-empleado-eliminar/(:num)','EmpleadoController::Eliminar/$1');
 
 /*Empleado/a Médico/o*/

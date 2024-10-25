@@ -42,6 +42,13 @@ class EmpleadosModel extends Model // Cambié 'EmpeadosModel' a 'EmpleadosModel'
         $empleado = $this->find($id_usuario);
         return $empleado ? $empleado['id_tipo_usuario'] : null; // Cambié 'id_rol' a 'id_tipo_usuario' si corresponde
     }
+
+    public function empleadosPuestos(){
+        //los puestos se establecen de acuerdo al tipo de usuario
+        return $this->select('empleados.*,tipos_usuarios.nombre as tipo_usuario') 
+           ->join('tipos_usuarios','empleados.id_tipo_usuario=tipos_usuarios.id_tipo_usuario')
+            ->findAll();
+           }
 }
 
 ?>
