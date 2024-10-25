@@ -14,19 +14,21 @@
             <h2 class="text-center">Tus Citas Médicas</h2>
             <ul class="list-group">
                 <?php if(!empty($citas)): ?>
-                    <?php foreach($citas as $cita): ?>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Consulta con el Dr. <?= esc($cita['id_medico']) ?> - <?= esc($cita['fecha_cita']) ?> - <?= esc($cita['hora']) ?>
-                            
-                            <!-- Formulario para eliminar la cita -->
-                            <form action="<?= base_url('paciente/citas/eliminar') ?>" method="post" onsubmit="return confirm('¿Estás seguro de que deseas eliminar esta cita?');">
-                                <input type="hidden" name="id_cita" value="<?= esc($cita['id_cita']) ?>">
-                                <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
-                            </form>
-                        </li>
-                    <?php endforeach; ?>
+                <?php foreach($citas as $cita): ?>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Consulta con el Dr. <?= esc($cita['id_medico']) ?> - <?= esc($cita['fecha_cita']) ?> -
+                    <?= esc($cita['hora']) ?>
+
+                    <!-- Formulario para eliminar la cita -->
+                    <form action="<?= base_url('paciente/citas/eliminar') ?>" method="post"
+                        onsubmit="return confirm('¿Estás seguro de que deseas eliminar esta cita?');">
+                        <input type="hidden" name="id_cita" value="<?= esc($cita['id_cita']) ?>">
+                        <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                    </form>
+                </li>
+                <?php endforeach; ?>
                 <?php else: ?>
-                    <li class="list-group-item">No tienes citas programadas.</li>
+                <li class="list-group-item">No tienes citas programadas.</li>
                 <?php endif; ?>
             </ul>
         </div>
@@ -36,13 +38,13 @@
 
             <!-- Mostrar errores de validación si existen -->
             <?php if (session()->getFlashdata('errors')): ?>
-                <div class="alert alert-danger">
-                    <ul>
-                        <?php foreach (session()->getFlashdata('errors') as $error): ?>
-                            <li><?= esc($error) ?></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
+            <div class="alert alert-danger">
+                <ul>
+                    <?php foreach (session()->getFlashdata('errors') as $error): ?>
+                    <li><?= esc($error) ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
             <?php endif; ?>
 
             <form action="<?= base_url('paciente/citas/programar') ?>" method="post">
@@ -58,9 +60,14 @@
                     <label for="doctor" class="form-label">Selecciona el Doctor</label>
                     <select class="form-select" id="doctor" name="doctor" required>
                         <?php foreach($medicos as $medico): ?>
-                            <option value="<?= esc($medico['id_medico']) ?>">Dr./Dra. <?= esc($medico['id_empleado']) ?></option>
+                        <option value="<?= esc($medico['id_medico']) ?>">Dr./Dra. <?= esc($medico['id_empleado']) ?>
+                        </option>
                         <?php endforeach; ?>
                     </select>
+                </div>
+                <div class="mb-3">
+                    <label for="motivo" class="form-label">Motivo de la Cita</label>
+                    <textarea class="form-control" id="motivo" name="motivo" rows="3" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Programar Cita</button>
             </form>
@@ -69,4 +76,4 @@
 </div>
 
 
-    <?= $this->endSection() ?>
+<?= $this->endSection() ?>

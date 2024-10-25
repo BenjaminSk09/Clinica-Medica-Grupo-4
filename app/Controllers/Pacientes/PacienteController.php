@@ -123,6 +123,7 @@ class PacienteController extends BaseController
             'id_medico' => $this->request->getPost('doctor'),
             'id_estado' => 1,  // Estado inicial (por ejemplo, "Programada")
             'fecha_creacion' => date('Y-m-d H:i:s'),  // Fecha actual
+            'motivo_cita' => $this->request->getPost('motivo'),
         ];
 
         $citasModel = new CitasModel();
