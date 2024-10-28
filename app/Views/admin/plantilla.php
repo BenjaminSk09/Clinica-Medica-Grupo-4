@@ -28,17 +28,10 @@
             <nav class="d-flex">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a href="<?=base_url('recetasDoctor')?>" class="nav-link text-white">Escribir recetas</a>
+                        <a href="<?=base_url('ad-especialidades')?>" class="nav-link text-white">Especialidades</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?=base_url('historialPaciente')?>" class="nav-link text-white">Historial de
-                            Paciente</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="<?=base_url('observaciones')?>" class="nav-link text-white">Agregar Observaciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="<?=base_url('pacientes_atendidos')?>" class="nav-link text-white">Pacientes atendidos</a>
+                        <a href="<?=base_url('ad_empleados')?>" class="nav-link text-white">Empleados</a>
                     </li>
                     <li class="nav-item">
                         <a href="<?=base_url('logout')?>" class="nav-link text-white">Cerrar sesión</a>
