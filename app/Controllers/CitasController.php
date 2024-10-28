@@ -10,50 +10,66 @@ class CitasController extends BaseController
 {
 
     protected $session;
+    protected $citasModel; // Declaramos la propiedad
 
     public function __construct()
     {
         $this->session = \Config\Services::session();
+        $this->citasModel = new CitasModel(); // Instanciamos el modelo
     }
 
+    public function obtenerCitasConPaciente($id_medico, $id_estado = 2) {
+        return $this->db->table('citas')
+            ->where('id_medico', $id_medico)
+            ->where('id_estado', $id_estado)
+            ->join('pacientes', 'pacientes.id = citas.id_paciente')
+            ->get()->getResult();
+    }
+    
         
  //Función para Ver las Citas Pendientes
- public function verCitasMedico()
+ public function verCitasMedico() {
+    // Verificar si está logueado y si es un médico
+    if (!$this->session->get('isLoggedIn') || $this->session->get('id_tipo_usuario') != 2) {
+        return redirect()->to(base_url('login_empleado'))->with('error', 'Debes iniciar sesión como médico.');
+    }
+
+    $id_medico = $this->session->get('id_empleado');  // ID del médico logueado
+
+    $citasModel = new CitasModel();
+    $citasPendientes = $citasModel->obtenerCitasConPaciente($id_medico, 2); // Filtrar por id_estado = 2
+
+    $datos = [
+        'citas' => $citasPendientes,
+    ];
+
+    return view('empleado/medicos/pagina_doctor', $datos);  // Renderizar la vista con las citas
+}
+
+ 
+ public function listarPacientesAtendidos()
  {
-     // Verificar si está logueado y si es un médico
-     if (!$this->session->get('isLoggedIn') || $this->session->get('id_tipo_usuario') != 2) {
-         return redirect()->to(base_url('login_empleado'))->with('error', 'Debes iniciar sesión como médico.');
-     }
+     // Obtener las citas recientes (estado 3) y completadas (estado 4)
+     $data['recientes'] = $this->citasModel->obtenerCitasConPaciente(null, 3); // Estado 'Recibido'
+     $data['anteriores'] = $this->citasModel->obtenerCitasConPaciente(null, 4); // Estado 'Completado'
  
-     $id_medico = $this->session->get('id_empleado');  // ID del médico logueado
- 
-     $citasModel = new CitasModel();
-     $citasPendientes = $citasModel->obtenerCitasConPaciente($id_medico);// aca llamo al metodo de CitasModel que junta los nombre y apellido de paciente
- 
-     $datos = [
-         'citas' => $citasPendientes,
-     ];
- 
-     return view('empleado/medicos/pagina_doctor', $datos);  // Renderizar la vista con las citas
+     // Renderizar la vista con los datos
+     return view('empleado/medicos/pacientes_atendidos', $data);
  }
  
 
- public function recibir_paciente()
- {
-     $id_cita = $this->request->getPost('id_cita');  // Tomamos el ID de la cita del formulario
- 
-     if ($id_cita) {
-         $model = new CitaModel(); // Asegúrate de que el modelo esté definido
-         $model->update($id_cita, ['id_estado' => 3]);  // Actualizamos 'id_estado' a 3 (recibido)
- 
-         // Redirigir a la vista de pacientes atendidos
-         return redirect()->to(base_url('pacientes_atendidos'));
-     }
- 
-     // Manejar errores si no se recibe el 'id_cita'
-     return redirect()->back()->with('error', 'No se pudo actualizar el estado de la cita.');
- }
- 
+    // Cambiar el estado de la cita a 'Recibido' (id_estado = 3)
+    public function marcarRecibido($id_cita)
+    {
+        // Actualizar el estado de la cita a 'Recibido' (id_estado = 3)
+        $this->citasModel->update($id_cita, ['id_estado' => 3]);
+    
+        // Redirigir a la vista de citas pendientes (pagina_doctor)
+        return redirect()->to(base_url('pagina_doctor'))->with('success', 'Paciente recibido con éxito.');
+    }
+    
+
+
 
 
 

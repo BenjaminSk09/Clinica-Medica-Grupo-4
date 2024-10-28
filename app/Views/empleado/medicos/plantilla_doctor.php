@@ -28,14 +28,7 @@
             <nav class="d-flex">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a href="<?=base_url('recetasDoctor')?>" class="nav-link text-white">Escribir recetas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="<?=base_url('historialPaciente')?>" class="nav-link text-white">Historial de
-                            Paciente</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="<?=base_url('observaciones')?>" class="nav-link text-white">Agregar Observaciones</a>
+                        <a href="<?=base_url('pagina_doctor')?>" class="nav-link text-white">Pacientes pendientes</a>
                     </li>
                     <li class="nav-item">
                         <a href="<?=base_url('pacientes_atendidos')?>" class="nav-link text-white">Pacientes atendidos</a>

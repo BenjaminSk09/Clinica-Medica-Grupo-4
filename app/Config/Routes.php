@@ -48,11 +48,18 @@ $routes->post('login_empleado/auth', 'LoginEmpleadosController::auth'); // Usar 
 
 
 ////Medicos
-$routes->get('recetasDoctor', 'MedicosController::Recetas');
-$routes->get('historialPaciente', 'MedicosController::HistorialMedico');
-$routes->get('observaciones', 'MedicosController::notasMedicas');
-$routes->get('pagina_doctor','CitasController::verCitasMedico');
-$routes->get('pacientes_atendidos','EstadosCitasController::pacientesAtendidos');
+$routes->get('pagina_doctor', 'CitasController::verCitasMedico'); // Mostrar citas pendientes
+$routes->get('pacientes_atendidos', 'CitasController::listarPacientesAtendidos'); // Mostrar pacientes atendidos
+$routes->post('citas/marcar_recibido/(:num)', 'CitasController::marcarRecibido/$1'); // Cambiar estado a recibido
+// Ruta para el formulario de receta
+// Rutas para DetalleCitas
+$routes->get('detalle_citas/formulario_receta/(:num)', 'DetalleCitasController::formularioReceta/$1');
+$routes->post('detalle_citas/guardar_receta', 'DetalleCitasController::guardarReceta');
+$routes->get('detalle_citas/formulario_tratamiento/(:num)', 'DetalleCitasController::formularioTratamiento/$1');
+$routes->post('detalle_citas/guardar_tratamiento', 'DetalleCitasController::guardarTratamiento');
+$routes->get('detalle_citas/formulario_nota_medica/(:num)', 'DetalleCitasController::formularioNotaMedica/$1');
+$routes->post('detalle_citas/guardar_nota_medica', 'DetalleCitasController::guardarNotaMedica');
+
 
 
 /*Pagina especialidades*/ 

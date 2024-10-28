@@ -18,25 +18,29 @@
         </thead>
         <tbody>
             <?php if (!empty($citas)) : ?>
-                <?php foreach ($citas as $cita) : ?>
-                    <tr>
-                        <td><?= esc($cita['nombre_paciente']) ?></td>
-                        <td><?= esc($cita['fecha_cita']) ?></td>
-                        <td><?= esc($cita['hora']) ?></td>
-                        <td><?= esc($cita['motivo_cita']) ?></td>
-                        <td>
-                            <a href="#" class="btn btn-primary btn-sm btn-center">Ver Detalles</a>
-                        </td>
-                    </tr>
-                <?php endforeach; ?>
+            <?php foreach ($citas as $cita) : ?>
+            <tr>
+                <td><?= esc($cita['nombre_paciente']) ?></td>
+                <td><?= esc($cita['fecha_cita']) ?></td>
+                <td><?= esc($cita['hora']) ?></td>
+                <td><?= esc($cita['motivo_cita']) ?></td>
+                <td>
+                <form action="<?= base_url('citas/marcar_recibido/' . $cita['id_cita']) ?>" method="POST">
+    <button type="submit" class="btn btn-primary btn-sm">Recibido</button>
+</form>
+
+                </td>
+            </tr>
+            <?php endforeach; ?>
             <?php else : ?>
-                <tr>
-                    <td colspan="5" class="text-center">No hay citas pendientes</td>
-                </tr>
+            <tr>
+                <td colspan="5" class="text-center">No hay citas pendientes</td>
+            </tr>
             <?php endif; ?>
         </tbody>
     </table>
 </div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
